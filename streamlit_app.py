@@ -49,8 +49,8 @@ if mode == "Sample data (demo)":
 else:
     frames = {k: loaders.read_uploads(v) for k, v in uploads.items()}
 
-tab_results, tab_worklist, tab_matches, tab_howto, tab_columns = st.tabs(
-    ["📊 Results", "🧾 Dispute worklist", "🔗 Order matching", "📥 What CSVs to pull", "🧩 Column check"])
+tab_results, tab_worklist, tab_company, tab_matches, tab_howto, tab_columns = st.tabs(
+    ["📊 Results", "🧾 Dispute worklist", "🏢 Company view", "🔗 Order matching", "📥 What CSVs to pull", "🧩 Column check"])
 
 with tab_howto:
     st.markdown("""
@@ -92,14 +92,39 @@ for p in LABELS:
     plats.append(df)
     plat_maps[p] = mp
 
+claims, waits, cancels = loaders.load_dd_ops(frames.get("doordash", []))
+money = "${:,.0f}".format
+
+with tab_company:
+    stores = claims.get("store", pd.Series(dtype=str)).nunique() if not claims.empty else 0
+    if max(stores, waits.get("store", pd.Series(dtype=str)).nunique() if not waits.empty else 0) < 2:
+        st.info("Upload a multi-store DoorDash **Operations Quality** export (corporate login) to see every store side by side.")
+    else:
+        sc = engine.company_scorecard(claims, waits, cancels)
+        c = st.columns(4)
+        c[0].metric("Stores", f"{len(sc)}")
+        c[1].metric("Error charges", money(sc["error_charges"].sum()), f"{int(sc['error_orders'].sum()):,} orders", delta_color="off")
+        c[2].metric("Unpaid cancellations", money(sc["unpaid_cancel_sales"].sum()),
+                    f"{int(sc['not_confirmed_cancels'].sum())} 'store did not confirm'", delta_color="off")
+        c[3].metric("Dasher wait on food", f"{sc['dasher_wait_hours'].sum():,.0f} hrs",
+                    f"{int(sc['waits_over_5min'].sum()):,} waits over 5 min", delta_color="off")
+        st.caption("Raw counts. This file has no order totals, so busy stores rank higher. Add the company financial export for per-order rates.")
+        sort_by = st.selectbox("Rank stores by", ["error_charges", "error_orders", "waits_over_5min", "dasher_wait_hours",
+                                                  "unpaid_cancel_sales", "store_caused_cancels", "not_confirmed_cancels"])
+        st.dataframe(sc.sort_values(sort_by, ascending=False), hide_index=True, width="stretch",
+                     column_config={"error_charges": st.column_config.NumberColumn(format="$%.0f"),
+                                    "unpaid_cancel_sales": st.column_config.NumberColumn(format="$%.0f"),
+                                    "avg_wait_min": st.column_config.NumberColumn(format="%.1f"),
+                                    "dasher_wait_hours": st.column_config.NumberColumn(format="%.1f")})
+        st.download_button("⬇️ Download scorecard CSV", sc.to_csv(index=False), "doordash_ops_scorecard.csv", "text/csv")
+
 try:
-    claims, waits, cancels = loaders.load_dd_ops(frames.get("doordash", []))
     matched, issues, s = engine.run(toast, plats, settings, items, claims, cancels)
 except ValueError as e:
     st.error(str(e))
     st.stop()
 
-money = "${:,.0f}".format
+
 
 with tab_results:
     st.subheader(f"{s['days']} days · {s['orders']:,} delivered 3P orders · {money(s['sales'])} 3P sales")

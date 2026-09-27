@@ -317,11 +317,13 @@ def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame,
         found = _find(df, names)
         return df[found[0]].fillna("").astype(str).str.strip() if found else pd.Series("", index=df.index)
 
-    claim_df = pd.DataFrame(columns=["order_id", "error_category", "claimed_items", "customer_comment", "dasher", "order_link"])
+    claim_df = pd.DataFrame(columns=["order_id", "store", "error_charge", "error_category", "claimed_items", "customer_comment", "dasher", "order_link"])
     if claims:
         raw = pd.concat(claims, ignore_index=True).drop_duplicates()
         c = pd.DataFrame({
             "order_id": pick(raw, "DD Order ID").str.upper(),
+            "store": pick(raw, "Store Name"),
+            "error_charge": to_money(pick(raw, "Error Charge")),
             "error_category": pick(raw, "Error Category"),
             "item": pick(raw, "Quantity") + " x " + pick(raw, "Item Name"),
             "modifier": pick(raw, "Modifier Detail"),
@@ -332,24 +334,27 @@ def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame,
         c["item"] = c["item"].str.strip() + c["modifier"].map(lambda m: f" ({m})" if m else "")
         join = lambda s: "; ".join(dict.fromkeys(v for v in s if v))
         claim_df = c.groupby("order_id", as_index=False).agg(
+            store=("store", "first"), error_charge=("error_charge", "sum"),
             error_category=("error_category", join), claimed_items=("item", join),
             customer_comment=("customer_comment", join), dasher=("dasher", join), order_link=("order_link", "first"))
 
-    wait_df = pd.DataFrame(columns=["order_id", "wait_min", "food_ready", "dasher_arrived", "delivered_date"])
+    wait_df = pd.DataFrame(columns=["order_id", "store", "wait_min", "food_ready", "dasher_arrived", "delivered_date"])
     if waits:
         raw = pd.concat(waits, ignore_index=True).drop_duplicates()
         wait_df = pd.DataFrame({
             "order_id": pick(raw, "DD Order ID").str.upper(),
+            "store": pick(raw, "Store Name"),
             "wait_min": pd.to_numeric(pick(raw, "Avoidable Wait Time"), errors="coerce"),
             "food_ready": pd.to_datetime(pick(raw, "Confirmed Food Ready time"), errors="coerce", format="mixed"),
             "dasher_arrived": pd.to_datetime(pick(raw, "Dasher Arrival Time"), errors="coerce", format="mixed"),
             "delivered_date": pick(raw, "Order Delivered Date"),
         })
-    cancel_df = pd.DataFrame(columns=["order_id", "placed", "category", "reason", "paid", "subtotal", "net_payout"])
+    cancel_df = pd.DataFrame(columns=["order_id", "store", "placed", "category", "reason", "paid", "subtotal", "net_payout"])
     if cancels:
         raw = pd.concat(cancels, ignore_index=True).drop_duplicates()
         cancel_df = pd.DataFrame({
             "order_id": pick(raw, "DD Order ID").str.upper(),
+            "store": pick(raw, "Store Name"),
             "placed": pd.to_datetime(pick(raw, "Order Placed Date") + " " + pick(raw, "Order Placed Time"), errors="coerce", format="mixed"),
             "category": pick(raw, "Cancellation Category - Short"),
             "reason": pick(raw, "Non-payment reason"),

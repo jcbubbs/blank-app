@@ -439,3 +439,48 @@ def promo_roi(campaigns: pd.DataFrame, commission_rate: float, food_cost_pct: fl
     c["existing_share"] = c["existing_customers"] / (c["existing_customers"] + c["new_customers"]).where(
         (c["existing_customers"] + c["new_customers"]) > 0)
     return c.sort_values("breakeven_incremental_pct", ascending=False).reset_index(drop=True)
+
+
+STORE_CAUSED_CANCEL = re.compile(r"wrong order handed|staff requested|out of stock|extreme dasher wait|avoidable store", re.I)
+NOT_CONFIRMED = re.compile(r"did not confirm", re.I)
+
+
+def company_scorecard(claims: pd.DataFrame, waits: pd.DataFrame, cancels: pd.DataFrame) -> pd.DataFrame:
+    """One row per store from a multi-store DoorDash Operations Quality export.
+
+    Without the financial report we don't know each store's order count, so
+    these are raw counts. Rank within similar-volume stores, or add the
+    financial export for rates.
+    """
+    stores = sorted(set(claims.get("store", pd.Series(dtype=str))) | set(waits.get("store", pd.Series(dtype=str)))
+                    | set(cancels.get("store", pd.Series(dtype=str))))
+    sc = pd.DataFrame({"store": [s for s in stores if s]}).set_index("store")
+    if not claims.empty:
+        g = claims.groupby("store")
+        sc["error_orders"] = g.size()
+        sc["error_charges"] = g["error_charge"].sum()
+        sc["missing_item_orders"] = g["error_category"].apply(lambda s: s.str.contains("Missing Item").sum())
+        sc["ingredient_side_orders"] = g["error_category"].apply(lambda s: s.str.contains("Ingredient|Side", regex=True).sum())
+        sc["top_error_item"] = claims.assign(item=claims["claimed_items"].str.split("; ").str[0].str.replace(r"^\d+ x ", "", regex=True)
+                                             .str.replace(r"\s*\(.*$", "", regex=True).str.strip()) \
+            .groupby("store")["item"].agg(lambda s: s.value_counts().index[0] if len(s) else "")
+    if not waits.empty:
+        g = waits.groupby("store")["wait_min"]
+        sc["dasher_wait_orders"] = g.size()
+        sc["avg_wait_min"] = g.mean()
+        sc["waits_over_5min"] = g.apply(lambda s: (s > 5).sum())
+        sc["dasher_wait_hours"] = g.sum() / 60
+    if not cancels.empty:
+        why = cancels["category"] + ": " + cancels["reason"]
+        unpaid = cancels[~cancels["paid"]].assign(why=why)
+        g = unpaid.groupby("store")
+        sc["unpaid_cancels"] = g.size()
+        sc["unpaid_cancel_sales"] = g["subtotal"].sum()
+        sc["store_caused_cancels"] = g["why"].apply(lambda s: s.str.contains(STORE_CAUSED_CANCEL).sum())
+        sc["not_confirmed_cancels"] = g["why"].apply(lambda s: s.str.contains(NOT_CONFIRMED).sum())
+    sc = sc.fillna({c: 0 for c in sc.columns if c != "top_error_item"}).reset_index()
+    for c in ("error_orders", "missing_item_orders", "ingredient_side_orders", "dasher_wait_orders", "waits_over_5min",
+              "unpaid_cancels", "store_caused_cancels", "not_confirmed_cancels"):
+        if c in sc:
+            sc[c] = sc[c].astype(int)
+    return sc.sort_values("error_charges" if "error_charges" in sc else "store", ascending=False).reset_index(drop=True)
