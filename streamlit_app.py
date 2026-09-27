@@ -143,6 +143,26 @@ with tab_worklist:
                                 "evidence": st.column_config.TextColumn(width="large")})
     st.download_button("⬇️ Download worklist CSV", wl.to_csv(index=False), "dispute_worklist.csv", "text/csv")
 
+    st.markdown("### ✍️ Ready to file")
+    st.caption("Open disputes with the strongest proof first. Use the copy icon on each box, paste into the platform, then tick it off. "
+               "Filing only proven cases protects the store's self-service dispute access.")
+    ready = issues[(issues["status"] == "open") & (issues["dispute_text"] != "") & (issues["amount"] > 0)]
+    ready = ready.assign(_c=ready["confidence"].map({"high": 0, "medium": 1, "low": 2}).fillna(3)).sort_values(["_c", "days_left"])
+    if ready.empty:
+        st.success("Nothing open to file right now.")
+    for plat in ready["platform"].unique():
+        group = ready[ready["platform"] == plat]
+        st.markdown(f"**{LABELS.get(plat, plat)}**: {len(group)} to file, ${group['amount'].sum():,.2f}  \n"
+                    f"How to file: {engine.FILING_STEPS.get(plat, '')}")
+        for _, row in group.head(50).iterrows():
+            label = (f"{'✅' if row['confidence'] == 'high' else '⚠️'} {row['platform_order_id']} · ${row['amount']:.2f} · "
+                     f"{row['issue']} · {row['days_left']} days left · {row['file_via']}")
+            with st.expander(label):
+                st.code(row["dispute_text"], language=None, wrap_lines=True)
+                st.caption(f"Evidence: {row['evidence']}")
+        if len(group) > 50:
+            st.caption(f"+{len(group) - 50} more in the CSV download.")
+
 with tab_matches:
     st.markdown("How each platform order lined up with Toast. **T3 loose** and unmatched rows are worth a manual look.")
     st.dataframe(matched["match_tier"].fillna("Unmatched").value_counts().rename_axis("tier").reset_index(name="orders"),

@@ -150,7 +150,22 @@ def item_evidence(claim: str, ticket: pd.DataFrame) -> tuple[str, str]:
     return f"Toast ticket shows {names} rung and sent to kitchen{when}, not voided", "high"
 
 
-def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidence="medium"):
+# How each rule gets filed. Error charges have a Dispute button in the portal;
+# everything else needs a support ticket or the account manager.
+FILE_VIA = {
+    "R1": "Portal: Dispute charge", "R2": "Support ticket", "R3": "Store ops (no dispute)",
+    "R4": "Support ticket", "R5": "Account manager / support", "R6": "Support ticket", "R7": "Menu fix + support ticket",
+}
+
+FILING_STEPS = {
+    "doordash": "DoorDash Merchant Portal → Financials → Transactions → filter type = Error charge → open the order → Dispute Charge → paste the text.",
+    "ubereats": "Uber Eats Manager → Orders (or Payments) → open the order → Dispute adjustment → paste the text and attach a ticket photo if you have one.",
+    "grubhub": "restaurant.grubhub.com → Financials → Transactions → filter Prepaid Order Adjustment → Dispute → paste the text.",
+}
+PLATFORM_NAMES = {"doordash": "DoorDash", "ubereats": "Uber Eats", "grubhub": "Grubhub"}
+
+
+def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidence="medium", text=""):
     when = row.get("order_time") if row is not None else None
     if (when is None or pd.isna(when)) and toast_row is not None:
         when = toast_row["opened"]
@@ -170,6 +185,8 @@ def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidenc
         "dispute_deadline": deadline,
         "days_left": days_left,
         "status": "expired" if days_left is not None and days_left < 0 else "open",
+        "file_via": FILE_VIA[rule],
+        "dispute_text": text,
     }
 
 
@@ -196,15 +213,26 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
             if credited:
                 ev += f"; ${credited:.2f} already credited back"
             confidence = "high" if rung else "medium"
+            proof = ""
             if rung:
                 ev += f". Toast #{t['order_number']} was rung at ${t['subtotal']:.2f}"
+                proof = f"Our POS (Toast order #{t['order_number']}) shows this order was rung in full at ${t['subtotal']:.2f}."
                 if tickets is not None:
                     num = str(t["order_number"])
                     ticket = tickets.get_group(num) if num in tickets.groups else pd.DataFrame(columns=items.columns)
                     item_ev, item_conf = item_evidence(r["description"], ticket)
                     ev += f". {item_ev}"
                     confidence = item_conf or "medium"
-            f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, confidence)
+                    if item_conf == "high":
+                        proof = f"Our POS (Toast order #{t['order_number']}) shows {item_ev.removeprefix('Toast ticket shows ')}."
+                    elif item_conf == "medium":
+                        proof = f"Our POS (Toast order #{t['order_number']}) shows all {len(ticket)} items were rung and sent to the kitchen, and the order was handed to the courier."
+            claim = r["description"] or "error charge"
+            text = (f"Disputing the ${charged - credited:.2f} error charge on order {r['order_id']} "
+                    f"({pd.Timestamp(r['order_time']):%m/%d/%y %I:%M %p}). Claim: {claim}. "
+                    f"{proof or 'The order was prepared as placed.'} "
+                    f"Please reverse this charge.")
+            f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, confidence, text)
             if credited >= charged - 0.01:
                 f["status"] = "credited"
             elif confidence == "low":
@@ -214,7 +242,10 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
         if cancelled and r["net_payout"] <= 0.01 and rung:
             out.append(_finding(r, "R2", t["subtotal"],
                                 f"Platform cancelled with ${r['net_payout']:.2f} paid; Toast #{t['order_number']} was made (${t['subtotal']:.2f}), not voided",
-                                s, t, "high"))
+                                s, t, "high",
+                                f"Order {r['order_id']} ({pd.Timestamp(r['order_time']):%m/%d/%y %I:%M %p}) was cancelled ({r['status']}) after our kitchen "
+                                f"prepared it. Toast order #{t['order_number']} shows ${t['subtotal']:.2f} of food made and not voided, and we were paid "
+                                f"${r['net_payout']:.2f}. Please compensate the ${t['subtotal']:.2f} food cost."))
 
         if have_toast and t is None and r["subtotal"] > 0 and not cancelled:
             out.append(_finding(r, "R3", 0,
@@ -230,27 +261,37 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
             if over > max(0.10, base * s.rate_tolerance):
                 out.append(_finding(r, "R5", over,
                                     f"Commission ${r['commission']:.2f} = {r['commission'] / base:.1%} of ${base:.2f} (after store-funded promo) vs contracted {rate:.0%} (${expected:.2f})",
-                                    s, t, "medium"))
+                                    s, t, "medium",
+                                    f"Order {r['order_id']}: commission was ${r['commission']:.2f} ({r['commission'] / base:.1%} of the ${base:.2f} "
+                                    f"commissionable subtotal), but our contracted rate is {rate:.0%} (${expected:.2f}). Please refund the ${over:.2f} difference "
+                                    f"and confirm the rate on our account."))
 
         if cancelled and r["marketing_fee"] > 0:
             out.append(_finding(r, "R6", r["marketing_fee"],
-                                f"Marketing fee ${r['marketing_fee']:.2f} charged on a cancelled order", s, t, "medium"))
+                                f"Marketing fee ${r['marketing_fee']:.2f} charged on a cancelled order", s, t, "medium",
+                                f"Order {r['order_id']} was cancelled ({r['status']}) but we were charged a ${r['marketing_fee']:.2f} marketing fee. "
+                                f"No sale happened, so please refund the fee."))
 
         if rung and r["subtotal"] > 0 and t["subtotal"] - r["subtotal"] > s.subtotal_gap:
             gap = t["subtotal"] - r["subtotal"]
             out.append(_finding(r, "R7", gap,
                                 f"Toast subtotal ${t['subtotal']:.2f} vs {r['platform']} ${r['subtotal']:.2f}: menu price drift or item missing from the platform ticket",
-                                s, t, "low"))
+                                s, t, "low",
+                                f"Order {r['order_id']}: we were paid on a ${r['subtotal']:.2f} subtotal, but the ticket sent to our POS totals "
+                                f"${t['subtotal']:.2f}. Please review and pay the ${gap:.2f} difference. (Store: check the menu prices on this platform.)"))
 
     matched_ids = set(matched["toast_order_id"].dropna())
     orphans = toast.iloc[0:0] if not have_toast else toast[(toast["platform"] != "") & ~toast["voided"] & ~toast["toast_order_id"].isin(matched_ids)]
     for _, t in orphans.iterrows():
         out.append(_finding(None, "R4", t["subtotal"],
                             f"Toast shows a {t['platform']} order (#{t['order_number']}, ${t['subtotal']:.2f}) with no platform record. Confirm it was paid",
-                            s, t, "medium"))
+                            s, t, "medium",
+                            f"Our POS received a {PLATFORM_NAMES.get(t['platform'], t['platform'])} order on {pd.Timestamp(t['opened']):%m/%d/%y %I:%M %p} "
+                            f"(Toast #{t['order_number']}, ${t['subtotal']:.2f}) that isn't in our payout report. "
+                            f"Please confirm it was paid, or pay it."))
 
     cols = ["platform", "platform_order_id", "toast_order", "order_time", "rule", "issue", "amount",
-            "confidence", "evidence", "dispute_deadline", "days_left", "status"]
+            "confidence", "evidence", "dispute_deadline", "days_left", "status", "file_via", "dispute_text"]
     df = pd.DataFrame(out, columns=cols)
     return df.sort_values(["status", "days_left", "amount"], ascending=[False, True, False], na_position="last").reset_index(drop=True)
 
