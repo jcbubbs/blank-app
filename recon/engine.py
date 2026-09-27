@@ -63,7 +63,7 @@ def match_orders(toast: pd.DataFrame, plat: pd.DataFrame, s: Settings) -> pd.Dat
 
     for i, row in plat.iterrows():
         k = _key(row["order_id"])
-        needles = {n for n in (k, k[:8]) if len(n) >= 6}
+        needles = {n for n in (k, k[:8], _key(row.get("pos_order_id", ""))) if len(n) >= 6}
         for tid, blob in blobs.items():
             if tid not in used and any(n in blob.replace(" ", "") for n in needles):
                 plat.at[i, "toast_order_id"], plat.at[i, "match_tier"] = tid, "T1 exact"
@@ -88,7 +88,7 @@ def match_orders(toast: pd.DataFrame, plat: pd.DataFrame, s: Settings) -> pd.Dat
         ).sort_values(["tagged", "dt"], ascending=[False, True])
         best = cand.iloc[0]
         plat.at[i, "toast_order_id"] = best["toast_order_id"]
-        plat.at[i, "match_tier"] = "T2 fuzzy" if best["tagged"] else "T2 fuzzy (low)"
+        plat.at[i, "match_tier"] = "T2 time+amount" if best["tagged"] else "T2 time+amount (untagged)"
         used.add(best["toast_order_id"])
 
     # Tier 3 (review): same platform tag, and either the amount is within
@@ -140,7 +140,8 @@ def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidenc
 
 
 def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.DataFrame:
-    by_id = toast.set_index("toast_order_id") if not toast.empty else pd.DataFrame()
+    have_toast = not toast.empty
+    by_id = toast.set_index("toast_order_id") if have_toast else pd.DataFrame()
     out = []
     for _, r in matched.iterrows():
         t = by_id.loc[r["toast_order_id"]] if r["toast_order_id"] is not None else None
@@ -151,30 +152,40 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.D
         cancelled = "cancel" in str(r["status"]).lower()
 
         if r["error_charge"] < 0:
-            ev = f"{r['platform']} took ${-r['error_charge']:.2f}"
+            charged, credited = -r["error_charge"], max(0.0, r["adjustment"])
+            ev = f"{r['platform']} took ${charged:.2f}"
             if r["description"]:
                 ev += f" ({r['description']})"
+            if r["subtotal"] > 0:
+                ev += f" on a ${r['subtotal']:.2f} order ({charged / r['subtotal']:.0%})"
+            if credited:
+                ev += f"; ${credited:.2f} already credited back"
             if rung:
                 ev += f". Toast #{t['order_number']} was rung and closed at ${t['subtotal']:.2f}, so it's POS proof the order was made"
-            out.append(_finding(r, "R1", -r["error_charge"], ev, s, t, "high" if rung else "medium"))
+            f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, "high" if rung else "medium")
+            if credited >= charged - 0.01:
+                f["status"] = "credited"
+            out.append(f)
 
         if cancelled and r["net_payout"] <= 0.01 and rung:
             out.append(_finding(r, "R2", t["subtotal"],
                                 f"Platform cancelled with ${r['net_payout']:.2f} paid; Toast #{t['order_number']} was made (${t['subtotal']:.2f}), not voided",
                                 s, t, "high"))
 
-        if t is None and r["subtotal"] > 0 and not cancelled:
+        if have_toast and t is None and r["subtotal"] > 0 and not cancelled:
             out.append(_finding(r, "R3", 0,
                                 f"${r['subtotal']:.2f} order on {r['platform']} with no Toast match. Check tablet/injection (inventory and tax impact)",
                                 s, None, "info"))
 
         rate = s.rates.get(r["platform"])
-        if rate and r["subtotal"] > 0 and not cancelled:
-            expected = r["subtotal"] * rate
+        # Commission is charged on the subtotal after discounts the store funds.
+        base = r["subtotal"] - r["promo"]
+        if rate and base > 0 and not cancelled:
+            expected = base * rate
             over = r["commission"] - expected
-            if over > max(0.10, r["subtotal"] * s.rate_tolerance):
+            if over > max(0.10, base * s.rate_tolerance):
                 out.append(_finding(r, "R5", over,
-                                    f"Commission ${r['commission']:.2f} = {r['commission'] / r['subtotal']:.1%} vs contracted {rate:.0%} (${expected:.2f})",
+                                    f"Commission ${r['commission']:.2f} = {r['commission'] / base:.1%} of ${base:.2f} (after store-funded promo) vs contracted {rate:.0%} (${expected:.2f})",
                                     s, t, "medium"))
 
         if cancelled and r["marketing_fee"] > 0:
@@ -188,7 +199,7 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.D
                                 s, t, "low"))
 
     matched_ids = set(matched["toast_order_id"].dropna())
-    orphans = toast[(toast["platform"] != "") & ~toast["voided"] & ~toast["toast_order_id"].isin(matched_ids)]
+    orphans = toast.iloc[0:0] if not have_toast else toast[(toast["platform"] != "") & ~toast["voided"] & ~toast["toast_order_id"].isin(matched_ids)]
     for _, t in orphans.iterrows():
         out.append(_finding(None, "R4", t["subtotal"],
                             f"Toast shows a {t['platform']} order (#{t['order_number']}, ${t['subtotal']:.2f}) with no platform record. Confirm it was paid",
@@ -198,6 +209,23 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.D
             "confidence", "evidence", "dispute_deadline", "days_left", "status"]
     df = pd.DataFrame(out, columns=cols)
     return df.sort_values(["status", "days_left", "amount"], ascending=[False, True, False], na_position="last").reset_index(drop=True)
+
+
+def rate_mix(matched: pd.DataFrame) -> pd.DataFrame:
+    """Weekly spread of effective commission rates for each platform.
+
+    A plan change shows up as one rate bucket disappearing and another
+    appearing. That's the kind of shift a per-order rule can't see.
+    """
+    m = matched[~matched["status"].astype(str).str.lower().str.contains("cancel")].copy()
+    m["base"] = m["subtotal"] - m["promo"]
+    m = m[(m["base"] > 0) & m["order_time"].notna()]
+    if m.empty:
+        return pd.DataFrame()
+    m["rate"] = (m["commission"] / m["base"] * 100).round(0).astype(int).astype(str) + "%"
+    m["week"] = m["order_time"].dt.to_period("W").dt.start_time.dt.date
+    return (m.pivot_table(index=["platform", "week"], columns="rate", values="order_id", aggfunc="count", fill_value=0)
+             .reset_index())
 
 
 def summarize(toast: pd.DataFrame, matched: pd.DataFrame, issues: pd.DataFrame, s: Settings) -> dict:

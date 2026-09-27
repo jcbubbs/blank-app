@@ -18,9 +18,9 @@ with st.sidebar:
     mode = st.radio("Source", ["Sample data (demo)", "Upload my CSVs"], index=0)
     uploads = {}
     if mode == "Upload my CSVs":
-        uploads["toast"] = st.file_uploader("Toast: OrderDetails.csv", type="csv", accept_multiple_files=True)
+        uploads["toast"] = st.file_uploader("Toast: OrderDetails.csv (optional but recommended)", type="csv", accept_multiple_files=True)
         for p, label in LABELS.items():
-            uploads[p] = st.file_uploader(f"{label} financial CSV", type="csv", accept_multiple_files=True)
+            uploads[p] = st.file_uploader(f"{label} financial export (CSV or zip)", type=["csv", "zip"], accept_multiple_files=True)
 
     st.header("2. Your contract terms")
     rates, windows = {}, {}
@@ -43,7 +43,7 @@ if mode == "Sample data (demo)":
     frames = {k: [v] for k, v in sample_frames().items()}
     st.info("Showing **made-up sample data** with planted problems. Switch to *Upload my CSVs* in the sidebar to run a real store.")
 else:
-    frames = {k: [loaders.read_csv(f) for f in (v or [])] for k, v in uploads.items()}
+    frames = {k: loaders.read_uploads(v) for k, v in uploads.items()}
 
 tab_results, tab_worklist, tab_matches, tab_howto, tab_columns = st.tabs(
     ["📊 Results", "🧾 Dispute worklist", "🔗 Order matching", "📥 What CSVs to pull", "🧩 Column check"])
@@ -54,8 +54,8 @@ with tab_howto:
 
 | # | File | Where to get it | Must include |
 |---|---|---|---|
-| 1 | **Toast – Order Details** | Toast Web → Reports → Sales → *Orders* (Order Details) → export CSV (`OrderDetails.csv`) | Order Id, Order #, Opened, **Tab Names**, Dining Options, Revenue Center, **Order Source**, Amount, Tax, Total, Voided |
-| 2 | **DoorDash – Transactions / Financial detail** | Merchant Portal → Financials → *Transactions* (or Reports → Financial report) → download CSV | DoorDash order ID, Timestamp local time, Transaction type, Final order status, Subtotal, Tax, **Commission**, Marketing fees, **Error charges**, Adjustments, Net total, Payout date / ID, Description |
+| 1 | **Toast – Order Details** | Toast Web → Reports → Sales → *Orders* → export CSV (`OrderDetails.csv`) | **Minimum:** Order #, Opened, Amount (matching works on time + amount; proven at 99.8% on Manahawkin). **Better:** Order Id, Tab Names, Dining Options, Order Source, Voided. These tag 3P orders and unlock the "Toast order never paid" check |
+| 2 | **DoorDash – Financial report (zip)** | Merchant Portal → Reports → Financial report → pick date range → download. **Upload the zip as-is** | The *Detailed transactions* file inside has everything: order ID, **POS order ID**, Order received time, status, subtotal, commission, store-funded discounts, **error charges, adjustments (dispute credits)**, payout |
 | 3 | **Uber Eats – Payment Details** | Uber Eats Manager → Payments → *Reports* → **Payment details** → CSV | Order ID, Order Accept Time, Order Status, Sales (excl. tax), Tax on Sales, **Marketplace Fee**, **Refunds (incl tax)** / order error adjustments, Marketing adjustment, Total payout, Payout Date |
 | 4 | **Grubhub – Transactions** | restaurant.grubhub.com → Financials → *Transactions* → export | order_number, transaction_date, transaction_type (incl. *Prepaid Order Adjustment*), subtotal, tax, commission, delivery_commission, processing_fee, merchant_net_total, deposit date, adjustment reason |
 
@@ -63,14 +63,17 @@ with tab_howto:
 1) Use **order-level / transaction-level** exports, not weekly summaries. Summaries can't be matched to orders.
 2) Leave column headers as exported. The app finds columns by name and shows anything missing on the **Column check** tab.
 3) Pick a store with heavy 3P volume and a single Toast location, and skip any week where the store changed menus or tablets.
-4) Nice to have: the store's **bank deposit CSV** for the same period (next version will match payouts to deposits).
+4) Nice to have: the store's **bank deposit CSV** for the same period (next version will match payouts to deposits), and Toast's **item-level** export (ItemSelectionDetails), which is the best proof against "missing item" charges.
 5) These files contain customer first names. Keep them in the pilot folder and don't email them around.
 """)
 
-if not frames.get("toast") or not any(frames.get(p) for p in LABELS):
+if not any(frames.get(p) for p in LABELS):
     with tab_results:
-        st.warning("Upload the Toast OrderDetails CSV plus at least one platform CSV to run the reconciliation. See **What CSVs to pull**.")
+        st.warning("Upload at least one platform export (the DoorDash zip works as-is). Add Toast OrderDetails to unlock POS matching. See **What CSVs to pull**.")
     st.stop()
+if not frames.get("toast"):
+    with tab_results:
+        st.info("No Toast file loaded, so POS matching (R2, R3, R4, R7) is skipped. Error charges, credits and commission checks still run.")
 
 toast, toast_map = loaders.load_toast(frames["toast"])
 plats, plat_maps = [], {}
@@ -99,6 +102,14 @@ with tab_results:
     c[1].metric("Error charges taken", money(s["error_charges"]))
     c[2].metric("Platform fees paid", money(s["fees"]))
     c[3].metric("Fees as % of 3P sales", f"{(s['fees'] / s['sales'] if s['sales'] else 0):.1%}")
+
+    st.markdown("#### Commission rate mix by week")
+    st.caption("Commission ÷ (subtotal − store-funded promo). When one rate column disappears and another appears, "
+               "the plan changed. Confirm the franchisee agreed to it.")
+    mix = engine.rate_mix(matched)
+    if not mix.empty:
+        mix = mix.assign(platform=mix["platform"].map(LABELS))
+        st.dataframe(mix, hide_index=True, width="stretch")
 
     st.markdown("#### What we found")
     by_rule = (issues.assign(open_amt=issues["amount"].where(issues["status"] == "open", 0))

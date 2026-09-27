@@ -25,15 +25,19 @@ SUM_FIELDS = {"commission", "processing_fee", "marketing_fee"}
 PLATFORM_ALIASES: dict[str, dict[str, list[str]]] = {
     "doordash": {
         "order_id": ["DoorDash order ID", "Order ID", "Delivery UUID"],
-        "order_time": ["Timestamp local time", "Order placed time", "Timestamp local date", "Timestamp UTC time", "Created at"],
+        "txn_id": ["DoorDash transaction ID"],
+        "pos_order_id": ["POS order ID", "Merchant delivery ID"],
+        # "Order received" lines up with Toast's Opened time. "Timestamp" is the
+        # transaction time, often 15-20 min later.
+        "order_time": ["Order received local time", "Timestamp local time", "Order placed time", "Timestamp local date", "Timestamp UTC time", "Created at"],
         "txn_type": ["Transaction type"],
         "status": ["Final order status", "Order status"],
         "subtotal": ["Subtotal"],
-        "tax": ["Subtotal tax passed to merchant", "Tax"],
+        "tax": ["Subtotal tax passed to merchant", "Tax (subtotal)", "Tax"],
         "commission": ["Commission"],
         "processing_fee": ["Payment processing fee"],
-        "marketing_fee": ["Marketing fees", "Marketing fees | (including any applicable taxes)"],
-        "promo": ["Customer discounts from marketing | (funded by you)", "Customer discounts funded by you"],
+        "marketing_fee": ["Marketing fees | (including any applicable taxes)", "Marketing fees"],
+        "promo": ["Customer discounts from marketing | (funded by you)", "Customer discounts funded by you", "Customer discounts"],
         "error_charge": ["Error charges", "Error charge"],
         "adjustment": ["Adjustments"],
         "net_payout": ["Net total", "Net payout"],
@@ -43,6 +47,8 @@ PLATFORM_ALIASES: dict[str, dict[str, list[str]]] = {
     },
     "ubereats": {
         "order_id": ["Order ID", "Workflow ID"],
+        "txn_id": [],
+        "pos_order_id": ["External Order ID"],
         "order_time": ["Order Accept Time", "Order Date"],
         "txn_type": ["Transaction type"],
         "status": ["Order Status"],
@@ -61,6 +67,8 @@ PLATFORM_ALIASES: dict[str, dict[str, list[str]]] = {
     },
     "grubhub": {
         "order_id": ["order_number", "Order Number", "Order ID"],
+        "txn_id": ["transaction_id"],
+        "pos_order_id": [],
         "order_time": ["transaction_date", "Order Date", "time_placed"],
         "txn_type": ["transaction_type", "Transaction Type"],
         "status": ["order_status", "Order Status"],
@@ -118,6 +126,23 @@ def read_csv(src) -> pd.DataFrame:
         return pd.read_csv(src, dtype=str, encoding="latin-1")
 
 
+def read_uploads(files) -> list[pd.DataFrame]:
+    """Read CSVs and zips of CSVs (e.g. DoorDash's financial export zip)."""
+    import zipfile
+    out = []
+    for f in files or []:
+        name = getattr(f, "name", str(f)).lower()
+        if name.endswith(".zip"):
+            data = BytesIO(f.getvalue()) if hasattr(f, "getvalue") else f
+            with zipfile.ZipFile(data) as z:
+                for member in sorted(z.namelist()):
+                    if member.lower().endswith(".csv") and not member.startswith("__MACOSX"):
+                        out.append(read_csv(BytesIO(z.read(member))))
+        else:
+            out.append(read_csv(f))
+    return out
+
+
 def to_money(series: pd.Series) -> pd.Series:
     s = series.fillna("").astype(str).str.strip()
     neg = s.str.startswith("(") & s.str.endswith(")")
@@ -145,9 +170,11 @@ def load_platform(frames: list[pd.DataFrame], platform: str) -> tuple[pd.DataFra
     aliases = PLATFORM_ALIASES[platform]
     rows, mapping = [], {}
     for df in frames:
-        mapping = map_columns(df, aliases)
+        this_map = map_columns(df, aliases)
+        if sum(map(bool, this_map.values())) > sum(map(bool, mapping.values())):
+            mapping = this_map  # show the richest file on the Column check tab
         out = pd.DataFrame(index=df.index)
-        for field, cols in mapping.items():
+        for field, cols in this_map.items():
             if field in MONEY_FIELDS:
                 used = cols if field in SUM_FIELDS else cols[:1]
                 out[field] = sum((to_money(df[c]) for c in used), pd.Series(0.0, index=df.index))
@@ -158,18 +185,30 @@ def load_platform(frames: list[pd.DataFrame], platform: str) -> tuple[pd.DataFra
         return pd.DataFrame(columns=["platform", "order_id", *aliases]), {}
     raw = pd.concat(rows, ignore_index=True)
     raw = raw[raw["order_id"].fillna("").astype(str).str.strip() != ""]
+    # DoorDash's zip repeats the same transactions in several files (detailed,
+    # simplified, error charges). Keep each transaction ID once.
+    # When a transaction repeats, keep the copy with the most filled-in fields,
+    # which is the detailed file's.
+    filled = (raw.fillna("").astype(str).apply(lambda c: c.str.strip()).ne("") & raw.ne(0)).sum(axis=1)
+    raw = raw.assign(_filled=filled).sort_values("_filled", ascending=False, kind="stable")
+    has_txn = raw["txn_id"].fillna("").astype(str).str.strip() != ""
+    raw = pd.concat([raw[has_txn].drop_duplicates("txn_id"), raw[~has_txn]], ignore_index=True).drop(columns="_filled")
 
     # Some exports put error charges and adjustments on their own transaction
-    # rows, with the amount only in the net column. Move that amount into
-    # error_charge so it isn't read as a normal payout.
+    # rows, with the amount only in the net column. Move a negative amount into
+    # error_charge, and a positive one (e.g. a dispute credit) into adjustment.
     is_adj_row = raw["txn_type"].fillna("").astype(str).str.contains(ADJUSTMENT_TXN)
-    move = is_adj_row & (raw["error_charge"] == 0)
-    raw.loc[move, "error_charge"] = raw.loc[move, "net_payout"]
+    empty = is_adj_row & (raw["error_charge"] == 0) & (raw["adjustment"] == 0)
+    raw.loc[empty & (raw["net_payout"] < 0), "error_charge"] = raw["net_payout"]
+    raw.loc[empty & (raw["net_payout"] > 0), "adjustment"] = raw["net_payout"]
     raw.loc[is_adj_row, "subtotal"] = 0.0
 
+    # Exports show fees as negative numbers. Flip the sign per column rather than
+    # taking abs(), so reversal rows from order edits still cancel out.
     for f in ("commission", "processing_fee", "marketing_fee", "promo"):
-        raw[f] = raw[f].abs()
-    raw["error_charge"] = -raw["error_charge"].abs()
+        if raw[f].sum() < 0:
+            raw[f] = -raw[f]
+    raw["error_charge"] = raw["error_charge"].where(raw["error_charge"] <= 0, -raw["error_charge"])
     raw["order_time"] = pd.to_datetime(raw["order_time"], errors="coerce", format="mixed")
 
     agg = {f: "sum" for f in MONEY_FIELDS}
@@ -177,7 +216,8 @@ def load_platform(frames: list[pd.DataFrame], platform: str) -> tuple[pd.DataFra
         "order_time": "min",
         "status": lambda s: next((v for v in s if isinstance(v, str) and v.strip()), ""),
         "txn_type": lambda s: " | ".join(sorted({str(v) for v in s if str(v).strip()})),
-        "payout_date": "first", "payout_id": "first",
+        "payout_date": "first", "payout_id": "first", "txn_id": "first",
+        "pos_order_id": lambda s: next((v for v in s if isinstance(v, str) and v.strip()), ""),
         "description": lambda s: " | ".join(sorted({str(v) for v in s if str(v).strip()})),
     })
     orders = raw.groupby("order_id", as_index=False).agg(agg)
@@ -200,6 +240,9 @@ def load_toast(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
     if not parts:
         return pd.DataFrame(columns=["platform", *TOAST_ALIASES]), {}
     t = pd.concat(parts, ignore_index=True)
+    # The simple Orders export has no Order Id column, so fall back to Order #.
+    no_id = t["toast_order_id"].astype(str).str.strip() == ""
+    t.loc[no_id, "toast_order_id"] = t.loc[no_id, "order_number"].astype(str)
     t = t[t["toast_order_id"].astype(str).str.strip() != ""].drop_duplicates("toast_order_id")
     t["opened"] = pd.to_datetime(t["opened"], errors="coerce", format="mixed")
     t["voided"] = t["voided"].astype(str).str.strip().str.lower().isin({"true", "yes", "1", "y"})
@@ -207,5 +250,5 @@ def load_toast(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
     t["platform"] = ""
     for p, pat in PLATFORM_PATTERNS.items():
         t.loc[(t["platform"] == "") & blob.str.contains(pat), "platform"] = p
-    t["search_blob"] = (blob + " " + t["order_number"].astype(str)).map(lambda s: re.sub(r"[^A-Z0-9 ]", "", s.upper()))
+    t["search_blob"] = (blob + " " + t["order_number"].astype(str) + " " + t["toast_order_id"].astype(str)).map(lambda s: re.sub(r"[^A-Z0-9 ]", "", s.upper()))
     return t.reset_index(drop=True), mapping
