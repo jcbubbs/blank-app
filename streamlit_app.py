@@ -31,6 +31,8 @@ with st.sidebar:
         rates[p] = c1.number_input(f"{label} commission %", 0.0, 40.0, engine.DEFAULT_RATES[p] * 100, 0.5) / 100
         windows[p] = c2.number_input(f"{label} dispute days", 1, 90, engine.DEFAULT_WINDOWS[p])
     win_rate = st.slider("Assumed dispute win rate", 0.0, 1.0, 0.60, 0.05)
+    food_cost = st.slider("Food + packaging cost (% of sales)", 0.15, 0.45, 0.30, 0.01,
+                          help="Used for promo payback. Assumption; replace with the store's P&L number.")
     as_of = st.date_input("Deadlines measured as of", date.today())
 
 settings = engine.Settings(rates=rates, windows=windows, win_rate=win_rate, as_of=as_of)
@@ -73,11 +75,17 @@ if not any(frames.get(p) for p in LABELS):
     with tab_results:
         st.warning("Upload at least one platform export (the DoorDash zip works as-is). Add Toast OrderDetails to unlock POS matching. See **What CSVs to pull**.")
     st.stop()
-if not frames.get("toast"):
+if not frames.get("toast") and not frames.get("toast_items"):
     with tab_results:
         st.info("No Toast file loaded, so POS matching (R2, R3, R4, R7) is skipped. Error charges, credits and commission checks still run.")
 
-toast, toast_map = loaders.load_toast(frames["toast"])
+items = loaders.load_toast_items(frames.get("toast_items", []))
+toast_frames = frames.get("toast") or ([loaders.toast_orders_from_items(items)] if not items.empty else [])
+toast, toast_map = loaders.load_toast(toast_frames)
+if not frames.get("toast") and not items.empty:
+    with tab_results:
+        st.info("No Toast OrderDetails file, so orders were rebuilt from ItemSelectionDetails. Paid add-ons are missing from "
+                "those totals, so more matches land in 'T3 loose (review)'.")
 plats, plat_maps = [], {}
 for p in LABELS:
     df, mp = loaders.load_platform(frames.get(p, []), p)
@@ -85,7 +93,6 @@ for p in LABELS:
     plat_maps[p] = mp
 
 try:
-    items = loaders.load_toast_items(frames.get("toast_items", []))
     claims, waits, cancels = loaders.load_dd_ops(frames.get("doordash", []))
     matched, issues, s = engine.run(toast, plats, settings, items, claims, cancels)
 except ValueError as e:
@@ -114,6 +121,23 @@ with tab_results:
         c[1].metric("Avg avoidable wait", f"{waits['wait_min'].mean():.1f} min")
         c[2].metric("Waits over 5 min", f"{(waits['wait_min'] > 5).sum():,}")
         st.caption("Food that isn't ready when the Dasher arrives hurts ranking and raises cold-food and missing-item claims. Coach the store on quote times.")
+
+    campaigns = loaders.load_dd_marketing(frames.get("doordash", []))
+    if not campaigns.empty:
+        st.markdown("#### DoorDash promotions: do they pay for themselves?")
+        roi = engine.promo_roi(campaigns, rates.get("doordash", 0.21), food_cost)
+        st.caption(f"Cost = discounts you fund + marketing fees. **Break-even new-order %** is the share of a campaign's orders that must be "
+                   f"orders you wouldn't have gotten otherwise for it to pay for itself (at {rates.get('doordash', 0.21):.0%} commission and "
+                   f"{food_cost:.0%} food cost). Above ~40% is risky, because DoorDash counts every order a promo touched, including regulars.")
+        st.dataframe(roi[["campaign", "type", "orders", "sales", "cost", "roas", "breakeven_incremental_pct",
+                          "new_customers", "cost_per_new_customer", "existing_share"]],
+                     hide_index=True, width="stretch",
+                     column_config={"sales": st.column_config.NumberColumn(format="$%.0f"),
+                                    "cost": st.column_config.NumberColumn(format="$%.0f"),
+                                    "roas": st.column_config.NumberColumn("ROAS", format="%.1fx"),
+                                    "breakeven_incremental_pct": st.column_config.NumberColumn("break-even new-order %", format="percent"),
+                                    "cost_per_new_customer": st.column_config.NumberColumn("$ per new customer", format="$%.0f"),
+                                    "existing_share": st.column_config.NumberColumn("% existing customers", format="percent")})
 
     st.markdown("#### Commission rate mix by week")
     st.caption("Commission ÷ (subtotal − store-funded promo). When one rate column disappears and another appears, "

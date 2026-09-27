@@ -81,14 +81,14 @@ def match_orders(toast: pd.DataFrame, plat: pd.DataFrame, s: Settings) -> pd.Dat
             continue
         cand = toast[
             ~toast["toast_order_id"].isin(used)
-            & toast["platform"].isin([row["platform"], ""])
+            & toast["platform"].isin([row["platform"], "3p", ""])
             & ((toast["opened"] - row["order_time"]).abs() <= window)
             & ((toast["subtotal"] - row["subtotal"]).abs() <= s.amount_tol)
         ]
         if cand.empty:
             continue
         cand = cand.assign(
-            tagged=cand["platform"] == row["platform"],
+            tagged=cand["platform"].isin([row["platform"], "3p"]),
             dt=(cand["opened"] - row["order_time"]).abs(),
         ).sort_values(["tagged", "dt"], ascending=[False, True])
         best = cand.iloc[0]
@@ -105,12 +105,17 @@ def match_orders(toast: pd.DataFrame, plat: pd.DataFrame, s: Settings) -> pd.Dat
             continue
         cand = toast[
             ~toast["toast_order_id"].isin(used)
-            & (toast["platform"] == row["platform"])
+            & toast["platform"].isin([row["platform"], "3p"])
             & ((toast["opened"] - row["order_time"]).abs() <= window)
         ]
         dt = (cand["opened"] - row["order_time"]).abs()
         if row["subtotal"] > 0:
-            cand = cand[((cand["subtotal"] - row["subtotal"]).abs() / cand["subtotal"].clip(lower=0.01)) <= s.loose_pct]
+            close_amt = ((cand["subtotal"] - row["subtotal"]).abs() / cand["subtotal"].clip(lower=0.01)) <= s.loose_pct
+            # Rebuilt-from-items totals leave out paid modifiers, so they can
+            # only come in under the platform subtotal. Require the times to be
+            # tight instead.
+            partial = cand["amount_partial"] & (cand["subtotal"] <= row["subtotal"] + s.amount_tol) & (dt <= pd.Timedelta(minutes=3))
+            cand = cand[close_amt | partial]
         else:
             cand = cand[dt <= pd.Timedelta(minutes=5)]
         if cand.empty:
@@ -198,7 +203,7 @@ def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidenc
 
 # Toast can prove an item was rung, but not which sauce went on it or whether
 # the bag had its chips. For these categories the proof is weaker.
-WEAK_PROOF_CATEGORIES = ("ingredient", "side item", "quality", "temperature")
+WEAK_PROOF_CATEGORIES = ("ingredient", "side item", "quality", "temperature", "quantity", "size", "incorrect", "wrong")
 
 
 def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: pd.DataFrame | None = None,
@@ -256,9 +261,9 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                 repeat = [d for d in str(ops["dasher"]).split("; ") if len(dasher_orders.get(d, ())) > 1]
                 if repeat:
                     ev += f". Dasher {', '.join(repeat)} delivered {max(len(dasher_orders[d]) for d in repeat)} claimed orders this period"
-                if confidence == "high" and any(w in category.lower() for w in WEAK_PROOF_CATEGORIES):
+                if confidence == "high" and any(w in f"{category} {r['description']}".lower() for w in WEAK_PROOF_CATEGORIES):
                     confidence = "medium"
-                    ev += ". Toast proves the item was rung, not its ingredients or sides, so the proof is weaker"
+                    ev += ". Toast proves the item was rung, not its ingredients, portions, sides or which bag it went in, so the proof is weaker"
                 claim = f"{category}: {ops['claimed_items']}" if ops["claimed_items"] else claim
             elif confidence == "high" and any(w in str(r["description"]).lower() for w in WEAK_PROOF_CATEGORIES):
                 confidence = "medium"
@@ -308,7 +313,7 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                                 f"Order {r['order_id']} was cancelled ({r['status']}) but we were charged a ${r['marketing_fee']:.2f} marketing fee. "
                                 f"No sale happened, so please refund the fee."))
 
-        if rung and r["subtotal"] > 0 and t["subtotal"] - r["subtotal"] > s.subtotal_gap:
+        if rung and not t.get("amount_partial", False) and r["subtotal"] > 0 and t["subtotal"] - r["subtotal"] > s.subtotal_gap:
             gap = t["subtotal"] - r["subtotal"]
             out.append(_finding(r, "R7", gap,
                                 f"Toast subtotal ${t['subtotal']:.2f} vs {r['platform']} ${r['subtotal']:.2f}: menu price drift or item missing from the platform ticket",
@@ -317,7 +322,7 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                                 f"${t['subtotal']:.2f}. Please review and pay the ${gap:.2f} difference. (Store: check the menu prices on this platform.)"))
 
     matched_ids = set(matched["toast_order_id"].dropna())
-    orphans = toast.iloc[0:0] if not have_toast else toast[(toast["platform"] != "") & ~toast["voided"] & ~toast["toast_order_id"].isin(matched_ids)]
+    orphans = toast.iloc[0:0] if not have_toast else toast[~toast["platform"].isin(["", "3p"]) & ~toast["voided"] & ~toast["toast_order_id"].isin(matched_ids)]
     for _, t in orphans.iterrows():
         out.append(_finding(None, "R4", t["subtotal"],
                             f"Toast shows a {t['platform']} order (#{t['order_number']}, ${t['subtotal']:.2f}) with no platform record. Confirm it was paid",
@@ -411,3 +416,26 @@ def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings, items: 
     matched = match_orders(toast, plat, s)
     issues = find_issues(toast, matched, s, items, claims, cancels)
     return matched, issues, summarize(toast, matched, issues, s)
+
+
+def promo_roi(campaigns: pd.DataFrame, commission_rate: float, food_cost_pct: float) -> pd.DataFrame:
+    """Return per campaign, including how many of its orders must be truly new for it to pay off.
+
+    DoorDash credits a campaign with every order it touched, including
+    customers who would have ordered anyway. So instead of trusting ROAS we
+    ask: what share of these orders must be incremental for the profit on
+    them to cover the spend? Lower is safer.
+    Contribution per $1 of sales = 1 - commission - food & packaging cost.
+    """
+    if campaigns.empty:
+        return campaigns
+    c = campaigns.copy()
+    c["cost"] = c["discounts_you_fund"] + c["marketing_fees"]
+    c["roas"] = c["sales"] / c["cost"].where(c["cost"] > 0)
+    margin = max(0.01, 1 - commission_rate - food_cost_pct)
+    c["contribution"] = c["sales"] * margin
+    c["breakeven_incremental_pct"] = c["cost"] / c["contribution"].where(c["contribution"] > 0)
+    c["cost_per_new_customer"] = c["cost"] / c["new_customers"].where(c["new_customers"] > 0)
+    c["existing_share"] = c["existing_customers"] / (c["existing_customers"] + c["new_customers"]).where(
+        (c["existing_customers"] + c["new_customers"]) > 0)
+    return c.sort_values("breakeven_incremental_pct", ascending=False).reset_index(drop=True)

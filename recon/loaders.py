@@ -100,6 +100,7 @@ TOAST_ALIASES: dict[str, list[str]] = {
     "revenue_center": ["Revenue Center"],
     "tab_name": ["Tab Names", "Tab Name", "Check Names"],
     "service": ["Service"],
+    "amount_partial": ["amount_partial"],
 }
 
 PLATFORM_PATTERNS = {
@@ -247,9 +248,12 @@ def load_toast(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
     t["opened"] = pd.to_datetime(t["opened"], errors="coerce", format="mixed")
     t["voided"] = t["voided"].astype(str).str.strip().str.lower().isin({"true", "yes", "1", "y"})
     blob = t[["source", "dining_option", "revenue_center", "tab_name", "service"]].astype(str).agg(" ".join, axis=1)
+    t["amount_partial"] = t["amount_partial"].astype(str).str.lower() == "true"
     t["platform"] = ""
     for p, pat in PLATFORM_PATTERNS.items():
         t.loc[(t["platform"] == "") & blob.str.contains(pat), "platform"] = p
+    # Came from a marketplace, but we can't tell which one.
+    t.loc[(t["platform"] == "") & blob.str.contains(r"rails|3p", case=False), "platform"] = "3p"
     t["search_blob"] = (blob + " " + t["order_number"].astype(str) + " " + t["toast_order_id"].astype(str)).map(lambda s: re.sub(r"[^A-Z0-9 ]", "", s.upper()))
     return t.reset_index(drop=True), mapping
 
@@ -354,3 +358,57 @@ def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame,
             "net_payout": to_money(pick(raw, "Net Payout")),
         })
     return claim_df, wait_df, cancel_df
+
+
+def toast_orders_from_items(items: pd.DataFrame) -> pd.DataFrame:
+    """Rebuild an order list from ItemSelectionDetails when OrderDetails is missing.
+
+    Item rows don't carry paid modifier prices, so the rebuilt amount can come
+    in under the real subtotal. amount_partial marks that so the matcher
+    allows it. Orders with an Olo "Rails Markup" line came in from a
+    marketplace, so they're tagged "3p".
+    """
+    if items.empty:
+        return pd.DataFrame(columns=["Order #", "Opened", "Amount", "Order Source"])
+    live = items[~items["voided"]]
+    o = live.groupby("order_number").agg(
+        opened=("sent", "min"), amount=("price", "sum"),
+        rails=("item", lambda s: s.astype(str).str.contains("rails markup", case=False).any())).reset_index()
+    return pd.DataFrame({
+        "Order #": o["order_number"], "Opened": o["opened"].dt.strftime("%m/%d/%y %I:%M %p"),
+        "Amount": o["amount"].round(2), "Order Source": o["rails"].map({True: "Olo Rails (3P)", False: ""}),
+        "amount_partial": True,
+    })
+
+
+def load_dd_marketing(frames: list[pd.DataFrame]) -> pd.DataFrame:
+    """DoorDash Marketing export (Promotion + Sponsored Listing), one row per campaign."""
+    rows = []
+    for df in frames:
+        cols = _norm_cols(df)
+        if "campaignname" not in cols or "sales" not in cols:
+            continue
+        kind = "Sponsored listing (ads)" if "impressions" in cols else None
+
+        def num(*names):
+            found = _find(df, names)
+            return to_money(df[found[0]]) if found else pd.Series(0.0, index=df.index)
+
+        def txt(*names):
+            found = _find(df, names)
+            return df[found[0]].fillna("").astype(str) if found else pd.Series("", index=df.index)
+
+        rows.append(pd.DataFrame({
+            "campaign": txt("Campaign name").str.strip(),
+            "type": kind or txt("Type of promotion"),
+            "orders": num("Orders"),
+            "sales": num("Sales"),
+            "discounts_you_fund": num("Customer discounts from marketing | (Funded by you)").abs(),
+            "marketing_fees": num("Marketing fees | (including any applicable taxes)").abs(),
+            "new_customers": num("New customers acquired"),
+            "existing_customers": num("Existing customers acquired"),
+        }))
+    if not rows:
+        return pd.DataFrame(columns=["campaign", "type", "orders", "sales", "discounts_you_fund", "marketing_fees",
+                                     "new_customers", "existing_customers"])
+    return pd.concat(rows, ignore_index=True).groupby(["campaign", "type"], as_index=False).sum()
