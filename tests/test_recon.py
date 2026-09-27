@@ -65,3 +65,27 @@ def test_item_evidence():
     assert conf == "low"
     _, conf = engine.item_evidence("1 BURRITO BOWL - BUILD YOUR OWN missing", ticket.iloc[:0])
     assert conf == ""
+
+
+def test_ops_quality_enriches_and_downgrades_ingredient_claims():
+    import pandas as pd
+    fin = pd.DataFrame({
+        "DoorDash transaction ID": ["t1", "t2"], "DoorDash order ID": ["4AFF0716", "4AFF0716"],
+        "Order received local time": ["2026-09-24 11:05:00"] * 2, "Transaction type": ["Order", "Error Charge"],
+        "Final order status": ["Delivered", ""], "Subtotal": ["30.00", "0"], "Commission": ["-6.30", "0"],
+        "Error charges": ["0", "-19.70"], "Net total": ["23.70", "-19.70"], "Description": ["", "1 QUESADILLA missing"],
+    })
+    ops = pd.DataFrame({"DD Order ID": ["4aff0716"], "Error Category": ["Ingredient Error"], "Item Name": ["QUESADILLA"],
+                        "Quantity": ["1"], "Customer Comment": ["Requested ranch, got sriracha"], "Dasher Name": ["Uriel L"],
+                        "Order Link": ["https://www.doordash.com/merchant/deliveries/x"]})
+    plat, _ = loaders.load_platform([fin, ops], "doordash")
+    claims, _ = loaders.load_dd_ops([fin, ops])
+    toast = pd.DataFrame({"Order #": ["111"], "Opened": ["9/24/26 11:05 AM"], "Amount": ["30.00"]})
+    t, _ = loaders.load_toast([toast])
+    items = loaders.load_toast_items([pd.DataFrame({"Order #": ["111"], "Sent Date": ["9/24/26 11:05 AM"],
+                                                    "Menu Item": ["QUESADILLA"], "Qty": ["1"], "Net Price": ["30"], "Void?": ["false"]})])
+    s = engine.Settings(rates={"doordash": 0.21}, as_of=__import__("datetime").date(2026, 9, 27))
+    _, issues, _ = engine.run(t, [plat], s, items, claims)
+    r1 = issues[issues["rule"] == "R1"].iloc[0]
+    assert r1["confidence"] == "medium"
+    assert "sriracha" in r1["evidence"] and r1["order_link"].startswith("https://")

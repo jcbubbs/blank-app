@@ -190,8 +190,19 @@ def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidenc
     }
 
 
-def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: pd.DataFrame | None = None) -> pd.DataFrame:
+# Toast can prove an item was rung, but not which sauce went on it or whether
+# the bag had its chips. For these categories the proof is weaker.
+WEAK_PROOF_CATEGORIES = ("ingredient", "side item", "quality", "temperature")
+
+
+def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: pd.DataFrame | None = None,
+                claims: pd.DataFrame | None = None) -> pd.DataFrame:
     have_toast = not toast.empty
+    claim_by_order = claims.set_index("order_id").to_dict("index") if claims is not None and not claims.empty else {}
+    dasher_orders = {}
+    for oid, c in claim_by_order.items():
+        for d in filter(None, str(c["dasher"]).split("; ")):
+            dasher_orders.setdefault(d, set()).add(oid)
     tickets = items.groupby("order_number") if items is not None and not items.empty else None
     by_id = toast.set_index("toast_order_id") if have_toast else pd.DataFrame()
     out = []
@@ -228,11 +239,30 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                     elif item_conf == "medium":
                         proof = f"Our POS (Toast order #{t['order_number']}) shows all {len(ticket)} items were rung and sent to the kitchen, and the order was handed to the courier."
             claim = r["description"] or "error charge"
+            ops = claim_by_order.get(str(r["order_id"]).upper())
+            link = ""
+            if ops:
+                link = ops["order_link"]
+                category = ops["error_category"]
+                ev += f". DoorDash category: {category}"
+                if ops["customer_comment"]:
+                    ev += f'. Customer said: "{ops["customer_comment"]}"'
+                repeat = [d for d in str(ops["dasher"]).split("; ") if len(dasher_orders.get(d, ())) > 1]
+                if repeat:
+                    ev += f". Dasher {', '.join(repeat)} delivered {max(len(dasher_orders[d]) for d in repeat)} claimed orders this period"
+                if confidence == "high" and any(w in category.lower() for w in WEAK_PROOF_CATEGORIES):
+                    confidence = "medium"
+                    ev += ". Toast proves the item was rung, not its ingredients or sides, so the proof is weaker"
+                claim = f"{category}: {ops['claimed_items']}" if ops["claimed_items"] else claim
+            elif confidence == "high" and any(w in str(r["description"]).lower() for w in WEAK_PROOF_CATEGORIES):
+                confidence = "medium"
+                ev += ". Quality/ingredient claim: Toast proves the item was rung, not how it was made"
             text = (f"Disputing the ${charged - credited:.2f} error charge on order {r['order_id']} "
                     f"({pd.Timestamp(r['order_time']):%m/%d/%y %I:%M %p}). Claim: {claim}. "
                     f"{proof or 'The order was prepared as placed.'} "
                     f"Please reverse this charge.")
             f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, confidence, text)
+            f["order_link"] = link
             if credited >= charged - 0.01:
                 f["status"] = "credited"
             elif confidence == "low":
@@ -291,8 +321,9 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                             f"Please confirm it was paid, or pay it."))
 
     cols = ["platform", "platform_order_id", "toast_order", "order_time", "rule", "issue", "amount",
-            "confidence", "evidence", "dispute_deadline", "days_left", "status", "file_via", "dispute_text"]
+            "confidence", "evidence", "dispute_deadline", "days_left", "status", "file_via", "dispute_text", "order_link"]
     df = pd.DataFrame(out, columns=cols)
+    df["order_link"] = df["order_link"].fillna("")
     return df.sort_values(["status", "days_left", "amount"], ascending=[False, True, False], na_position="last").reset_index(drop=True)
 
 
@@ -338,10 +369,11 @@ def summarize(toast: pd.DataFrame, matched: pd.DataFrame, issues: pd.DataFrame, 
     }
 
 
-def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings, items: pd.DataFrame | None = None):
+def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings, items: pd.DataFrame | None = None,
+        claims: pd.DataFrame | None = None):
     plat = pd.concat([p for p in platforms if not p.empty], ignore_index=True) if any(not p.empty for p in platforms) else pd.DataFrame()
     if plat.empty:
         raise ValueError("No platform orders loaded. Upload at least one DoorDash, Uber Eats or Grubhub CSV.")
     matched = match_orders(toast, plat, s)
-    issues = find_issues(toast, matched, s, items)
+    issues = find_issues(toast, matched, s, items, claims)
     return matched, issues, summarize(toast, matched, issues, s)

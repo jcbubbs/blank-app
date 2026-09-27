@@ -281,3 +281,60 @@ def load_toast_items(frames: list[pd.DataFrame]) -> pd.DataFrame:
     it["price"] = to_money(it["price"])
     it["voided"] = it["voided"].astype(str).str.strip().str.lower().isin({"true", "yes", "1", "y"})
     return it
+
+
+def _norm_cols(df: pd.DataFrame) -> set[str]:
+    return {_norm(c) for c in df.columns}
+
+
+def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """DoorDash Operations Quality export (view by order).
+
+    Returns (claims, waits):
+    - claims: one row per order with the customer's comment, error category,
+      items, Dasher and portal link from the missing/incorrect file.
+    - waits: orders where the Dasher waited on food (avoidable wait file).
+    Frames that aren't one of these files are ignored, so the whole upload
+    list can be passed in.
+    """
+    claims, waits = [], []
+    for df in frames:
+        cols = _norm_cols(df)
+        if "errorcategory" in cols and "ddorderid" in cols:
+            claims.append(df)
+        elif "avoidablewaittime" in cols and "ddorderid" in cols:
+            waits.append(df)
+
+    def pick(df, *names):
+        found = _find(df, names)
+        return df[found[0]].fillna("").astype(str).str.strip() if found else pd.Series("", index=df.index)
+
+    claim_df = pd.DataFrame(columns=["order_id", "error_category", "claimed_items", "customer_comment", "dasher", "order_link"])
+    if claims:
+        raw = pd.concat(claims, ignore_index=True).drop_duplicates()
+        c = pd.DataFrame({
+            "order_id": pick(raw, "DD Order ID").str.upper(),
+            "error_category": pick(raw, "Error Category"),
+            "item": pick(raw, "Quantity") + " x " + pick(raw, "Item Name"),
+            "modifier": pick(raw, "Modifier Detail"),
+            "customer_comment": pick(raw, "Customer Comment"),
+            "dasher": pick(raw, "Dasher Name"),
+            "order_link": pick(raw, "Order Link"),
+        })
+        c["item"] = c["item"].str.strip() + c["modifier"].map(lambda m: f" ({m})" if m else "")
+        join = lambda s: "; ".join(dict.fromkeys(v for v in s if v))
+        claim_df = c.groupby("order_id", as_index=False).agg(
+            error_category=("error_category", join), claimed_items=("item", join),
+            customer_comment=("customer_comment", join), dasher=("dasher", join), order_link=("order_link", "first"))
+
+    wait_df = pd.DataFrame(columns=["order_id", "wait_min", "food_ready", "dasher_arrived", "delivered_date"])
+    if waits:
+        raw = pd.concat(waits, ignore_index=True).drop_duplicates()
+        wait_df = pd.DataFrame({
+            "order_id": pick(raw, "DD Order ID").str.upper(),
+            "wait_min": pd.to_numeric(pick(raw, "Avoidable Wait Time"), errors="coerce"),
+            "food_ready": pd.to_datetime(pick(raw, "Confirmed Food Ready time"), errors="coerce", format="mixed"),
+            "dasher_arrived": pd.to_datetime(pick(raw, "Dasher Arrival Time"), errors="coerce", format="mixed"),
+            "delivered_date": pick(raw, "Order Delivered Date"),
+        })
+    return claim_df, wait_df

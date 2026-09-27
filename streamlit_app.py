@@ -21,7 +21,8 @@ with st.sidebar:
         uploads["toast"] = st.file_uploader("Toast: OrderDetails.csv (optional but recommended)", type="csv", accept_multiple_files=True)
         uploads["toast_items"] = st.file_uploader("Toast: ItemSelectionDetails.csv (proof for 'missing item' charges)", type="csv", accept_multiple_files=True)
         for p, label in LABELS.items():
-            uploads[p] = st.file_uploader(f"{label} financial export (CSV or zip)", type=["csv", "zip"], accept_multiple_files=True)
+            uploads[p] = st.file_uploader(f"{label} exports (CSV or zip)" + (": financial + Operations Quality" if p == "doordash" else ""),
+                                          type=["csv", "zip"], accept_multiple_files=True)
 
     st.header("2. Your contract terms")
     rates, windows = {}, {}
@@ -85,7 +86,8 @@ for p in LABELS:
 
 try:
     items = loaders.load_toast_items(frames.get("toast_items", []))
-    matched, issues, s = engine.run(toast, plats, settings, items)
+    claims, waits = loaders.load_dd_ops(frames.get("doordash", []))
+    matched, issues, s = engine.run(toast, plats, settings, items, claims)
 except ValueError as e:
     st.error(str(e))
     st.stop()
@@ -104,6 +106,14 @@ with tab_results:
     c[1].metric("Error charges taken", money(s["error_charges"]))
     c[2].metric("Platform fees paid", money(s["fees"]))
     c[3].metric("Fees as % of 3P sales", f"{(s['fees'] / s['sales'] if s['sales'] else 0):.1%}")
+
+    if not waits.empty:
+        st.markdown("#### Dashers waiting on food (DoorDash Operations Quality)")
+        c = st.columns(3)
+        c[0].metric("Orders where the Dasher waited", f"{len(waits):,}")
+        c[1].metric("Avg avoidable wait", f"{waits['wait_min'].mean():.1f} min")
+        c[2].metric("Waits over 5 min", f"{(waits['wait_min'] > 5).sum():,}")
+        st.caption("Food that isn't ready when the Dasher arrives hurts ranking and raises cold-food and missing-item claims. Coach the store on quote times.")
 
     st.markdown("#### Commission rate mix by week")
     st.caption("Commission ÷ (subtotal − store-funded promo). When one rate column disappears and another appears, "
@@ -140,6 +150,7 @@ with tab_worklist:
     wl = wl.assign(platform=wl["platform"].map(LABELS))
     st.dataframe(wl, hide_index=True, width="stretch",
                  column_config={"amount": st.column_config.NumberColumn(format="$%.2f"),
+                                "order_link": st.column_config.LinkColumn("portal link", display_text="open"),
                                 "evidence": st.column_config.TextColumn(width="large")})
     st.download_button("⬇️ Download worklist CSV", wl.to_csv(index=False), "dispute_worklist.csv", "text/csv")
 
@@ -158,6 +169,8 @@ with tab_worklist:
             label = (f"{'✅' if row['confidence'] == 'high' else '⚠️'} {row['platform_order_id']} · ${row['amount']:.2f} · "
                      f"{row['issue']} · {row['days_left']} days left · {row['file_via']}")
             with st.expander(label):
+                if isinstance(row.get("order_link"), str) and row["order_link"].startswith("http"):
+                    st.link_button("Open order in DoorDash portal", row["order_link"])
                 st.code(row["dispute_text"], language=None, wrap_lines=True)
                 st.caption(f"Evidence: {row['evidence']}")
         if len(group) > 50:
