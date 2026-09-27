@@ -22,9 +22,14 @@ RULES = {
     "R5": "Commission above contracted rate",
     "R6": "Marketing fee on cancelled order",
     "R7": "Platform paid on lower subtotal than Toast",
+    "R8": "Cancelled unpaid, but order reached Toast",
+    "R9": "Store-caused cancellation (food lost)",
 }
 # Rules whose dollars can be clawed back via a platform dispute or ticket.
-RECOVERABLE_RULES = {"R1", "R2", "R4", "R5", "R6", "R7"}
+RECOVERABLE_RULES = {"R1", "R2", "R4", "R5", "R6", "R7", "R8"}
+# DoorDash reasons that blame the store. We can't dispute these, but they
+# still cost food and labor, so they're reported for coaching.
+STORE_FAULT = re.compile(r"wrong order handed|staff requested|avoidable store", re.I)
 
 
 @dataclass
@@ -155,6 +160,7 @@ def item_evidence(claim: str, ticket: pd.DataFrame) -> tuple[str, str]:
 FILE_VIA = {
     "R1": "Portal: Dispute charge", "R2": "Support ticket", "R3": "Store ops (no dispute)",
     "R4": "Support ticket", "R5": "Account manager / support", "R6": "Support ticket", "R7": "Menu fix + support ticket",
+    "R8": "Support ticket", "R9": "Store ops (no dispute)",
 }
 
 FILING_STEPS = {
@@ -196,7 +202,7 @@ WEAK_PROOF_CATEGORIES = ("ingredient", "side item", "quality", "temperature")
 
 
 def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: pd.DataFrame | None = None,
-                claims: pd.DataFrame | None = None) -> pd.DataFrame:
+                claims: pd.DataFrame | None = None, cancels: pd.DataFrame | None = None) -> pd.DataFrame:
     have_toast = not toast.empty
     claim_by_order = claims.set_index("order_id").to_dict("index") if claims is not None and not claims.empty else {}
     dasher_orders = {}
@@ -320,6 +326,34 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: 
                             f"(Toast #{t['order_number']}, ${t['subtotal']:.2f}) that isn't in our payout report. "
                             f"Please confirm it was paid, or pay it."))
 
+    # Unpaid cancellations from the Operations Quality file. Most never show up
+    # in the financial report, so check them against Toast directly.
+    if cancels is not None and not cancels.empty:
+        used = set(matched["toast_order_id"].dropna())
+        for _, c in cancels[~cancels["paid"]].iterrows():
+            t = None
+            if have_toast and pd.notna(c["placed"]):
+                cand = toast[~toast["toast_order_id"].isin(used)
+                             & ((toast["opened"] - c["placed"]).abs() <= pd.Timedelta(minutes=10))
+                             & ((toast["subtotal"] - c["subtotal"]).abs() <= s.amount_tol) & ~toast["voided"]]
+                if not cand.empty:
+                    t = cand.loc[(cand["opened"] - c["placed"]).abs().idxmin()]
+                    used.add(t["toast_order_id"])
+            row = {"platform": "doordash", "order_id": c["order_id"], "order_time": c["placed"]}
+            why = f"{c['category']}: {c['reason']}".strip(": ")
+            if STORE_FAULT.search(why):
+                out.append(_finding(row, "R9", c["subtotal"],
+                                    f"DoorDash cancelled and didn't pay ({why}). ${c['subtotal']:.2f} of food"
+                                    + (f" rung on Toast #{t['order_number']}" if t is not None else "") + ". Coach the store",
+                                    s, t, "info"))
+            elif t is not None:
+                out.append(_finding(row, "R8", c["subtotal"],
+                                    f"DoorDash cancelled and paid $0 ({why}), but Toast #{t['order_number']} received and rang it at ${t['subtotal']:.2f}",
+                                    s, t, "high" if "confirm" in why.lower() else "medium",
+                                    f"Order {c['order_id']} ({c['placed']:%m/%d/%y %I:%M %p}) was cancelled with reason \"{c['reason']}\" and we were paid $0. "
+                                    f"The order did reach our POS (Toast #{t['order_number']}, ${t['subtotal']:.2f}). "
+                                    f"Please pay the ${t['subtotal']:.2f} subtotal."))
+
     cols = ["platform", "platform_order_id", "toast_order", "order_time", "rule", "issue", "amount",
             "confidence", "evidence", "dispute_deadline", "days_left", "status", "file_via", "dispute_text", "order_link"]
     df = pd.DataFrame(out, columns=cols)
@@ -370,10 +404,10 @@ def summarize(toast: pd.DataFrame, matched: pd.DataFrame, issues: pd.DataFrame, 
 
 
 def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings, items: pd.DataFrame | None = None,
-        claims: pd.DataFrame | None = None):
+        claims: pd.DataFrame | None = None, cancels: pd.DataFrame | None = None):
     plat = pd.concat([p for p in platforms if not p.empty], ignore_index=True) if any(not p.empty for p in platforms) else pd.DataFrame()
     if plat.empty:
         raise ValueError("No platform orders loaded. Upload at least one DoorDash, Uber Eats or Grubhub CSV.")
     matched = match_orders(toast, plat, s)
-    issues = find_issues(toast, matched, s, items, claims)
+    issues = find_issues(toast, matched, s, items, claims, cancels)
     return matched, issues, summarize(toast, matched, issues, s)

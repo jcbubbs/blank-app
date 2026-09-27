@@ -79,7 +79,7 @@ def test_ops_quality_enriches_and_downgrades_ingredient_claims():
                         "Quantity": ["1"], "Customer Comment": ["Requested ranch, got sriracha"], "Dasher Name": ["Uriel L"],
                         "Order Link": ["https://www.doordash.com/merchant/deliveries/x"]})
     plat, _ = loaders.load_platform([fin, ops], "doordash")
-    claims, _ = loaders.load_dd_ops([fin, ops])
+    claims, _, _ = loaders.load_dd_ops([fin, ops])
     toast = pd.DataFrame({"Order #": ["111"], "Opened": ["9/24/26 11:05 AM"], "Amount": ["30.00"]})
     t, _ = loaders.load_toast([toast])
     items = loaders.load_toast_items([pd.DataFrame({"Order #": ["111"], "Sent Date": ["9/24/26 11:05 AM"],

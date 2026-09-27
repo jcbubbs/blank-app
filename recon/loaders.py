@@ -287,23 +287,27 @@ def _norm_cols(df: pd.DataFrame) -> set[str]:
     return {_norm(c) for c in df.columns}
 
 
-def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame]:
+def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """DoorDash Operations Quality export (view by order).
 
-    Returns (claims, waits):
+    Returns (claims, waits, cancels):
     - claims: one row per order with the customer's comment, error category,
       items, Dasher and portal link from the missing/incorrect file.
     - waits: orders where the Dasher waited on food (avoidable wait file).
+    - cancels: cancelled orders with DoorDash's reason and whether we were paid.
+      Unpaid cancels often never appear in the financial report at all.
     Frames that aren't one of these files are ignored, so the whole upload
     list can be passed in.
     """
-    claims, waits = [], []
+    claims, waits, cancels = [], [], []
     for df in frames:
         cols = _norm_cols(df)
         if "errorcategory" in cols and "ddorderid" in cols:
             claims.append(df)
         elif "avoidablewaittime" in cols and "ddorderid" in cols:
             waits.append(df)
+        elif "cancellationcategoryshort" in cols and "ddorderid" in cols:
+            cancels.append(df)
 
     def pick(df, *names):
         found = _find(df, names)
@@ -337,4 +341,16 @@ def load_dd_ops(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame]
             "dasher_arrived": pd.to_datetime(pick(raw, "Dasher Arrival Time"), errors="coerce", format="mixed"),
             "delivered_date": pick(raw, "Order Delivered Date"),
         })
-    return claim_df, wait_df
+    cancel_df = pd.DataFrame(columns=["order_id", "placed", "category", "reason", "paid", "subtotal", "net_payout"])
+    if cancels:
+        raw = pd.concat(cancels, ignore_index=True).drop_duplicates()
+        cancel_df = pd.DataFrame({
+            "order_id": pick(raw, "DD Order ID").str.upper(),
+            "placed": pd.to_datetime(pick(raw, "Order Placed Date") + " " + pick(raw, "Order Placed Time"), errors="coerce", format="mixed"),
+            "category": pick(raw, "Cancellation Category - Short"),
+            "reason": pick(raw, "Non-payment reason"),
+            "paid": pick(raw, "Paid").str.lower().isin({"true", "yes", "1"}),
+            "subtotal": to_money(pick(raw, "Order Subtotal")),
+            "net_payout": to_money(pick(raw, "Net Payout")),
+        })
+    return claim_df, wait_df, cancel_df

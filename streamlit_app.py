@@ -86,8 +86,8 @@ for p in LABELS:
 
 try:
     items = loaders.load_toast_items(frames.get("toast_items", []))
-    claims, waits = loaders.load_dd_ops(frames.get("doordash", []))
-    matched, issues, s = engine.run(toast, plats, settings, items, claims)
+    claims, waits, cancels = loaders.load_dd_ops(frames.get("doordash", []))
+    matched, issues, s = engine.run(toast, plats, settings, items, claims, cancels)
 except ValueError as e:
     st.error(str(e))
     st.stop()
