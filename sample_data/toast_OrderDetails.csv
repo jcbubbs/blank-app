@@ -1,0 +1,1246 @@
+Location,Order Id,Order #,Opened,Tab Names,Revenue Center,Dining Options,Order Source,Amount,Tax,Total,Voided
+Bubbakoo's Burritos - Sample Store,996681516149,1001,08/28/26 01:35 PM,DoorDash - Mike R (892F902B),Online,Takeout,DoorDash,29.56,2.62,32.18,false
+Bubbakoo's Burritos - Sample Store,622026593455,1002,08/28/26 11:38 AM,DoorDash - Kate W (1738F7D9),Online,Takeout,DoorDash,15.04,1.33,16.37,false
+Bubbakoo's Burritos - Sample Store,244711152332,1003,08/28/26 02:48 PM,DoorDash - Dev J (93BD04CF),Online,Takeout,DoorDash,40.64,3.61,44.25,false
+Bubbakoo's Burritos - Sample Store,895759484248,1004,08/28/26 08:31 PM,DoorDash - Mike R (8A6A63EC),Online,Takeout,DoorDash,51.35,4.56,55.91,false
+Bubbakoo's Burritos - Sample Store,066848452803,1005,08/28/26 12:46 PM,DoorDash - Kate W (18F135D2),Online,Takeout,DoorDash,38.34,3.40,41.74,false
+Bubbakoo's Burritos - Sample Store,327970498904,1006,08/28/26 07:29 PM,DoorDash - Dev J (7731AF10),Online,Takeout,DoorDash,42.98,3.81,46.79,false
+Bubbakoo's Burritos - Sample Store,800339133901,1007,08/28/26 02:07 PM,DoorDash - Kate W (4CDD2055),Online,Takeout,DoorDash,43.85,3.89,47.74,false
+Bubbakoo's Burritos - Sample Store,1022854985045,1008,08/28/26 03:57 PM,DoorDash - Ana P (6B0A18E8),Online,Takeout,DoorDash,39.62,3.52,43.14,false
+Bubbakoo's Burritos - Sample Store,347112184522,1009,08/28/26 06:13 PM,DoorDash - Dev J (8EDE0D7A),Online,Takeout,DoorDash,12.84,1.14,13.98,false
+Bubbakoo's Burritos - Sample Store,766540415529,1010,08/28/26 04:58 PM,DoorDash - Mike R (119A72D1),Online,Takeout,DoorDash,38.94,3.46,42.40,false
+Bubbakoo's Burritos - Sample Store,976614537807,1011,08/28/26 12:04 PM,DoorDash - Luis M (FE3B890B),Online,Takeout,DoorDash,45.36,4.03,49.39,false
+Bubbakoo's Burritos - Sample Store,812304330959,1012,08/28/26 11:24 AM,DoorDash - Luis M (1DF9FD78),Online,Takeout,DoorDash,55.21,4.90,60.11,false
+Bubbakoo's Burritos - Sample Store,971855918879,1013,08/28/26 05:48 PM,DoorDash - Luis M (2A96FB1A),Online,Takeout,DoorDash,29.37,2.61,31.98,false
+Bubbakoo's Burritos - Sample Store,1053900970441,1014,08/28/26 06:21 PM,DoorDash - Tony B (FC891B4A),Online,Takeout,DoorDash,51.61,4.58,56.19,false
+Bubbakoo's Burritos - Sample Store,200098761823,1015,08/28/26 01:36 PM,DoorDash - Jane D (3BBBE9EA),Online,Takeout,DoorDash,14.90,1.32,16.22,false
+Bubbakoo's Burritos - Sample Store,756453226022,1016,08/28/26 03:48 PM,DoorDash - Dev J (9C1CAAF7),Online,Takeout,DoorDash,11.19,0.99,12.18,false
+Bubbakoo's Burritos - Sample Store,431210330628,1017,08/28/26 06:47 PM,DoorDash - Kate W (AE3A2B7F),Online,Takeout,DoorDash,53.28,4.73,58.01,false
+Bubbakoo's Burritos - Sample Store,374134293241,1018,08/28/26 07:13 PM,DoorDash - Chris L (FC132D0D),Online,Takeout,DoorDash,40.81,3.62,44.43,false
+Bubbakoo's Burritos - Sample Store,958079710109,1019,08/28/26 12:45 PM,DoorDash - Tony B (F2EE4E45),Online,Takeout,DoorDash,11.01,0.98,11.99,false
+Bubbakoo's Burritos - Sample Store,932503342787,1020,08/28/26 05:28 PM,DoorDash - Tony B (9A2EF80F),Online,Takeout,DoorDash,17.98,1.60,19.58,false
+Bubbakoo's Burritos - Sample Store,912588732322,1021,08/28/26 06:58 PM,DoorDash - Tony B (1A28F7B3),Online,Takeout,DoorDash,33.58,2.98,36.56,false
+Bubbakoo's Burritos - Sample Store,029696030019,1022,08/28/26 07:50 PM,DoorDash - Ana P (5C9BCF35),Online,Takeout,DoorDash,12.09,1.07,13.16,false
+Bubbakoo's Burritos - Sample Store,585072439847,1023,08/28/26 12:35 PM,DoorDash - Ana P (E883A1D4),Online,Takeout,DoorDash,43.72,3.88,47.60,false
+Bubbakoo's Burritos - Sample Store,392958505834,1024,08/28/26 02:19 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,48.89,4.34,53.23,false
+Bubbakoo's Burritos - Sample Store,886684091209,1025,08/28/26 11:30 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,48.14,4.27,52.41,false
+Bubbakoo's Burritos - Sample Store,1085012103329,1026,08/28/26 05:13 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,14.79,1.31,16.10,false
+Bubbakoo's Burritos - Sample Store,785044013168,1027,08/28/26 07:11 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,53.73,4.77,58.50,false
+Bubbakoo's Burritos - Sample Store,794447218737,1028,08/28/26 07:12 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,52.78,4.68,57.46,false
+Bubbakoo's Burritos - Sample Store,163327078665,1029,08/28/26 06:57 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,29.87,2.65,32.52,false
+Bubbakoo's Burritos - Sample Store,144088789343,1030,08/28/26 01:29 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,39.74,3.53,43.27,false
+Bubbakoo's Burritos - Sample Store,214197504889,1031,08/28/26 11:15 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,48.57,4.31,52.88,false
+Bubbakoo's Burritos - Sample Store,461899477998,1032,08/28/26 11:29 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,22.84,2.03,24.87,false
+Bubbakoo's Burritos - Sample Store,461780971572,1033,08/28/26 12:03 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,53.77,4.77,58.54,false
+Bubbakoo's Burritos - Sample Store,879506390357,1034,08/28/26 08:05 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,18.14,1.61,19.75,false
+Bubbakoo's Burritos - Sample Store,612164808375,1035,08/28/26 01:27 PM,Grubhub - Tony B 1035,Online,Takeout,Grubhub,33.25,2.95,36.20,false
+Bubbakoo's Burritos - Sample Store,496101854034,1036,08/28/26 12:48 PM,Grubhub - Jane D 1036,Online,Takeout,Grubhub,52.51,4.66,57.17,false
+Bubbakoo's Burritos - Sample Store,495111741876,1037,08/28/26 12:07 PM,Grubhub - Kate W 1037,Online,Takeout,Grubhub,31.83,2.82,34.65,false
+Bubbakoo's Burritos - Sample Store,1038921471586,1038,08/28/26 07:40 PM,Grubhub - Sam K 1038,Online,Takeout,Grubhub,55.25,4.90,60.15,false
+Bubbakoo's Burritos - Sample Store,735352903342,1039,08/29/26 01:22 PM,DoorDash - Chris L (12926185),Online,Takeout,DoorDash,30.58,2.71,33.29,false
+Bubbakoo's Burritos - Sample Store,154115593506,1040,08/29/26 01:08 PM,DoorDash - Tony B (A4B9A9C4),Online,Takeout,DoorDash,53.16,4.72,57.88,false
+Bubbakoo's Burritos - Sample Store,248388458517,1041,08/29/26 02:45 PM,DoorDash - Ana P (7CBD1F5A),Online,Takeout,DoorDash,46.09,4.09,50.18,false
+Bubbakoo's Burritos - Sample Store,402533572737,1042,08/29/26 06:21 PM,DoorDash - Tony B (321C5296),Online,Takeout,DoorDash,57.72,5.12,62.84,false
+Bubbakoo's Burritos - Sample Store,563909681505,1043,08/29/26 04:46 PM,DoorDash - Tony B (626467BA),Online,Takeout,DoorDash,37.04,3.29,40.33,false
+Bubbakoo's Burritos - Sample Store,044117562460,1044,08/29/26 12:56 PM,DoorDash - Mike R (E05B3E13),Online,Takeout,DoorDash,57.30,5.09,62.39,false
+Bubbakoo's Burritos - Sample Store,1011621989227,1045,08/29/26 03:39 PM,DoorDash - Sam K (E9526A69),Online,Takeout,DoorDash,46.52,4.13,50.65,false
+Bubbakoo's Burritos - Sample Store,1031947168339,1046,08/29/26 04:34 PM,DoorDash - Priya S (2EEFA279),Online,Takeout,DoorDash,15.20,1.35,16.55,false
+Bubbakoo's Burritos - Sample Store,498738807466,1047,08/29/26 12:30 PM,DoorDash - Mike R (38EFBAEB),Online,Takeout,DoorDash,48.68,4.32,53.00,false
+Bubbakoo's Burritos - Sample Store,779652163366,1048,08/29/26 04:48 PM,DoorDash - Dev J (449274D2),Online,Takeout,DoorDash,57.73,5.12,62.85,false
+Bubbakoo's Burritos - Sample Store,835504651741,1049,08/29/26 12:53 PM,DoorDash - Sam K (33A71568),Online,Takeout,DoorDash,56.55,5.02,61.57,false
+Bubbakoo's Burritos - Sample Store,013043598144,1050,08/29/26 03:56 PM,DoorDash - Jane D (58D50F1B),Online,Takeout,DoorDash,31.95,2.84,34.79,false
+Bubbakoo's Burritos - Sample Store,716481806366,1051,08/29/26 07:40 PM,DoorDash - Luis M (3EE4DA5A),Online,Takeout,DoorDash,36.90,3.27,40.17,false
+Bubbakoo's Burritos - Sample Store,253327653153,1052,08/29/26 07:28 PM,DoorDash - Sam K (81B62BB5),Online,Takeout,DoorDash,36.66,3.25,39.91,false
+Bubbakoo's Burritos - Sample Store,060051725654,1053,08/29/26 02:24 PM,DoorDash - Priya S (23C49CAE),Online,Takeout,DoorDash,50.12,4.45,54.57,false
+Bubbakoo's Burritos - Sample Store,955118614527,1054,08/29/26 11:16 AM,DoorDash - Ana P (6E4505F5),Online,Takeout,DoorDash,14.32,1.27,15.59,false
+Bubbakoo's Burritos - Sample Store,400562578905,1055,08/29/26 03:10 PM,DoorDash - Sam K (28541424),Online,Takeout,DoorDash,43.56,3.87,47.43,false
+Bubbakoo's Burritos - Sample Store,365076811113,1056,08/29/26 08:23 PM,DoorDash - Chris L (4F3E885E),Online,Takeout,DoorDash,26.21,2.33,28.54,false
+Bubbakoo's Burritos - Sample Store,288153013908,1057,08/29/26 12:25 PM,DoorDash - Kate W (3F88AF59),Online,Takeout,DoorDash,33.31,2.96,36.27,false
+Bubbakoo's Burritos - Sample Store,640312977582,1058,08/29/26 01:28 PM,DoorDash - Sam K (4CB59AA7),Online,Takeout,DoorDash,29.78,2.64,32.42,false
+Bubbakoo's Burritos - Sample Store,161676396468,1059,08/29/26 05:38 PM,DoorDash - Sam K (26433798),Online,Takeout,DoorDash,46.92,4.16,51.08,false
+Bubbakoo's Burritos - Sample Store,557284321005,1060,08/29/26 07:45 PM,DoorDash - Ana P (816B2332),Online,Takeout,DoorDash,40.48,3.59,44.07,false
+Bubbakoo's Burritos - Sample Store,146208684424,1061,08/29/26 09:00 PM,DoorDash - Chris L (B17DD255),Online,Takeout,DoorDash,48.50,4.30,52.80,false
+Bubbakoo's Burritos - Sample Store,269211402723,1062,08/29/26 12:50 PM,DoorDash - Jane D (A0B55864),Online,Takeout,DoorDash,28.70,2.55,31.25,false
+Bubbakoo's Burritos - Sample Store,721949393311,1063,08/29/26 03:30 PM,DoorDash - Kate W (EEB89FF1),Online,Takeout,DoorDash,11.16,0.99,12.15,false
+Bubbakoo's Burritos - Sample Store,1072238294572,1064,08/29/26 03:21 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,49.03,4.35,53.38,false
+Bubbakoo's Burritos - Sample Store,694139617887,1065,08/29/26 07:26 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,50.74,4.50,55.24,false
+Bubbakoo's Burritos - Sample Store,013458026670,1066,08/29/26 12:22 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,39.19,3.48,42.67,false
+Bubbakoo's Burritos - Sample Store,778638299634,1067,08/29/26 12:04 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,33.83,3.00,36.83,false
+Bubbakoo's Burritos - Sample Store,094395331277,1068,08/29/26 06:58 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,32.90,2.92,35.82,false
+Bubbakoo's Burritos - Sample Store,229294767698,1069,08/29/26 11:18 AM,Uber Eats - Luis M,Online,Takeout,Uber Eats,24.61,2.18,26.79,false
+Bubbakoo's Burritos - Sample Store,695012539902,1070,08/29/26 12:18 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,38.33,3.40,41.73,false
+Bubbakoo's Burritos - Sample Store,000683180147,1071,08/29/26 12:58 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,44.06,3.91,47.97,false
+Bubbakoo's Burritos - Sample Store,364386017673,1072,08/29/26 06:41 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,30.05,2.67,32.72,false
+Bubbakoo's Burritos - Sample Store,815621017841,1073,08/29/26 04:34 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,46.28,4.11,50.39,false
+Bubbakoo's Burritos - Sample Store,303893230232,1074,08/29/26 03:19 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,28.49,2.53,31.02,false
+Bubbakoo's Burritos - Sample Store,477882662995,1075,08/29/26 03:49 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,15.78,1.40,17.18,false
+Bubbakoo's Burritos - Sample Store,440796341031,1076,08/29/26 02:15 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,47.34,4.20,51.54,false
+Bubbakoo's Burritos - Sample Store,533805200078,1077,08/29/26 12:22 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,13.33,1.18,14.51,false
+Bubbakoo's Burritos - Sample Store,1072619743506,1078,08/29/26 08:25 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,16.98,1.51,18.49,false
+Bubbakoo's Burritos - Sample Store,227956121939,1079,08/29/26 03:07 PM,Grubhub - Ana P 1079,Online,Takeout,Grubhub,25.14,2.23,27.37,false
+Bubbakoo's Burritos - Sample Store,212806117465,1080,08/29/26 08:24 PM,Grubhub - Luis M 1080,Online,Takeout,Grubhub,21.34,1.89,23.23,false
+Bubbakoo's Burritos - Sample Store,221489821682,1081,08/29/26 12:32 PM,Grubhub - Tony B 1081,Online,Takeout,Grubhub,19.21,1.70,20.91,false
+Bubbakoo's Burritos - Sample Store,545727390188,1082,08/29/26 06:04 PM,Grubhub - Sam K 1082,Online,Takeout,Grubhub,28.99,2.57,31.56,false
+Bubbakoo's Burritos - Sample Store,274434623937,1083,08/29/26 08:51 PM,Grubhub - Chris L 1083,Online,Takeout,Grubhub,56.48,5.01,61.49,false
+Bubbakoo's Burritos - Sample Store,779215300138,1084,08/29/26 05:52 PM,Grubhub - Jane D 1084,Online,Takeout,Grubhub,41.35,3.67,45.02,false
+Bubbakoo's Burritos - Sample Store,493802015580,1085,08/29/26 07:22 PM,Grubhub - Kate W 1085,Online,Takeout,Grubhub,11.01,0.98,11.99,false
+Bubbakoo's Burritos - Sample Store,771898975442,1086,08/29/26 12:54 PM,Grubhub - Mike R 1086,Online,Takeout,Grubhub,21.52,1.91,23.43,false
+Bubbakoo's Burritos - Sample Store,788751441353,1087,08/30/26 08:26 PM,DoorDash - Dev J (3B8A27BA),Online,Takeout,DoorDash,47.51,4.22,51.73,false
+Bubbakoo's Burritos - Sample Store,576815608012,1088,08/30/26 01:12 PM,DoorDash - Mike R (B2D643A2),Online,Takeout,DoorDash,40.44,3.59,44.03,false
+Bubbakoo's Burritos - Sample Store,306921329203,1089,08/30/26 05:39 PM,DoorDash - Kate W (02AD9D2B),Online,Takeout,DoorDash,23.26,2.06,25.32,false
+Bubbakoo's Burritos - Sample Store,061449805770,1090,08/30/26 03:08 PM,DoorDash - Priya S (077EF32A),Online,Takeout,DoorDash,33.34,2.96,36.30,false
+Bubbakoo's Burritos - Sample Store,1015434732694,1091,08/30/26 02:20 PM,DoorDash - Sam K (14C2732A),Online,Takeout,DoorDash,34.42,3.05,37.47,false
+Bubbakoo's Burritos - Sample Store,005145712893,1092,08/30/26 02:54 PM,DoorDash - Tony B (6BA99D01),Online,Takeout,DoorDash,34.17,3.03,37.20,false
+Bubbakoo's Burritos - Sample Store,288713898465,1093,08/30/26 07:38 PM,DoorDash - Chris L (4FCC9A5C),Online,Takeout,DoorDash,14.17,1.26,15.43,false
+Bubbakoo's Burritos - Sample Store,734054561361,1094,08/30/26 12:51 PM,DoorDash - Chris L (E57F7691),Online,Takeout,DoorDash,55.74,4.95,60.69,false
+Bubbakoo's Burritos - Sample Store,777611733984,1095,08/30/26 01:29 PM,DoorDash - Dev J (F95FE8A0),Online,Takeout,DoorDash,54.33,4.82,59.15,false
+Bubbakoo's Burritos - Sample Store,184389798626,1096,08/30/26 02:10 PM,DoorDash - Mike R (506F68AC),Online,Takeout,DoorDash,29.49,2.62,32.11,false
+Bubbakoo's Burritos - Sample Store,415432332259,1097,08/30/26 02:17 PM,DoorDash - Jane D (77B5ABCB),Online,Takeout,DoorDash,19.72,1.75,21.47,false
+Bubbakoo's Burritos - Sample Store,974766513850,1098,08/30/26 04:39 PM,DoorDash - Mike R (47A164E4),Online,Takeout,DoorDash,31.79,2.82,34.61,false
+Bubbakoo's Burritos - Sample Store,096346636280,1099,08/30/26 08:34 PM,DoorDash - Sam K (C4CBA038),Online,Takeout,DoorDash,56.32,5.00,61.32,false
+Bubbakoo's Burritos - Sample Store,523543599993,1100,08/30/26 07:04 PM,DoorDash - Tony B (316A2A12),Online,Takeout,DoorDash,20.20,1.79,21.99,false
+Bubbakoo's Burritos - Sample Store,211557272634,1101,08/30/26 06:00 PM,DoorDash - Priya S (0A68013D),Online,Takeout,DoorDash,22.66,2.01,24.67,false
+Bubbakoo's Burritos - Sample Store,758992171172,1102,08/30/26 04:49 PM,DoorDash - Jane D (9DF24D5E),Online,Takeout,DoorDash,28.06,2.49,30.55,false
+Bubbakoo's Burritos - Sample Store,1051045375050,1103,08/30/26 03:45 PM,DoorDash - Mike R (EA9D18B2),Online,Takeout,DoorDash,24.98,2.22,27.20,false
+Bubbakoo's Burritos - Sample Store,009375652626,1104,08/30/26 05:37 PM,DoorDash - Ana P (7E544D56),Online,Takeout,DoorDash,48.12,4.27,52.39,false
+Bubbakoo's Burritos - Sample Store,088457930891,1105,08/30/26 01:35 PM,DoorDash - Tony B (75F5C1A0),Online,Takeout,DoorDash,39.54,3.51,43.05,false
+Bubbakoo's Burritos - Sample Store,1074431992531,1106,08/30/26 01:46 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,22.62,2.01,24.63,false
+Bubbakoo's Burritos - Sample Store,781634364284,1107,08/30/26 12:50 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,57.43,5.10,62.53,false
+Bubbakoo's Burritos - Sample Store,854041306381,1108,08/30/26 01:57 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,22.01,1.95,23.96,false
+Bubbakoo's Burritos - Sample Store,202926162922,1109,08/30/26 04:01 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,24.81,2.20,27.01,false
+Bubbakoo's Burritos - Sample Store,1092002537778,1110,08/30/26 03:02 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,18.21,1.62,19.83,false
+Bubbakoo's Burritos - Sample Store,004734481719,1111,08/30/26 07:42 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,35.74,3.17,38.91,false
+Bubbakoo's Burritos - Sample Store,206374858611,1112,08/30/26 02:57 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,50.51,4.48,54.99,false
+Bubbakoo's Burritos - Sample Store,1042237189176,1113,08/30/26 12:16 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,28.50,2.53,31.03,false
+Bubbakoo's Burritos - Sample Store,047851817581,1114,08/30/26 12:49 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,40.96,3.64,44.60,false
+Bubbakoo's Burritos - Sample Store,744785961898,1115,08/30/26 03:23 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,12.80,1.14,13.94,false
+Bubbakoo's Burritos - Sample Store,446948345997,1116,08/30/26 02:09 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,40.19,3.57,43.76,false
+Bubbakoo's Burritos - Sample Store,447841251628,1117,08/30/26 05:46 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,42.21,3.75,45.96,false
+Bubbakoo's Burritos - Sample Store,949265997411,1118,08/30/26 04:16 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,30.64,2.72,33.36,false
+Bubbakoo's Burritos - Sample Store,126374064610,1119,08/30/26 02:21 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,29.36,2.61,31.97,false
+Bubbakoo's Burritos - Sample Store,704986655669,1120,08/30/26 08:54 PM,Grubhub - Jane D 1120,Online,Takeout,Grubhub,52.49,4.66,57.15,false
+Bubbakoo's Burritos - Sample Store,177310401931,1121,08/30/26 12:32 PM,Grubhub - Ana P 1121,Online,Takeout,Grubhub,37.92,3.37,41.29,false
+Bubbakoo's Burritos - Sample Store,1038683261338,1122,08/30/26 12:08 PM,Grubhub - Chris L 1122,Online,Takeout,Grubhub,16.11,1.43,17.54,false
+Bubbakoo's Burritos - Sample Store,758578596863,1123,08/30/26 07:15 PM,Grubhub - Mike R 1123,Online,Takeout,Grubhub,25.78,2.29,28.07,false
+Bubbakoo's Burritos - Sample Store,043886563728,1124,08/30/26 02:50 PM,Grubhub - Luis M 1124,Online,Takeout,Grubhub,40.19,3.57,43.76,false
+Bubbakoo's Burritos - Sample Store,741987646230,1125,08/30/26 07:50 PM,Grubhub - Chris L 1125,Online,Takeout,Grubhub,18.35,1.63,19.98,false
+Bubbakoo's Burritos - Sample Store,641273885951,1126,08/30/26 04:32 PM,Grubhub - Sam K 1126,Online,Takeout,Grubhub,16.53,1.47,18.00,false
+Bubbakoo's Burritos - Sample Store,259696370657,1127,08/30/26 06:18 PM,Grubhub - Ana P 1127,Online,Takeout,Grubhub,29.29,2.60,31.89,false
+Bubbakoo's Burritos - Sample Store,880862200628,1128,08/31/26 02:06 PM,DoorDash - Tony B (20E27C17),Online,Takeout,DoorDash,49.09,4.36,53.45,false
+Bubbakoo's Burritos - Sample Store,856045934162,1129,08/31/26 07:36 PM,DoorDash - Mike R (2159702B),Online,Takeout,DoorDash,34.98,3.10,38.08,false
+Bubbakoo's Burritos - Sample Store,142565887300,1130,08/31/26 11:58 AM,DoorDash - Ana P (F36C1575),Online,Takeout,DoorDash,46.35,4.11,50.46,false
+Bubbakoo's Burritos - Sample Store,278125674323,1131,08/31/26 03:55 PM,DoorDash - Chris L (AFA6798A),Online,Takeout,DoorDash,55.96,4.97,60.93,false
+Bubbakoo's Burritos - Sample Store,1013459070910,1132,08/31/26 04:34 PM,DoorDash - Ana P (74D6D11F),Online,Takeout,DoorDash,53.14,4.72,57.86,false
+Bubbakoo's Burritos - Sample Store,308964501541,1133,08/31/26 02:35 PM,DoorDash - Tony B (51AF1074),Online,Takeout,DoorDash,38.82,3.45,42.27,false
+Bubbakoo's Burritos - Sample Store,693790554102,1135,08/31/26 05:11 PM,DoorDash - Mike R (947DBE2D),Online,Takeout,DoorDash,56.41,5.01,61.42,false
+Bubbakoo's Burritos - Sample Store,485680852644,1136,08/31/26 05:21 PM,DoorDash - Tony B (256D1082),Online,Takeout,DoorDash,23.44,2.08,25.52,false
+Bubbakoo's Burritos - Sample Store,1063602427737,1137,08/31/26 02:02 PM,DoorDash - Kate W (D1E0014E),Online,Takeout,DoorDash,39.92,3.54,43.46,false
+Bubbakoo's Burritos - Sample Store,985111304055,1138,08/31/26 11:01 AM,DoorDash - Priya S (9DB59658),Online,Takeout,DoorDash,46.11,4.09,50.20,false
+Bubbakoo's Burritos - Sample Store,393088673052,1139,08/31/26 01:16 PM,DoorDash - Jane D (05B4C425),Online,Takeout,DoorDash,33.95,3.01,36.96,false
+Bubbakoo's Burritos - Sample Store,146710170537,1140,08/31/26 06:03 PM,DoorDash - Dev J (5DC18BCE),Online,Takeout,DoorDash,38.43,3.41,41.84,false
+Bubbakoo's Burritos - Sample Store,299712078441,1141,08/31/26 03:12 PM,DoorDash - Ana P (A361BCA2),Online,Takeout,DoorDash,44.25,3.93,48.18,false
+Bubbakoo's Burritos - Sample Store,487815824912,1142,08/31/26 03:33 PM,DoorDash - Tony B (8FF4EF93),Online,Takeout,DoorDash,56.46,5.01,61.47,false
+Bubbakoo's Burritos - Sample Store,172819471599,1143,08/31/26 03:14 PM,DoorDash - Jane D (88122E14),Online,Takeout,DoorDash,18.76,1.66,20.42,false
+Bubbakoo's Burritos - Sample Store,667945832422,1144,08/31/26 12:50 PM,DoorDash - Ana P (327F82F8),Online,Takeout,DoorDash,11.58,1.03,12.61,false
+Bubbakoo's Burritos - Sample Store,412344130882,1145,08/31/26 02:01 PM,DoorDash - Luis M (0C69E424),Online,Takeout,DoorDash,34.90,3.10,38.00,false
+Bubbakoo's Burritos - Sample Store,041420749453,1146,08/31/26 06:56 PM,DoorDash - Mike R (39D7C140),Online,Takeout,DoorDash,14.78,1.31,16.09,false
+Bubbakoo's Burritos - Sample Store,696927110448,1147,08/31/26 04:46 PM,DoorDash - Sam K (D867C466),Online,Takeout,DoorDash,52.89,4.69,57.58,false
+Bubbakoo's Burritos - Sample Store,015064291016,1148,08/31/26 07:56 PM,DoorDash - Chris L (F71377DC),Online,Takeout,DoorDash,56.68,5.03,61.71,false
+Bubbakoo's Burritos - Sample Store,211857299479,1149,08/31/26 03:29 PM,DoorDash - Ana P (F1D7B8AA),Online,Takeout,DoorDash,53.52,4.75,58.27,false
+Bubbakoo's Burritos - Sample Store,583427117393,1150,08/31/26 04:36 PM,DoorDash - Kate W (A1754BA6),Online,Takeout,DoorDash,39.26,3.48,42.74,false
+Bubbakoo's Burritos - Sample Store,684581550577,1151,08/31/26 11:27 AM,DoorDash - Sam K (E27F8BE8),Online,Takeout,DoorDash,31.55,2.80,34.35,false
+Bubbakoo's Burritos - Sample Store,378652096077,1152,08/31/26 08:39 PM,DoorDash - Mike R (1CA505C1),Online,Takeout,DoorDash,53.81,4.78,58.59,false
+Bubbakoo's Burritos - Sample Store,940880297492,1153,08/31/26 11:33 AM,Uber Eats - Mike R,Online,Takeout,Uber Eats,12.96,1.15,14.11,false
+Bubbakoo's Burritos - Sample Store,1008268365697,1154,08/31/26 02:27 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,49.43,4.39,53.82,false
+Bubbakoo's Burritos - Sample Store,694202163254,1155,08/31/26 12:51 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,22.59,2.00,24.59,false
+Bubbakoo's Burritos - Sample Store,465301792369,1156,08/31/26 07:10 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,15.69,1.39,17.08,false
+Bubbakoo's Burritos - Sample Store,1059865804706,1157,08/31/26 11:24 AM,Uber Eats - Tony B,Online,Takeout,Uber Eats,27.49,2.44,29.93,false
+Bubbakoo's Burritos - Sample Store,378379315241,1158,08/31/26 03:57 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,40.06,3.56,43.62,false
+Bubbakoo's Burritos - Sample Store,185916720421,1159,08/31/26 11:52 AM,Uber Eats - Mike R,Online,Takeout,Uber Eats,36.28,3.22,39.50,false
+Bubbakoo's Burritos - Sample Store,874864256459,1160,08/31/26 11:02 AM,Uber Eats - Jane D,Online,Takeout,Uber Eats,35.61,3.16,38.77,false
+Bubbakoo's Burritos - Sample Store,1031714342092,1161,08/31/26 04:56 PM,Grubhub - Ana P 1161,Online,Takeout,Grubhub,55.99,4.97,60.96,false
+Bubbakoo's Burritos - Sample Store,617174595585,1162,08/31/26 07:30 PM,Grubhub - Luis M 1162,Online,Takeout,Grubhub,18.79,1.67,20.46,false
+Bubbakoo's Burritos - Sample Store,028543762891,1163,08/31/26 04:36 PM,Grubhub - Mike R 1163,Online,Takeout,Grubhub,27.71,2.46,30.17,false
+Bubbakoo's Burritos - Sample Store,695286393952,1164,08/31/26 02:32 PM,Grubhub - Ana P 1164,Online,Takeout,Grubhub,25.25,2.24,27.49,false
+Bubbakoo's Burritos - Sample Store,637151893379,1165,08/31/26 06:53 PM,Grubhub - Dev J 1165,Online,Takeout,Grubhub,16.96,1.51,18.47,false
+Bubbakoo's Burritos - Sample Store,757798867278,1166,08/31/26 07:56 PM,Grubhub - Tony B 1166,Online,Takeout,Grubhub,18.30,1.62,19.92,false
+Bubbakoo's Burritos - Sample Store,331861311604,1167,08/31/26 08:54 PM,Grubhub - Chris L 1167,Online,Takeout,Grubhub,21.86,1.94,23.80,false
+Bubbakoo's Burritos - Sample Store,1049381091928,1168,08/31/26 01:40 PM,Grubhub - Tony B 1168,Online,Takeout,Grubhub,56.81,5.04,61.85,false
+Bubbakoo's Burritos - Sample Store,1078685159957,1169,08/31/26 03:25 PM,Grubhub - Mike R 1169,Online,Takeout,Grubhub,56.83,5.04,61.87,false
+Bubbakoo's Burritos - Sample Store,429003873995,1170,09/01/26 04:07 PM,DoorDash - Mike R (E951ACBA),Online,Takeout,DoorDash,31.44,2.79,34.23,false
+Bubbakoo's Burritos - Sample Store,324838588921,1171,09/01/26 11:37 AM,DoorDash - Chris L (B1853DC0),Online,Takeout,DoorDash,11.59,1.03,12.62,false
+Bubbakoo's Burritos - Sample Store,770646103760,1172,09/01/26 11:25 AM,DoorDash - Chris L (01699AF8),Online,Takeout,DoorDash,17.67,1.57,19.24,false
+Bubbakoo's Burritos - Sample Store,200487340464,1173,09/01/26 02:54 PM,DoorDash - Dev J (C628087D),Online,Takeout,DoorDash,42.39,3.76,46.15,false
+Bubbakoo's Burritos - Sample Store,783402601522,1174,09/01/26 06:45 PM,DoorDash - Priya S (190DCC94),Online,Takeout,DoorDash,31.33,2.78,34.11,false
+Bubbakoo's Burritos - Sample Store,1025041633135,1175,09/01/26 03:17 PM,DoorDash - Priya S (9F1F2193),Online,Takeout,DoorDash,50.92,4.52,55.44,false
+Bubbakoo's Burritos - Sample Store,786669828916,1176,09/01/26 04:36 PM,DoorDash - Mike R (E87F44B1),Online,Takeout,DoorDash,47.57,4.22,51.79,false
+Bubbakoo's Burritos - Sample Store,019379713475,1177,09/01/26 07:53 PM,DoorDash - Chris L (8A814A78),Online,Takeout,DoorDash,27.37,2.43,29.80,false
+Bubbakoo's Burritos - Sample Store,1025477995034,1178,09/01/26 07:54 PM,DoorDash - Ana P (35C86B78),Online,Takeout,DoorDash,27.11,2.41,29.52,false
+Bubbakoo's Burritos - Sample Store,767203843835,1179,09/01/26 05:06 PM,DoorDash - Jane D (6651B3C4),Online,Takeout,DoorDash,40.97,3.64,44.61,false
+Bubbakoo's Burritos - Sample Store,884738482097,1180,09/01/26 08:57 PM,DoorDash - Kate W (6685B4B8),Online,Takeout,DoorDash,23.46,2.08,25.54,false
+Bubbakoo's Burritos - Sample Store,792687985652,1181,09/01/26 06:54 PM,DoorDash - Chris L (11A3199D),Online,Takeout,DoorDash,20.96,1.86,22.82,false
+Bubbakoo's Burritos - Sample Store,834487846064,1182,09/01/26 01:30 PM,DoorDash - Priya S (CB95F372),Online,Takeout,DoorDash,27.60,2.45,30.05,false
+Bubbakoo's Burritos - Sample Store,472372920248,1183,09/01/26 07:01 PM,DoorDash - Priya S (B44678F9),Online,Takeout,DoorDash,27.67,2.46,30.13,false
+Bubbakoo's Burritos - Sample Store,525361776236,1184,09/01/26 07:16 PM,DoorDash - Chris L (5BA46881),Online,Takeout,DoorDash,11.13,0.99,12.12,false
+Bubbakoo's Burritos - Sample Store,424576610308,1185,09/01/26 06:18 PM,DoorDash - Ana P (5CC8512E),Online,Takeout,DoorDash,40.30,3.58,43.88,false
+Bubbakoo's Burritos - Sample Store,697267110829,1186,09/01/26 12:27 PM,DoorDash - Ana P (F14F10CB),Online,Takeout,DoorDash,49.91,4.43,54.34,false
+Bubbakoo's Burritos - Sample Store,936915902175,1187,09/01/26 11:12 AM,DoorDash - Dev J (4001BD9B),Online,Takeout,DoorDash,20.86,1.85,22.71,false
+Bubbakoo's Burritos - Sample Store,670736078000,1188,09/01/26 02:10 PM,DoorDash - Priya S (3562EFE9),Online,Takeout,DoorDash,47.49,4.21,51.70,false
+Bubbakoo's Burritos - Sample Store,922309488852,1189,09/01/26 08:24 PM,DoorDash - Chris L (7E9508CB),Online,Takeout,DoorDash,48.04,4.26,52.30,false
+Bubbakoo's Burritos - Sample Store,062522711142,1190,09/01/26 01:02 PM,DoorDash - Ana P (D3B9CD98),Online,Takeout,DoorDash,37.09,3.29,40.38,false
+Bubbakoo's Burritos - Sample Store,811159883133,1191,09/01/26 06:58 PM,DoorDash - Ana P (7F8870A9),Online,Takeout,DoorDash,53.56,4.75,58.31,false
+Bubbakoo's Burritos - Sample Store,1097015464979,1192,09/01/26 04:28 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,32.99,2.93,35.92,false
+Bubbakoo's Burritos - Sample Store,104533519170,1194,09/01/26 04:40 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,49.00,4.35,53.35,false
+Bubbakoo's Burritos - Sample Store,465325154959,1195,09/01/26 04:51 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,33.30,2.96,36.26,false
+Bubbakoo's Burritos - Sample Store,1080200377507,1196,09/01/26 08:29 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,13.48,1.20,14.68,false
+Bubbakoo's Burritos - Sample Store,783045956206,1197,09/01/26 07:40 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,27.21,2.41,29.62,false
+Bubbakoo's Burritos - Sample Store,973043283792,1198,09/01/26 01:13 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,38.56,3.42,41.98,false
+Bubbakoo's Burritos - Sample Store,523648559931,1199,09/01/26 08:18 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,37.98,3.37,41.35,false
+Bubbakoo's Burritos - Sample Store,232284730061,1200,09/01/26 07:32 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,53.76,4.77,58.53,false
+Bubbakoo's Burritos - Sample Store,1005454445606,1201,09/01/26 06:48 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,40.39,3.58,43.97,false
+Bubbakoo's Burritos - Sample Store,348039414177,1202,09/01/26 01:22 PM,Grubhub - Sam K 1202,Online,Takeout,Grubhub,47.97,4.26,52.23,false
+Bubbakoo's Burritos - Sample Store,906407232889,1203,09/01/26 06:21 PM,Grubhub - Luis M 1203,Online,Takeout,Grubhub,37.62,3.34,40.96,false
+Bubbakoo's Burritos - Sample Store,651090682684,1204,09/01/26 06:12 PM,Grubhub - Jane D 1204,Online,Takeout,Grubhub,38.04,3.38,41.42,false
+Bubbakoo's Burritos - Sample Store,687846589758,1205,09/01/26 07:06 PM,Grubhub - Luis M 1205,Online,Takeout,Grubhub,47.18,4.19,51.37,false
+Bubbakoo's Burritos - Sample Store,142255104179,1206,09/01/26 06:20 PM,Grubhub - Mike R 1206,Online,Takeout,Grubhub,11.22,1.00,12.22,false
+Bubbakoo's Burritos - Sample Store,851974940105,1207,09/01/26 11:19 AM,Grubhub - Ana P 1207,Online,Takeout,Grubhub,23.95,2.13,26.08,false
+Bubbakoo's Burritos - Sample Store,786205191848,1208,09/01/26 12:26 PM,Grubhub - Sam K 1208,Online,Takeout,Grubhub,24.78,2.20,26.98,false
+Bubbakoo's Burritos - Sample Store,800206072033,1209,09/02/26 12:03 PM,DoorDash - Mike R (9E43E933),Online,Takeout,DoorDash,11.69,1.04,12.73,false
+Bubbakoo's Burritos - Sample Store,159628774279,1210,09/02/26 07:18 PM,DoorDash - Luis M (9330CA45),Online,Takeout,DoorDash,39.62,3.52,43.14,false
+Bubbakoo's Burritos - Sample Store,497298123865,1211,09/02/26 05:13 PM,DoorDash - Luis M (6AFFBC9A),Online,Takeout,DoorDash,55.83,4.95,60.78,false
+Bubbakoo's Burritos - Sample Store,797170939836,1212,09/02/26 08:40 PM,DoorDash - Dev J (F954DD9E),Online,Takeout,DoorDash,26.69,2.37,29.06,false
+Bubbakoo's Burritos - Sample Store,415258148323,1213,09/02/26 01:35 PM,DoorDash - Chris L (F9F4886C),Online,Takeout,DoorDash,39.25,3.48,42.73,false
+Bubbakoo's Burritos - Sample Store,897307128315,1214,09/02/26 06:42 PM,DoorDash - Priya S (449D27F9),Online,Takeout,DoorDash,24.32,2.16,26.48,false
+Bubbakoo's Burritos - Sample Store,936197086854,1215,09/02/26 03:58 PM,DoorDash - Dev J (FE2A7B12),Online,Takeout,DoorDash,50.16,4.45,54.61,false
+Bubbakoo's Burritos - Sample Store,793495998829,1216,09/02/26 04:56 PM,DoorDash - Priya S (CC21A87A),Online,Takeout,DoorDash,36.12,3.21,39.33,false
+Bubbakoo's Burritos - Sample Store,827152239552,1217,09/02/26 04:16 PM,DoorDash - Chris L (B555B9FA),Online,Takeout,DoorDash,39.52,3.51,43.03,false
+Bubbakoo's Burritos - Sample Store,573719972289,1218,09/02/26 05:36 PM,DoorDash - Mike R (5AE82B36),Online,Takeout,DoorDash,32.61,2.89,35.50,false
+Bubbakoo's Burritos - Sample Store,885539334662,1219,09/02/26 07:56 PM,DoorDash - Chris L (306C3A5A),Online,Takeout,DoorDash,26.09,2.32,28.41,false
+Bubbakoo's Burritos - Sample Store,1099179275202,1220,09/02/26 05:14 PM,DoorDash - Ana P (84685B61),Online,Takeout,DoorDash,38.16,3.39,41.55,false
+Bubbakoo's Burritos - Sample Store,032629778772,1221,09/02/26 05:25 PM,DoorDash - Mike R (C98F9BF5),Online,Takeout,DoorDash,51.72,4.59,56.31,false
+Bubbakoo's Burritos - Sample Store,234364270509,1222,09/02/26 03:49 PM,DoorDash - Dev J (346388D1),Online,Takeout,DoorDash,35.41,3.14,38.55,false
+Bubbakoo's Burritos - Sample Store,924508871161,1223,09/02/26 03:46 PM,DoorDash - Dev J (97D6B91B),Online,Takeout,DoorDash,31.02,2.75,33.77,false
+Bubbakoo's Burritos - Sample Store,1041473028036,1224,09/02/26 04:46 PM,DoorDash - Jane D (070B80F4),Online,Takeout,DoorDash,20.45,1.81,22.26,false
+Bubbakoo's Burritos - Sample Store,097240778195,1225,09/02/26 05:49 PM,DoorDash - Tony B (41D77253),Online,Takeout,DoorDash,54.34,4.82,59.16,false
+Bubbakoo's Burritos - Sample Store,283217503716,1226,09/02/26 02:09 PM,DoorDash - Chris L (3C316362),Online,Takeout,DoorDash,32.07,2.85,34.92,false
+Bubbakoo's Burritos - Sample Store,836001153444,1227,09/02/26 08:29 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,53.51,4.75,58.26,false
+Bubbakoo's Burritos - Sample Store,645528399447,1228,09/02/26 12:00 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,15.75,1.40,17.15,false
+Bubbakoo's Burritos - Sample Store,481760370567,1229,09/02/26 12:48 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,33.12,2.94,36.06,false
+Bubbakoo's Burritos - Sample Store,1018581370764,1230,09/02/26 01:27 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,53.97,4.79,58.76,false
+Bubbakoo's Burritos - Sample Store,107193595839,1231,09/02/26 12:22 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,54.90,4.87,59.77,false
+Bubbakoo's Burritos - Sample Store,402129984610,1232,09/02/26 11:23 AM,Uber Eats - Chris L,Online,Takeout,Uber Eats,40.53,3.60,44.13,false
+Bubbakoo's Burritos - Sample Store,955368105899,1233,09/02/26 04:40 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,21.42,1.90,23.32,false
+Bubbakoo's Burritos - Sample Store,881905000281,1234,09/02/26 03:33 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,30.66,2.72,33.38,false
+Bubbakoo's Burritos - Sample Store,691733916099,1235,09/02/26 07:23 PM,Grubhub - Ana P 1235,Online,Takeout,Grubhub,16.13,1.43,17.56,false
+Bubbakoo's Burritos - Sample Store,1088482407235,1236,09/02/26 08:35 PM,Grubhub - Chris L 1236,Online,Takeout,Grubhub,33.44,2.97,36.41,false
+Bubbakoo's Burritos - Sample Store,155879500448,1237,09/02/26 03:04 PM,Grubhub - Ana P 1237,Online,Takeout,Grubhub,54.48,4.84,59.32,false
+Bubbakoo's Burritos - Sample Store,579578547381,1238,09/02/26 06:34 PM,Grubhub - Jane D 1238,Online,Takeout,Grubhub,48.93,4.34,53.27,false
+Bubbakoo's Burritos - Sample Store,924010994079,1239,09/02/26 02:11 PM,Grubhub - Sam K 1239,Online,Takeout,Grubhub,27.92,2.48,30.40,false
+Bubbakoo's Burritos - Sample Store,669539554002,1240,09/02/26 07:57 PM,Grubhub - Mike R 1240,Online,Takeout,Grubhub,47.21,4.19,51.40,false
+Bubbakoo's Burritos - Sample Store,009458767154,1241,09/03/26 01:59 PM,DoorDash - Chris L (A0E1BFBD),Online,Takeout,DoorDash,20.68,1.84,22.52,false
+Bubbakoo's Burritos - Sample Store,703695636048,1242,09/03/26 07:55 PM,DoorDash - Tony B (84B9BDA5),Online,Takeout,DoorDash,30.18,2.68,32.86,false
+Bubbakoo's Burritos - Sample Store,912951681381,1243,09/03/26 12:34 PM,DoorDash - Sam K (221EC3E3),Online,Takeout,DoorDash,11.73,1.04,12.77,false
+Bubbakoo's Burritos - Sample Store,493629691997,1244,09/03/26 11:37 AM,DoorDash - Jane D (DBAAAE92),Online,Takeout,DoorDash,18.68,1.66,20.34,false
+Bubbakoo's Burritos - Sample Store,420340252125,1245,09/03/26 01:03 PM,DoorDash - Tony B (DD8F90D5),Online,Takeout,DoorDash,27.77,2.46,30.23,false
+Bubbakoo's Burritos - Sample Store,266376825803,1246,09/03/26 03:58 PM,DoorDash - Kate W (7249D149),Online,Takeout,DoorDash,52.02,4.62,56.64,false
+Bubbakoo's Burritos - Sample Store,017309034122,1247,09/03/26 02:49 PM,DoorDash - Kate W (401E0548),Online,Takeout,DoorDash,40.10,3.56,43.66,false
+Bubbakoo's Burritos - Sample Store,488349143210,1248,09/03/26 02:19 PM,DoorDash - Luis M (93945BED),Online,Takeout,DoorDash,23.29,2.07,25.36,false
+Bubbakoo's Burritos - Sample Store,552272244169,1249,09/03/26 05:01 PM,DoorDash - Mike R (45E42F4D),Online,Takeout,DoorDash,51.87,4.60,56.47,false
+Bubbakoo's Burritos - Sample Store,159888890097,1250,09/03/26 12:55 PM,DoorDash - Dev J (8AA62560),Online,Takeout,DoorDash,16.74,1.49,18.23,false
+Bubbakoo's Burritos - Sample Store,921687269569,1251,09/03/26 05:46 PM,DoorDash - Priya S (A28ECD3F),Online,Takeout,DoorDash,18.72,1.66,20.38,false
+Bubbakoo's Burritos - Sample Store,787418183709,1252,09/03/26 05:48 PM,DoorDash - Priya S (56AB1E51),Online,Takeout,DoorDash,56.61,5.02,61.63,false
+Bubbakoo's Burritos - Sample Store,161135896507,1253,09/03/26 08:39 PM,DoorDash - Kate W (668D3355),Online,Takeout,DoorDash,48.81,4.33,53.14,false
+Bubbakoo's Burritos - Sample Store,356779773118,1254,09/03/26 03:18 PM,DoorDash - Mike R (5D4B69E0),Online,Takeout,DoorDash,51.91,4.61,56.52,false
+Bubbakoo's Burritos - Sample Store,502240310271,1255,09/03/26 02:25 PM,DoorDash - Priya S (6BB4D3FD),Online,Takeout,DoorDash,34.72,3.08,37.80,false
+Bubbakoo's Burritos - Sample Store,887092228041,1256,09/03/26 11:41 AM,DoorDash - Dev J (EAFD6A99),Online,Takeout,DoorDash,12.62,1.12,13.74,false
+Bubbakoo's Burritos - Sample Store,379268855490,1257,09/03/26 12:43 PM,DoorDash - Jane D (3C953F5D),Online,Takeout,DoorDash,22.78,2.02,24.80,false
+Bubbakoo's Burritos - Sample Store,586650648809,1258,09/03/26 01:04 PM,DoorDash - Sam K (83870307),Online,Takeout,DoorDash,13.84,1.23,15.07,false
+Bubbakoo's Burritos - Sample Store,267465274486,1259,09/03/26 06:30 PM,DoorDash - Priya S (EA63FC95),Online,Takeout,DoorDash,16.82,1.49,18.31,false
+Bubbakoo's Burritos - Sample Store,602159533911,1260,09/03/26 08:21 PM,DoorDash - Chris L (91F7442C),Online,Takeout,DoorDash,24.50,2.17,26.67,false
+Bubbakoo's Burritos - Sample Store,599201407986,1261,09/03/26 06:54 PM,DoorDash - Sam K (780E2104),Online,Takeout,DoorDash,52.92,4.70,57.62,false
+Bubbakoo's Burritos - Sample Store,538268828363,1262,09/03/26 09:01 PM,DoorDash - Chris L (DCA332DF),Online,Takeout,DoorDash,29.63,2.63,32.26,false
+Bubbakoo's Burritos - Sample Store,482530963917,1263,09/03/26 02:41 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,24.89,2.21,27.10,false
+Bubbakoo's Burritos - Sample Store,1056516027484,1264,09/03/26 07:50 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,29.23,2.59,31.82,false
+Bubbakoo's Burritos - Sample Store,903131753518,1265,09/03/26 06:06 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,26.84,2.38,29.22,false
+Bubbakoo's Burritos - Sample Store,004738880165,1266,09/03/26 07:09 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,23.63,2.10,25.73,false
+Bubbakoo's Burritos - Sample Store,862643952077,1267,09/03/26 08:25 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,38.53,3.42,41.95,false
+Bubbakoo's Burritos - Sample Store,577203594609,1268,09/03/26 12:56 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,28.84,2.56,31.40,false
+Bubbakoo's Burritos - Sample Store,589201702296,1269,09/03/26 04:31 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,11.32,1.00,12.32,false
+Bubbakoo's Burritos - Sample Store,669342262917,1270,09/03/26 01:29 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,31.48,2.79,34.27,false
+Bubbakoo's Burritos - Sample Store,1010605027035,1271,09/03/26 04:35 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,20.60,1.83,22.43,false
+Bubbakoo's Burritos - Sample Store,044486034542,1272,09/03/26 08:13 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,40.14,3.56,43.70,false
+Bubbakoo's Burritos - Sample Store,440238051149,1273,09/03/26 06:44 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,55.55,4.93,60.48,false
+Bubbakoo's Burritos - Sample Store,376185030154,1274,09/03/26 02:12 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,56.33,5.00,61.33,false
+Bubbakoo's Burritos - Sample Store,982069723592,1275,09/03/26 05:13 PM,Grubhub - Kate W 1275,Online,Takeout,Grubhub,25.95,2.30,28.25,false
+Bubbakoo's Burritos - Sample Store,320078388022,1276,09/03/26 04:52 PM,Grubhub - Priya S 1276,Online,Takeout,Grubhub,49.57,4.40,53.97,false
+Bubbakoo's Burritos - Sample Store,624287172641,1277,09/03/26 07:37 PM,Grubhub - Dev J 1277,Online,Takeout,Grubhub,52.98,4.70,57.68,false
+Bubbakoo's Burritos - Sample Store,015402613607,1278,09/03/26 06:01 PM,Grubhub - Kate W 1278,Online,Takeout,Grubhub,11.50,1.02,12.52,false
+Bubbakoo's Burritos - Sample Store,631977454544,1279,09/04/26 02:00 PM,DoorDash - Kate W (DF02EAC3),Online,Takeout,DoorDash,34.40,3.05,37.45,false
+Bubbakoo's Burritos - Sample Store,082034320392,1280,09/04/26 06:01 PM,DoorDash - Kate W (C26E5270),Online,Takeout,DoorDash,39.28,3.49,42.77,false
+Bubbakoo's Burritos - Sample Store,849048739874,1281,09/04/26 07:57 PM,DoorDash - Jane D (CE7D5793),Online,Takeout,DoorDash,34.05,3.02,37.07,false
+Bubbakoo's Burritos - Sample Store,995828228544,1282,09/04/26 01:27 PM,DoorDash - Sam K (086B8152),Online,Takeout,DoorDash,44.63,3.96,48.59,false
+Bubbakoo's Burritos - Sample Store,840021137461,1283,09/04/26 04:57 PM,DoorDash - Chris L (0DFF6F5D),Online,Takeout,DoorDash,20.01,1.78,21.79,false
+Bubbakoo's Burritos - Sample Store,192649536316,1284,09/04/26 06:32 PM,DoorDash - Ana P (0B42312F),Online,Takeout,DoorDash,13.57,1.20,14.77,false
+Bubbakoo's Burritos - Sample Store,544974799201,1285,09/04/26 11:06 AM,DoorDash - Dev J (6B1AB7B4),Online,Takeout,DoorDash,53.25,4.73,57.98,false
+Bubbakoo's Burritos - Sample Store,785443466136,1286,09/04/26 03:11 PM,DoorDash - Priya S (38AD8F8F),Online,Takeout,DoorDash,42.83,3.80,46.63,false
+Bubbakoo's Burritos - Sample Store,1065184666994,1287,09/04/26 11:24 AM,DoorDash - Tony B (2B8028C4),Online,Takeout,DoorDash,48.26,4.28,52.54,false
+Bubbakoo's Burritos - Sample Store,071516710763,1288,09/04/26 05:45 PM,DoorDash - Priya S (DF19A228),Online,Takeout,DoorDash,37.39,3.32,40.71,false
+Bubbakoo's Burritos - Sample Store,259177564017,1289,09/04/26 06:15 PM,DoorDash - Chris L (632A42B9),Online,Takeout,DoorDash,49.81,4.42,54.23,false
+Bubbakoo's Burritos - Sample Store,215146213245,1290,09/04/26 11:37 AM,DoorDash - Chris L (27E8A103),Online,Takeout,DoorDash,24.12,2.14,26.26,false
+Bubbakoo's Burritos - Sample Store,237738975425,1291,09/04/26 08:20 PM,DoorDash - Chris L (7790C627),Online,Takeout,DoorDash,50.25,4.46,54.71,false
+Bubbakoo's Burritos - Sample Store,941573967897,1292,09/04/26 05:28 PM,DoorDash - Luis M (F370BDBC),Online,Takeout,DoorDash,40.58,3.60,44.18,false
+Bubbakoo's Burritos - Sample Store,585696081949,1293,09/04/26 01:15 PM,DoorDash - Luis M (E64D52A0),Online,Takeout,DoorDash,55.28,4.91,60.19,false
+Bubbakoo's Burritos - Sample Store,593098345297,1294,09/04/26 05:55 PM,DoorDash - Mike R (C02CBB7C),Online,Takeout,DoorDash,39.59,3.51,43.10,false
+Bubbakoo's Burritos - Sample Store,760578737335,1295,09/04/26 05:35 PM,DoorDash - Jane D (4F8FDD84),Online,Takeout,DoorDash,12.35,1.10,13.45,false
+Bubbakoo's Burritos - Sample Store,553214037142,1296,09/04/26 02:59 PM,DoorDash - Kate W (116DBE5B),Online,Takeout,DoorDash,26.09,2.32,28.41,false
+Bubbakoo's Burritos - Sample Store,310951220225,1297,09/04/26 02:19 PM,DoorDash - Ana P (49DF9B07),Online,Takeout,DoorDash,14.10,1.25,15.35,false
+Bubbakoo's Burritos - Sample Store,030822375120,1298,09/04/26 05:55 PM,DoorDash - Ana P (E1FC4C5C),Online,Takeout,DoorDash,50.69,4.50,55.19,false
+Bubbakoo's Burritos - Sample Store,441723274450,1299,09/04/26 05:01 PM,DoorDash - Luis M (B301F4F0),Online,Takeout,DoorDash,53.16,4.72,57.88,false
+Bubbakoo's Burritos - Sample Store,442555370889,1300,09/04/26 02:06 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,24.70,2.19,26.89,false
+Bubbakoo's Burritos - Sample Store,702783160401,1301,09/04/26 01:46 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,31.24,2.77,34.01,false
+Bubbakoo's Burritos - Sample Store,754497479184,1302,09/04/26 08:40 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,50.45,4.48,54.93,false
+Bubbakoo's Burritos - Sample Store,668233017517,1303,09/04/26 11:00 AM,Uber Eats - Jane D,Online,Takeout,Uber Eats,16.26,1.44,17.70,false
+Bubbakoo's Burritos - Sample Store,455636488319,1304,09/04/26 03:13 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,43.01,3.82,46.83,false
+Bubbakoo's Burritos - Sample Store,761670786700,1305,09/04/26 02:49 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,24.21,2.15,26.36,false
+Bubbakoo's Burritos - Sample Store,140781515507,1306,09/04/26 07:43 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,13.55,1.20,14.75,false
+Bubbakoo's Burritos - Sample Store,1065854959201,1307,09/04/26 02:14 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,13.05,1.16,14.21,false
+Bubbakoo's Burritos - Sample Store,696649755270,1308,09/04/26 08:18 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,23.23,2.06,25.29,false
+Bubbakoo's Burritos - Sample Store,708394053799,1309,09/04/26 01:21 PM,Grubhub - Chris L 1309,Online,Takeout,Grubhub,43.25,3.84,47.09,false
+Bubbakoo's Burritos - Sample Store,132351103842,1310,09/04/26 04:09 PM,Grubhub - Chris L 1310,Online,Takeout,Grubhub,17.27,1.53,18.80,false
+Bubbakoo's Burritos - Sample Store,756405924426,1311,09/04/26 01:55 PM,Grubhub - Priya S 1311,Online,Takeout,Grubhub,42.82,3.80,46.62,false
+Bubbakoo's Burritos - Sample Store,769274149359,1312,09/04/26 11:14 AM,Grubhub - Sam K 1312,Online,Takeout,Grubhub,27.94,2.48,30.42,false
+Bubbakoo's Burritos - Sample Store,047553097674,1313,09/05/26 12:55 PM,DoorDash - Sam K (5CEBFC57),Online,Takeout,DoorDash,18.58,1.65,20.23,false
+Bubbakoo's Burritos - Sample Store,290183681744,1314,09/05/26 06:59 PM,DoorDash - Tony B (BF4E72CB),Online,Takeout,DoorDash,57.63,5.11,62.74,false
+Bubbakoo's Burritos - Sample Store,677006006580,1315,09/05/26 07:22 PM,DoorDash - Tony B (8B06C17B),Online,Takeout,DoorDash,55.97,4.97,60.94,false
+Bubbakoo's Burritos - Sample Store,404999590599,1316,09/05/26 03:12 PM,DoorDash - Priya S (C6419ADB),Online,Takeout,DoorDash,14.67,1.30,15.97,false
+Bubbakoo's Burritos - Sample Store,418014879540,1317,09/05/26 07:59 PM,DoorDash - Sam K (1A2846FF),Online,Takeout,DoorDash,50.75,4.50,55.25,false
+Bubbakoo's Burritos - Sample Store,263081993773,1318,09/05/26 05:04 PM,DoorDash - Tony B (EB7249B2),Online,Takeout,DoorDash,26.05,2.31,28.36,false
+Bubbakoo's Burritos - Sample Store,240281660071,1319,09/05/26 11:45 AM,DoorDash - Priya S (D1DA1B4F),Online,Takeout,DoorDash,16.04,1.42,17.46,false
+Bubbakoo's Burritos - Sample Store,756523647032,1320,09/05/26 06:14 PM,DoorDash - Dev J (9A45A3C6),Online,Takeout,DoorDash,34.48,3.06,37.54,false
+Bubbakoo's Burritos - Sample Store,208217443571,1321,09/05/26 01:48 PM,DoorDash - Jane D (16F40890),Online,Takeout,DoorDash,17.50,1.55,19.05,false
+Bubbakoo's Burritos - Sample Store,078525989822,1322,09/05/26 05:21 PM,DoorDash - Kate W (D562BF11),Online,Takeout,DoorDash,11.13,0.99,12.12,false
+Bubbakoo's Burritos - Sample Store,196821480313,1323,09/05/26 07:47 PM,DoorDash - Jane D (704E3636),Online,Takeout,DoorDash,44.41,3.94,48.35,false
+Bubbakoo's Burritos - Sample Store,092207956192,1324,09/05/26 05:29 PM,DoorDash - Tony B (ACDDEFA4),Online,Takeout,DoorDash,24.90,2.21,27.11,false
+Bubbakoo's Burritos - Sample Store,669850907445,1325,09/05/26 07:49 PM,DoorDash - Ana P (A02F6772),Online,Takeout,DoorDash,32.64,2.90,35.54,false
+Bubbakoo's Burritos - Sample Store,407819214581,1326,09/05/26 12:04 PM,DoorDash - Dev J (4C0ABA50),Online,Takeout,DoorDash,44.97,3.99,48.96,false
+Bubbakoo's Burritos - Sample Store,743984900642,1327,09/05/26 01:23 PM,DoorDash - Jane D (A23D3955),Online,Takeout,DoorDash,25.07,2.22,27.29,false
+Bubbakoo's Burritos - Sample Store,619507106508,1328,09/05/26 12:30 PM,DoorDash - Priya S (94AD393D),Online,Takeout,DoorDash,17.91,1.59,19.50,false
+Bubbakoo's Burritos - Sample Store,241000372270,1329,09/05/26 05:47 PM,DoorDash - Chris L (E3D69B01),Online,Takeout,DoorDash,23.27,2.07,25.34,false
+Bubbakoo's Burritos - Sample Store,593678530553,1330,09/05/26 12:37 PM,DoorDash - Chris L (7D4145ED),Online,Takeout,DoorDash,19.81,1.76,21.57,false
+Bubbakoo's Burritos - Sample Store,949764521864,1331,09/05/26 07:45 PM,DoorDash - Mike R (68746928),Online,Takeout,DoorDash,53.73,4.77,58.50,false
+Bubbakoo's Burritos - Sample Store,619298401296,1332,09/05/26 07:50 PM,DoorDash - Ana P (8B573A36),Online,Takeout,DoorDash,15.80,1.40,17.20,false
+Bubbakoo's Burritos - Sample Store,468733811490,1334,09/05/26 11:42 AM,DoorDash - Sam K (75AF45A8),Online,Takeout,DoorDash,11.71,1.04,12.75,false
+Bubbakoo's Burritos - Sample Store,377276258174,1335,09/05/26 02:26 PM,DoorDash - Ana P (5ACB1925),Online,Takeout,DoorDash,37.46,3.32,40.78,false
+Bubbakoo's Burritos - Sample Store,897835012153,1336,09/05/26 03:23 PM,DoorDash - Tony B (865350BF),Online,Takeout,DoorDash,16.77,1.49,18.26,false
+Bubbakoo's Burritos - Sample Store,269188010903,1337,09/05/26 12:44 PM,DoorDash - Jane D (1CEB8F72),Online,Takeout,DoorDash,27.72,2.46,30.18,false
+Bubbakoo's Burritos - Sample Store,532665953008,1338,09/05/26 02:17 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,43.61,3.87,47.48,false
+Bubbakoo's Burritos - Sample Store,419487590158,1339,09/05/26 12:16 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,48.63,4.32,52.95,false
+Bubbakoo's Burritos - Sample Store,551848194401,1340,09/05/26 03:19 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,36.31,3.22,39.53,false
+Bubbakoo's Burritos - Sample Store,1062900282795,1341,09/05/26 11:33 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,48.62,4.32,52.94,false
+Bubbakoo's Burritos - Sample Store,238492058376,1342,09/05/26 06:41 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,29.49,2.62,32.11,false
+Bubbakoo's Burritos - Sample Store,632783412379,1343,09/05/26 01:17 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,38.69,3.43,42.12,false
+Bubbakoo's Burritos - Sample Store,270671038903,1344,09/05/26 05:40 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,55.06,4.89,59.95,false
+Bubbakoo's Burritos - Sample Store,1088774216949,1345,09/05/26 11:48 AM,Uber Eats - Priya S,Online,Takeout,Uber Eats,40.65,3.61,44.26,false
+Bubbakoo's Burritos - Sample Store,849985364819,1346,09/05/26 05:05 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,37.74,3.35,41.09,false
+Bubbakoo's Burritos - Sample Store,875284450925,1347,09/05/26 02:25 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,47.39,4.21,51.60,false
+Bubbakoo's Burritos - Sample Store,269016176599,1348,09/05/26 01:26 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,43.02,3.82,46.84,false
+Bubbakoo's Burritos - Sample Store,531642069934,1349,09/05/26 08:25 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,44.64,3.96,48.60,false
+Bubbakoo's Burritos - Sample Store,491365654110,1350,09/05/26 03:12 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,49.03,4.35,53.38,false
+Bubbakoo's Burritos - Sample Store,723922194282,1351,09/05/26 01:54 PM,Grubhub - Sam K 1351,Online,Takeout,Grubhub,38.58,3.42,42.00,false
+Bubbakoo's Burritos - Sample Store,1083849985468,1352,09/05/26 12:18 PM,Grubhub - Ana P 1352,Online,Takeout,Grubhub,54.30,4.82,59.12,false
+Bubbakoo's Burritos - Sample Store,989213677626,1353,09/05/26 05:06 PM,Grubhub - Mike R 1353,Online,Takeout,Grubhub,56.62,5.03,61.65,false
+Bubbakoo's Burritos - Sample Store,236309382048,1354,09/05/26 03:42 PM,Grubhub - Sam K 1354,Online,Takeout,Grubhub,53.19,4.72,57.91,false
+Bubbakoo's Burritos - Sample Store,262837872107,1355,09/05/26 05:49 PM,Grubhub - Kate W 1355,Online,Takeout,Grubhub,32.05,2.84,34.89,false
+Bubbakoo's Burritos - Sample Store,004881940740,1356,09/05/26 01:13 PM,Grubhub - Dev J 1356,Online,Takeout,Grubhub,39.25,3.48,42.73,false
+Bubbakoo's Burritos - Sample Store,954886120841,1357,09/06/26 08:09 PM,DoorDash - Jane D (EC425FCE),Online,Takeout,DoorDash,41.20,3.66,44.86,false
+Bubbakoo's Burritos - Sample Store,050664559786,1358,09/06/26 07:17 PM,DoorDash - Jane D (2CAC5901),Online,Takeout,DoorDash,30.05,2.67,32.72,false
+Bubbakoo's Burritos - Sample Store,1013722838337,1359,09/06/26 04:44 PM,DoorDash - Luis M (41CBE3FD),Online,Takeout,DoorDash,47.47,4.21,51.68,false
+Bubbakoo's Burritos - Sample Store,167583616713,1360,09/06/26 08:38 PM,DoorDash - Tony B (9D2CFAC6),Online,Takeout,DoorDash,41.74,3.70,45.44,false
+Bubbakoo's Burritos - Sample Store,749637840482,1361,09/06/26 01:27 PM,DoorDash - Tony B (D0636FD8),Online,Takeout,DoorDash,35.89,3.19,39.08,false
+Bubbakoo's Burritos - Sample Store,712002462758,1362,09/06/26 08:50 PM,DoorDash - Luis M (D03E86E5),Online,Takeout,DoorDash,26.55,2.36,28.91,false
+Bubbakoo's Burritos - Sample Store,142910434029,1363,09/06/26 08:24 PM,DoorDash - Kate W (5C81C108),Online,Takeout,DoorDash,56.94,5.05,61.99,false
+Bubbakoo's Burritos - Sample Store,251809234222,1364,09/06/26 11:12 AM,DoorDash - Tony B (C62F9AB0),Online,Takeout,DoorDash,37.23,3.30,40.53,false
+Bubbakoo's Burritos - Sample Store,857083263101,1365,09/06/26 12:33 PM,DoorDash - Kate W (0F670ECA),Online,Takeout,DoorDash,55.04,4.88,59.92,false
+Bubbakoo's Burritos - Sample Store,1012992450736,1366,09/06/26 03:26 PM,DoorDash - Ana P (E721AB01),Online,Takeout,DoorDash,55.17,4.90,60.07,false
+Bubbakoo's Burritos - Sample Store,381875650283,1367,09/06/26 08:04 PM,DoorDash - Luis M (7109E1CD),Online,Takeout,DoorDash,12.37,1.10,13.47,false
+Bubbakoo's Burritos - Sample Store,740460323614,1368,09/06/26 06:53 PM,DoorDash - Jane D (1B990F6E),Online,Takeout,DoorDash,20.97,1.86,22.83,false
+Bubbakoo's Burritos - Sample Store,947586276863,1369,09/06/26 12:02 PM,DoorDash - Priya S (EB4C14E3),Online,Takeout,DoorDash,21.72,1.93,23.65,false
+Bubbakoo's Burritos - Sample Store,834624009848,1370,09/06/26 11:34 AM,DoorDash - Chris L (3DE88452),Online,Takeout,DoorDash,22.84,2.03,24.87,false
+Bubbakoo's Burritos - Sample Store,946943098841,1371,09/06/26 03:47 PM,DoorDash - Dev J (FB3969AD),Online,Takeout,DoorDash,25.03,2.22,27.25,false
+Bubbakoo's Burritos - Sample Store,177166253694,1372,09/06/26 01:21 PM,DoorDash - Luis M (0101B029),Online,Takeout,DoorDash,49.67,4.41,54.08,false
+Bubbakoo's Burritos - Sample Store,123716620816,1374,09/06/26 06:30 PM,DoorDash - Sam K (EFAAB9B7),Online,Takeout,DoorDash,19.57,1.74,21.31,false
+Bubbakoo's Burritos - Sample Store,507530882542,1375,09/06/26 11:12 AM,DoorDash - Tony B (BC6B8B46),Online,Takeout,DoorDash,17.27,1.53,18.80,false
+Bubbakoo's Burritos - Sample Store,987755075499,1376,09/06/26 12:32 PM,DoorDash - Priya S (B76325E2),Online,Takeout,DoorDash,30.47,2.70,33.17,false
+Bubbakoo's Burritos - Sample Store,255959348164,1377,09/06/26 09:02 PM,DoorDash - Jane D (03EE5C50),Online,Takeout,DoorDash,22.03,1.96,23.99,false
+Bubbakoo's Burritos - Sample Store,1052784374810,1378,09/06/26 12:50 PM,DoorDash - Mike R (51058367),Online,Takeout,DoorDash,45.24,4.02,49.26,false
+Bubbakoo's Burritos - Sample Store,552098808184,1379,09/06/26 07:58 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,31.14,2.76,33.90,false
+Bubbakoo's Burritos - Sample Store,1064521288328,1380,09/06/26 08:03 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,27.62,2.45,30.07,false
+Bubbakoo's Burritos - Sample Store,559189480306,1381,09/06/26 12:14 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,23.83,2.11,25.94,false
+Bubbakoo's Burritos - Sample Store,501021311678,1382,09/06/26 05:59 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,48.11,4.27,52.38,false
+Bubbakoo's Burritos - Sample Store,594072425735,1383,09/06/26 08:24 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,26.55,2.36,28.91,false
+Bubbakoo's Burritos - Sample Store,1099073958760,1384,09/06/26 05:32 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,56.73,5.03,61.76,false
+Bubbakoo's Burritos - Sample Store,266249370178,1385,09/06/26 03:05 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,39.57,3.51,43.08,false
+Bubbakoo's Burritos - Sample Store,358881107875,1386,09/06/26 01:01 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,15.08,1.34,16.42,false
+Bubbakoo's Burritos - Sample Store,519061713083,1387,09/06/26 08:24 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,42.40,3.76,46.16,false
+Bubbakoo's Burritos - Sample Store,429772114086,1388,09/06/26 08:21 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,57.75,5.13,62.88,false
+Bubbakoo's Burritos - Sample Store,997558887471,1389,09/06/26 12:16 PM,Grubhub - Dev J 1389,Online,Takeout,Grubhub,40.56,3.60,44.16,false
+Bubbakoo's Burritos - Sample Store,577089394733,1390,09/06/26 04:57 PM,Grubhub - Ana P 1390,Online,Takeout,Grubhub,35.54,3.15,38.69,false
+Bubbakoo's Burritos - Sample Store,195250496497,1391,09/06/26 08:00 PM,Grubhub - Ana P 1391,Online,Takeout,Grubhub,18.95,1.68,20.63,false
+Bubbakoo's Burritos - Sample Store,277895644437,1392,09/06/26 04:32 PM,Grubhub - Mike R 1392,Online,Takeout,Grubhub,28.92,2.57,31.49,false
+Bubbakoo's Burritos - Sample Store,301025668997,1393,09/06/26 12:48 PM,Grubhub - Sam K 1393,Online,Takeout,Grubhub,28.14,2.50,30.64,false
+Bubbakoo's Burritos - Sample Store,833973184877,1394,09/06/26 03:58 PM,Grubhub - Luis M 1394,Online,Takeout,Grubhub,57.86,5.14,63.00,false
+Bubbakoo's Burritos - Sample Store,375910081680,1395,09/06/26 11:09 AM,Grubhub - Chris L 1395,Online,Takeout,Grubhub,42.97,3.81,46.78,false
+Bubbakoo's Burritos - Sample Store,600085016006,1396,09/07/26 11:20 AM,DoorDash - Dev J (0EC7B2E3),Online,Takeout,DoorDash,37.14,3.30,40.44,false
+Bubbakoo's Burritos - Sample Store,098178189146,1397,09/07/26 04:32 PM,DoorDash - Kate W (17615173),Online,Takeout,DoorDash,23.01,2.04,25.05,false
+Bubbakoo's Burritos - Sample Store,488412531735,1398,09/07/26 01:14 PM,DoorDash - Tony B (C7F3440C),Online,Takeout,DoorDash,30.89,2.74,33.63,false
+Bubbakoo's Burritos - Sample Store,282655347169,1399,09/07/26 05:17 PM,DoorDash - Priya S (686DB9FE),Online,Takeout,DoorDash,12.96,1.15,14.11,false
+Bubbakoo's Burritos - Sample Store,785342121798,1400,09/07/26 03:06 PM,DoorDash - Chris L (9E59AADD),Online,Takeout,DoorDash,29.11,2.58,31.69,false
+Bubbakoo's Burritos - Sample Store,457524891889,1401,09/07/26 12:07 PM,DoorDash - Luis M (1476E333),Online,Takeout,DoorDash,42.28,3.75,46.03,false
+Bubbakoo's Burritos - Sample Store,195307635229,1402,09/07/26 11:26 AM,DoorDash - Priya S (76514EAB),Online,Takeout,DoorDash,16.07,1.43,17.50,false
+Bubbakoo's Burritos - Sample Store,222223532771,1403,09/07/26 06:33 PM,DoorDash - Jane D (D31D977D),Online,Takeout,DoorDash,29.69,2.63,32.32,false
+Bubbakoo's Burritos - Sample Store,099291565917,1404,09/07/26 08:15 PM,DoorDash - Priya S (5484D1F6),Online,Takeout,DoorDash,12.91,1.15,14.06,false
+Bubbakoo's Burritos - Sample Store,902179375512,1405,09/07/26 12:19 PM,DoorDash - Chris L (16979162),Online,Takeout,DoorDash,37.84,3.36,41.20,false
+Bubbakoo's Burritos - Sample Store,1095818900093,1406,09/07/26 04:46 PM,DoorDash - Priya S (BF7840C0),Online,Takeout,DoorDash,33.69,2.99,36.68,false
+Bubbakoo's Burritos - Sample Store,1087426217100,1407,09/07/26 11:53 AM,DoorDash - Kate W (30B44021),Online,Takeout,DoorDash,51.98,4.61,56.59,false
+Bubbakoo's Burritos - Sample Store,972857255294,1408,09/07/26 07:55 PM,DoorDash - Sam K (A9F8EF91),Online,Takeout,DoorDash,23.33,2.07,25.40,false
+Bubbakoo's Burritos - Sample Store,336111619625,1409,09/07/26 11:53 AM,DoorDash - Priya S (CD4E0A7D),Online,Takeout,DoorDash,25.42,2.26,27.68,false
+Bubbakoo's Burritos - Sample Store,642999014619,1410,09/07/26 01:15 PM,DoorDash - Luis M (EEB51898),Online,Takeout,DoorDash,13.45,1.19,14.64,false
+Bubbakoo's Burritos - Sample Store,346729529634,1411,09/07/26 05:14 PM,DoorDash - Kate W (EB5C670F),Online,Takeout,DoorDash,54.73,4.86,59.59,false
+Bubbakoo's Burritos - Sample Store,484455511049,1412,09/07/26 08:07 PM,DoorDash - Jane D (52D46EEF),Online,Takeout,DoorDash,14.18,1.26,15.44,false
+Bubbakoo's Burritos - Sample Store,488457213032,1413,09/07/26 02:26 PM,DoorDash - Luis M (9C5890BE),Online,Takeout,DoorDash,44.40,3.94,48.34,false
+Bubbakoo's Burritos - Sample Store,081088706764,1414,09/07/26 02:31 PM,DoorDash - Jane D (1FDCD58D),Online,Takeout,DoorDash,13.71,1.22,14.93,false
+Bubbakoo's Burritos - Sample Store,793168153958,1415,09/07/26 02:06 PM,DoorDash - Ana P (CCFA8B19),Online,Takeout,DoorDash,11.67,1.04,12.71,false
+Bubbakoo's Burritos - Sample Store,105079223320,1416,09/07/26 02:37 PM,DoorDash - Chris L (EAF8BF48),Online,Takeout,DoorDash,36.12,3.21,39.33,false
+Bubbakoo's Burritos - Sample Store,753519397896,1417,09/07/26 12:36 PM,DoorDash - Sam K (D5645201),Online,Takeout,DoorDash,55.69,4.94,60.63,false
+Bubbakoo's Burritos - Sample Store,958777006637,1418,09/07/26 12:00 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,54.42,4.83,59.25,false
+Bubbakoo's Burritos - Sample Store,1040034481775,1419,09/07/26 08:35 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,44.81,3.98,48.79,false
+Bubbakoo's Burritos - Sample Store,762553059376,1420,09/07/26 05:40 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,56.79,5.04,61.83,false
+Bubbakoo's Burritos - Sample Store,390105414985,1421,09/07/26 02:22 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,32.83,2.91,35.74,false
+Bubbakoo's Burritos - Sample Store,824710050823,1422,09/07/26 02:38 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,57.82,5.13,62.95,false
+Bubbakoo's Burritos - Sample Store,219423153095,1423,09/07/26 12:36 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,20.42,1.81,22.23,false
+Bubbakoo's Burritos - Sample Store,035647644945,1424,09/07/26 07:01 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,23.75,2.11,25.86,false
+Bubbakoo's Burritos - Sample Store,495425464820,1425,09/07/26 11:04 AM,Uber Eats - Jane D,Online,Takeout,Uber Eats,27.18,2.41,29.59,false
+Bubbakoo's Burritos - Sample Store,617288501113,1426,09/07/26 03:16 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,26.49,2.35,28.84,false
+Bubbakoo's Burritos - Sample Store,043094529752,1427,09/07/26 12:37 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,46.11,4.09,50.20,false
+Bubbakoo's Burritos - Sample Store,1037933589993,1428,09/07/26 01:15 PM,Grubhub - Ana P 1428,Online,Takeout,Grubhub,30.52,2.71,33.23,false
+Bubbakoo's Burritos - Sample Store,116367900561,1429,09/07/26 04:40 PM,Grubhub - Sam K 1429,Online,Takeout,Grubhub,11.23,1.00,12.23,false
+Bubbakoo's Burritos - Sample Store,623474747508,1430,09/07/26 12:59 PM,Grubhub - Tony B 1430,Online,Takeout,Grubhub,18.19,1.61,19.80,false
+Bubbakoo's Burritos - Sample Store,996978360363,1431,09/07/26 07:39 PM,Grubhub - Kate W 1431,Online,Takeout,Grubhub,23.04,2.04,25.08,false
+Bubbakoo's Burritos - Sample Store,772196674144,1432,09/07/26 08:08 PM,Grubhub - Jane D 1432,Online,Takeout,Grubhub,34.58,3.07,37.65,false
+Bubbakoo's Burritos - Sample Store,569616779442,1433,09/07/26 02:54 PM,Grubhub - Jane D 1433,Online,Takeout,Grubhub,15.09,1.34,16.43,false
+Bubbakoo's Burritos - Sample Store,852960292942,1434,09/07/26 03:58 PM,Grubhub - Chris L 1434,Online,Takeout,Grubhub,37.78,3.35,41.13,false
+Bubbakoo's Burritos - Sample Store,191949986581,1435,09/07/26 03:13 PM,Grubhub - Chris L 1435,Online,Takeout,Grubhub,14.43,1.28,15.71,false
+Bubbakoo's Burritos - Sample Store,454971850915,1436,09/08/26 12:29 PM,DoorDash - Jane D (2ECC39E9),Online,Takeout,DoorDash,49.10,4.36,53.46,false
+Bubbakoo's Burritos - Sample Store,847587397477,1437,09/08/26 11:34 AM,DoorDash - Ana P (82EB0DDA),Online,Takeout,DoorDash,15.14,1.34,16.48,false
+Bubbakoo's Burritos - Sample Store,969767490312,1438,09/08/26 02:31 PM,DoorDash - Mike R (B566AA33),Online,Takeout,DoorDash,20.32,1.80,22.12,false
+Bubbakoo's Burritos - Sample Store,950042638107,1439,09/08/26 11:38 AM,DoorDash - Dev J (11AC793F),Online,Takeout,DoorDash,34.37,3.05,37.42,false
+Bubbakoo's Burritos - Sample Store,1064307258012,1440,09/08/26 05:17 PM,DoorDash - Tony B (F8AA927C),Online,Takeout,DoorDash,47.97,4.26,52.23,false
+Bubbakoo's Burritos - Sample Store,866863800431,1441,09/08/26 07:29 PM,DoorDash - Jane D (4D8F36CA),Online,Takeout,DoorDash,17.34,1.54,18.88,false
+Bubbakoo's Burritos - Sample Store,652667256151,1442,09/08/26 06:25 PM,DoorDash - Kate W (DEEE53A3),Online,Takeout,DoorDash,29.13,2.59,31.72,false
+Bubbakoo's Burritos - Sample Store,505035007026,1443,09/08/26 12:10 PM,DoorDash - Chris L (C02EDF60),Online,Takeout,DoorDash,56.52,5.02,61.54,false
+Bubbakoo's Burritos - Sample Store,437158271213,1444,09/08/26 07:26 PM,DoorDash - Jane D (B5DC8F9B),Online,Takeout,DoorDash,38.03,3.38,41.41,false
+Bubbakoo's Burritos - Sample Store,923006227338,1445,09/08/26 05:31 PM,DoorDash - Tony B (AC03E0E3),Online,Takeout,DoorDash,30.09,2.67,32.76,false
+Bubbakoo's Burritos - Sample Store,461603258506,1446,09/08/26 04:15 PM,DoorDash - Mike R (F3742B88),Online,Takeout,DoorDash,11.21,0.99,12.20,false
+Bubbakoo's Burritos - Sample Store,680606025061,1447,09/08/26 04:06 PM,DoorDash - Tony B (1545FF3D),Online,Takeout,DoorDash,32.50,2.88,35.38,false
+Bubbakoo's Burritos - Sample Store,887074717345,1448,09/08/26 04:00 PM,DoorDash - Luis M (B38050B9),Online,Takeout,DoorDash,26.78,2.38,29.16,false
+Bubbakoo's Burritos - Sample Store,1053695756326,1449,09/08/26 01:04 PM,DoorDash - Ana P (D2ABF161),Online,Takeout,DoorDash,21.17,1.88,23.05,false
+Bubbakoo's Burritos - Sample Store,1049339938845,1450,09/08/26 05:12 PM,DoorDash - Priya S (9C38CB57),Online,Takeout,DoorDash,18.87,1.67,20.54,false
+Bubbakoo's Burritos - Sample Store,620427657111,1451,09/08/26 01:48 PM,DoorDash - Mike R (2CE38517),Online,Takeout,DoorDash,29.37,2.61,31.98,false
+Bubbakoo's Burritos - Sample Store,1018487210152,1452,09/08/26 05:02 PM,DoorDash - Kate W (DCBC9574),Online,Takeout,DoorDash,42.78,3.80,46.58,false
+Bubbakoo's Burritos - Sample Store,780228759038,1453,09/08/26 06:09 PM,DoorDash - Sam K (442F2468),Online,Takeout,DoorDash,14.57,1.29,15.86,false
+Bubbakoo's Burritos - Sample Store,021372609824,1454,09/08/26 07:54 PM,DoorDash - Luis M (7F8491C4),Online,Takeout,DoorDash,49.01,4.35,53.36,false
+Bubbakoo's Burritos - Sample Store,505731613723,1455,09/08/26 01:01 PM,DoorDash - Ana P (83323746),Online,Takeout,DoorDash,37.20,3.30,40.50,false
+Bubbakoo's Burritos - Sample Store,1011840814240,1456,09/08/26 04:33 PM,DoorDash - Sam K (E433C3F3),Online,Takeout,DoorDash,33.68,2.99,36.67,false
+Bubbakoo's Burritos - Sample Store,028107501294,1457,09/08/26 05:44 PM,DoorDash - Chris L (47E73205),Online,Takeout,DoorDash,19.16,1.70,20.86,false
+Bubbakoo's Burritos - Sample Store,781574890106,1458,09/08/26 08:23 PM,DoorDash - Priya S (F3348405),Online,Takeout,DoorDash,56.97,5.06,62.03,false
+Bubbakoo's Burritos - Sample Store,219644133340,1459,09/08/26 04:31 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,18.61,1.65,20.26,false
+Bubbakoo's Burritos - Sample Store,425079264598,1460,09/08/26 01:48 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,25.48,2.26,27.74,false
+Bubbakoo's Burritos - Sample Store,444264100207,1461,09/08/26 02:11 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,23.80,2.11,25.91,false
+Bubbakoo's Burritos - Sample Store,1018783313318,1462,09/08/26 03:29 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,28.00,2.48,30.48,false
+Bubbakoo's Burritos - Sample Store,617020842647,1463,09/08/26 07:36 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,50.34,4.47,54.81,false
+Bubbakoo's Burritos - Sample Store,695146524979,1464,09/08/26 12:18 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,23.94,2.12,26.06,false
+Bubbakoo's Burritos - Sample Store,1033378348035,1465,09/08/26 03:27 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,32.13,2.85,34.98,false
+Bubbakoo's Burritos - Sample Store,913445341928,1466,09/08/26 03:34 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,57.08,5.07,62.15,false
+Bubbakoo's Burritos - Sample Store,925112323605,1467,09/08/26 12:55 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,54.71,4.86,59.57,false
+Bubbakoo's Burritos - Sample Store,584731533403,1468,09/08/26 05:52 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,29.45,2.61,32.06,false
+Bubbakoo's Burritos - Sample Store,936316218528,1469,09/08/26 03:56 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,17.28,1.53,18.81,false
+Bubbakoo's Burritos - Sample Store,934892189185,1470,09/08/26 08:52 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,31.33,2.78,34.11,false
+Bubbakoo's Burritos - Sample Store,709233442011,1471,09/08/26 01:10 PM,Grubhub - Priya S 1471,Online,Takeout,Grubhub,53.22,4.72,57.94,false
+Bubbakoo's Burritos - Sample Store,993052624906,1472,09/08/26 03:42 PM,Grubhub - Kate W 1472,Online,Takeout,Grubhub,44.46,3.95,48.41,false
+Bubbakoo's Burritos - Sample Store,569939738023,1473,09/08/26 04:16 PM,Grubhub - Mike R 1473,Online,Takeout,Grubhub,15.41,1.37,16.78,false
+Bubbakoo's Burritos - Sample Store,066586469486,1474,09/08/26 01:07 PM,Grubhub - Ana P 1474,Online,Takeout,Grubhub,50.41,4.47,54.88,false
+Bubbakoo's Burritos - Sample Store,323086642675,1475,09/08/26 08:30 PM,Grubhub - Luis M 1475,Online,Takeout,Grubhub,39.00,3.46,42.46,false
+Bubbakoo's Burritos - Sample Store,893241114320,1476,09/08/26 04:38 PM,Grubhub - Chris L 1476,Online,Takeout,Grubhub,35.94,3.19,39.13,false
+Bubbakoo's Burritos - Sample Store,695589366648,1477,09/08/26 02:50 PM,Grubhub - Priya S 1477,Online,Takeout,Grubhub,47.57,4.22,51.79,false
+Bubbakoo's Burritos - Sample Store,956346242920,1478,09/08/26 12:31 PM,Grubhub - Dev J 1478,Online,Takeout,Grubhub,38.49,3.42,41.91,false
+Bubbakoo's Burritos - Sample Store,148501085657,1479,09/08/26 05:23 PM,Grubhub - Mike R 1479,Online,Takeout,Grubhub,56.18,4.99,61.17,false
+Bubbakoo's Burritos - Sample Store,121074757800,1480,09/08/26 06:47 PM,Grubhub - Chris L 1480,Online,Takeout,Grubhub,56.55,5.02,61.57,false
+Bubbakoo's Burritos - Sample Store,868432525692,1481,09/09/26 03:50 PM,DoorDash - Jane D (842649FE),Online,Takeout,DoorDash,46.70,4.14,50.84,false
+Bubbakoo's Burritos - Sample Store,025547776029,1482,09/09/26 03:31 PM,DoorDash - Sam K (F91778A2),Online,Takeout,DoorDash,20.46,1.82,22.28,false
+Bubbakoo's Burritos - Sample Store,688721118027,1483,09/09/26 12:05 PM,DoorDash - Kate W (DD126C13),Online,Takeout,DoorDash,27.63,2.45,30.08,false
+Bubbakoo's Burritos - Sample Store,389516256790,1484,09/09/26 08:41 PM,DoorDash - Jane D (1AF25591),Online,Takeout,DoorDash,40.71,3.61,44.32,false
+Bubbakoo's Burritos - Sample Store,856261330770,1485,09/09/26 11:33 AM,DoorDash - Mike R (57CAC47B),Online,Takeout,DoorDash,48.81,4.33,53.14,false
+Bubbakoo's Burritos - Sample Store,141631987858,1486,09/09/26 07:17 PM,DoorDash - Luis M (518ADDB8),Online,Takeout,DoorDash,57.56,5.11,62.67,false
+Bubbakoo's Burritos - Sample Store,1000459013004,1487,09/09/26 08:01 PM,DoorDash - Sam K (5A93B16F),Online,Takeout,DoorDash,37.48,3.33,40.81,false
+Bubbakoo's Burritos - Sample Store,927267860598,1488,09/09/26 03:47 PM,DoorDash - Priya S (C6400F24),Online,Takeout,DoorDash,55.43,4.92,60.35,false
+Bubbakoo's Burritos - Sample Store,893392386815,1489,09/09/26 01:17 PM,DoorDash - Kate W (95D947F7),Online,Takeout,DoorDash,17.50,1.55,19.05,false
+Bubbakoo's Burritos - Sample Store,684353431892,1490,09/09/26 06:57 PM,DoorDash - Mike R (88C035D3),Online,Takeout,DoorDash,47.68,4.23,51.91,false
+Bubbakoo's Burritos - Sample Store,968010942709,1491,09/09/26 07:16 PM,DoorDash - Chris L (3E504A0B),Online,Takeout,DoorDash,47.14,4.18,51.32,false
+Bubbakoo's Burritos - Sample Store,699738107636,1492,09/09/26 12:43 PM,DoorDash - Luis M (70A64184),Online,Takeout,DoorDash,38.79,3.44,42.23,false
+Bubbakoo's Burritos - Sample Store,947782870513,1493,09/09/26 12:10 PM,DoorDash - Ana P (787D1653),Online,Takeout,DoorDash,37.80,3.35,41.15,false
+Bubbakoo's Burritos - Sample Store,769068619517,1494,09/09/26 07:01 PM,DoorDash - Luis M (1E4EE42C),Online,Takeout,DoorDash,43.53,3.86,47.39,false
+Bubbakoo's Burritos - Sample Store,711854776996,1495,09/09/26 02:54 PM,DoorDash - Chris L (D2E60FCF),Online,Takeout,DoorDash,11.23,1.00,12.23,false
+Bubbakoo's Burritos - Sample Store,263719507815,1496,09/09/26 03:09 PM,DoorDash - Jane D (003DF689),Online,Takeout,DoorDash,15.41,1.37,16.78,false
+Bubbakoo's Burritos - Sample Store,115777179357,1497,09/09/26 11:45 AM,DoorDash - Sam K (69EACCC5),Online,Takeout,DoorDash,54.73,4.86,59.59,false
+Bubbakoo's Burritos - Sample Store,1051351956542,1498,09/09/26 02:14 PM,DoorDash - Tony B (831AB894),Online,Takeout,DoorDash,17.73,1.57,19.30,false
+Bubbakoo's Burritos - Sample Store,672677109300,1499,09/09/26 11:02 AM,DoorDash - Mike R (D2442B19),Online,Takeout,DoorDash,14.39,1.28,15.67,false
+Bubbakoo's Burritos - Sample Store,026665449238,1500,09/09/26 11:56 AM,DoorDash - Jane D (659F1814),Online,Takeout,DoorDash,42.09,3.74,45.83,false
+Bubbakoo's Burritos - Sample Store,1072078298498,1501,09/09/26 06:48 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,20.81,1.85,22.66,false
+Bubbakoo's Burritos - Sample Store,1081680313658,1502,09/09/26 08:19 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,35.42,3.14,38.56,false
+Bubbakoo's Burritos - Sample Store,1076216748680,1503,09/09/26 12:33 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,28.28,2.51,30.79,false
+Bubbakoo's Burritos - Sample Store,499871378571,1504,09/09/26 02:19 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,11.33,1.01,12.34,false
+Bubbakoo's Burritos - Sample Store,068020205377,1505,09/09/26 08:48 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,41.48,3.68,45.16,false
+Bubbakoo's Burritos - Sample Store,486591302926,1506,09/09/26 01:20 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,50.95,4.52,55.47,false
+Bubbakoo's Burritos - Sample Store,486027669306,1507,09/09/26 01:18 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,22.87,2.03,24.90,false
+Bubbakoo's Burritos - Sample Store,013957558843,1508,09/09/26 07:07 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,46.83,4.16,50.99,false
+Bubbakoo's Burritos - Sample Store,377483894331,1509,09/09/26 08:10 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,11.98,1.06,13.04,false
+Bubbakoo's Burritos - Sample Store,070296269265,1510,09/09/26 08:04 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,18.58,1.65,20.23,false
+Bubbakoo's Burritos - Sample Store,450616344449,1511,09/09/26 06:49 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,18.57,1.65,20.22,false
+Bubbakoo's Burritos - Sample Store,1087134951200,1512,09/09/26 02:38 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,21.25,1.89,23.14,false
+Bubbakoo's Burritos - Sample Store,374729410044,1513,09/09/26 06:30 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,39.87,3.54,43.41,false
+Bubbakoo's Burritos - Sample Store,814511743802,1514,09/09/26 11:29 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,15.31,1.36,16.67,false
+Bubbakoo's Burritos - Sample Store,015185623437,1515,09/09/26 12:11 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,39.10,3.47,42.57,false
+Bubbakoo's Burritos - Sample Store,1010491791723,1516,09/09/26 05:13 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,14.50,1.29,15.79,false
+Bubbakoo's Burritos - Sample Store,965200754022,1517,09/09/26 12:42 PM,Grubhub - Ana P 1517,Online,Takeout,Grubhub,22.98,2.04,25.02,false
+Bubbakoo's Burritos - Sample Store,881365392240,1518,09/09/26 06:53 PM,Grubhub - Chris L 1518,Online,Takeout,Grubhub,27.09,2.40,29.49,false
+Bubbakoo's Burritos - Sample Store,728680919715,1519,09/09/26 04:45 PM,Grubhub - Mike R 1519,Online,Takeout,Grubhub,24.05,2.13,26.18,false
+Bubbakoo's Burritos - Sample Store,097290577767,1520,09/09/26 03:30 PM,Grubhub - Jane D 1520,Online,Takeout,Grubhub,19.49,1.73,21.22,false
+Bubbakoo's Burritos - Sample Store,196377249572,1521,09/10/26 12:07 PM,DoorDash - Tony B (214C413C),Online,Takeout,DoorDash,24.91,2.21,27.12,false
+Bubbakoo's Burritos - Sample Store,274329910337,1522,09/10/26 05:19 PM,DoorDash - Kate W (2A8E1571),Online,Takeout,DoorDash,48.04,4.26,52.30,false
+Bubbakoo's Burritos - Sample Store,424182332741,1523,09/10/26 03:54 PM,DoorDash - Chris L (3956D9C5),Online,Takeout,DoorDash,46.76,4.15,50.91,false
+Bubbakoo's Burritos - Sample Store,920743976686,1524,09/10/26 03:08 PM,DoorDash - Jane D (01EE1932),Online,Takeout,DoorDash,41.15,3.65,44.80,false
+Bubbakoo's Burritos - Sample Store,539926878197,1525,09/10/26 03:00 PM,DoorDash - Mike R (1DA7F575),Online,Takeout,DoorDash,24.25,2.15,26.40,false
+Bubbakoo's Burritos - Sample Store,129109784886,1526,09/10/26 05:55 PM,DoorDash - Chris L (E8EBB348),Online,Takeout,DoorDash,16.54,1.47,18.01,false
+Bubbakoo's Burritos - Sample Store,558652911184,1527,09/10/26 12:10 PM,DoorDash - Tony B (EFC44097),Online,Takeout,DoorDash,23.51,2.09,25.60,false
+Bubbakoo's Burritos - Sample Store,476499535966,1528,09/10/26 07:15 PM,DoorDash - Priya S (FFF95BDB),Online,Takeout,DoorDash,45.98,4.08,50.06,false
+Bubbakoo's Burritos - Sample Store,512240576966,1529,09/10/26 03:08 PM,DoorDash - Mike R (365ED460),Online,Takeout,DoorDash,35.51,3.15,38.66,false
+Bubbakoo's Burritos - Sample Store,398526031989,1530,09/10/26 01:14 PM,DoorDash - Chris L (191207B8),Online,Takeout,DoorDash,14.50,1.29,15.79,false
+Bubbakoo's Burritos - Sample Store,518160159424,1531,09/10/26 01:02 PM,DoorDash - Kate W (2E12B23B),Online,Takeout,DoorDash,44.06,3.91,47.97,false
+Bubbakoo's Burritos - Sample Store,425824687037,1532,09/10/26 08:12 PM,DoorDash - Ana P (9ADC976A),Online,Takeout,DoorDash,41.48,3.68,45.16,false
+Bubbakoo's Burritos - Sample Store,657197227777,1533,09/10/26 11:45 AM,DoorDash - Ana P (A69C04D2),Online,Takeout,DoorDash,51.29,4.55,55.84,false
+Bubbakoo's Burritos - Sample Store,821646329263,1534,09/10/26 12:25 PM,DoorDash - Ana P (706351F7),Online,Takeout,DoorDash,32.12,2.85,34.97,false
+Bubbakoo's Burritos - Sample Store,524268721923,1535,09/10/26 08:59 PM,DoorDash - Ana P (ADDAD00B),Online,Takeout,DoorDash,20.37,1.81,22.18,false
+Bubbakoo's Burritos - Sample Store,211382745049,1536,09/10/26 07:46 PM,DoorDash - Chris L (FDEA0E80),Online,Takeout,DoorDash,51.10,4.54,55.64,false
+Bubbakoo's Burritos - Sample Store,780260989240,1537,09/10/26 02:26 PM,DoorDash - Tony B (39EDA348),Online,Takeout,DoorDash,25.56,2.27,27.83,false
+Bubbakoo's Burritos - Sample Store,286954182602,1538,09/10/26 08:45 PM,DoorDash - Jane D (D642E0F6),Online,Takeout,DoorDash,28.58,2.54,31.12,false
+Bubbakoo's Burritos - Sample Store,459390776751,1539,09/10/26 08:36 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,36.75,3.26,40.01,false
+Bubbakoo's Burritos - Sample Store,182204728054,1540,09/10/26 01:20 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,57.93,5.14,63.07,false
+Bubbakoo's Burritos - Sample Store,166903376865,1541,09/10/26 09:01 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,49.51,4.39,53.90,false
+Bubbakoo's Burritos - Sample Store,313835556676,1542,09/10/26 05:58 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,15.46,1.37,16.83,false
+Bubbakoo's Burritos - Sample Store,268204709540,1543,09/10/26 01:24 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,30.74,2.73,33.47,false
+Bubbakoo's Burritos - Sample Store,648866572258,1544,09/10/26 08:05 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,38.56,3.42,41.98,false
+Bubbakoo's Burritos - Sample Store,579632903173,1545,09/10/26 08:46 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,28.95,2.57,31.52,false
+Bubbakoo's Burritos - Sample Store,1012751560521,1546,09/10/26 12:15 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,43.95,3.90,47.85,false
+Bubbakoo's Burritos - Sample Store,864681133001,1547,09/10/26 06:36 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,33.34,2.96,36.30,false
+Bubbakoo's Burritos - Sample Store,824204614783,1548,09/10/26 06:21 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,15.18,1.35,16.53,false
+Bubbakoo's Burritos - Sample Store,701035597763,1549,09/10/26 05:20 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,45.56,4.04,49.60,false
+Bubbakoo's Burritos - Sample Store,515730197502,1550,09/10/26 03:35 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,16.32,1.45,17.77,false
+Bubbakoo's Burritos - Sample Store,531765778778,1551,09/10/26 04:40 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,38.12,3.38,41.50,false
+Bubbakoo's Burritos - Sample Store,226096040583,1552,09/10/26 01:45 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,29.52,2.62,32.14,false
+Bubbakoo's Burritos - Sample Store,500798023428,1553,09/10/26 02:21 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,28.35,2.52,30.87,false
+Bubbakoo's Burritos - Sample Store,090938276560,1554,09/10/26 11:16 AM,Grubhub - Jane D 1554,Online,Takeout,Grubhub,38.99,3.46,42.45,false
+Bubbakoo's Burritos - Sample Store,218914313244,1555,09/10/26 11:05 AM,Grubhub - Chris L 1555,Online,Takeout,Grubhub,19.16,1.70,20.86,false
+Bubbakoo's Burritos - Sample Store,287224911383,1556,09/10/26 07:03 PM,Grubhub - Priya S 1556,Online,Takeout,Grubhub,26.76,2.37,29.13,false
+Bubbakoo's Burritos - Sample Store,1072438847575,1557,09/10/26 11:58 AM,Grubhub - Mike R 1557,Online,Takeout,Grubhub,54.58,4.84,59.42,false
+Bubbakoo's Burritos - Sample Store,1020506459603,1558,09/10/26 01:14 PM,Grubhub - Luis M 1558,Online,Takeout,Grubhub,48.21,4.28,52.49,false
+Bubbakoo's Burritos - Sample Store,069124103170,1559,09/11/26 06:13 PM,DoorDash - Mike R (4FB69253),Online,Takeout,DoorDash,29.11,2.58,31.69,false
+Bubbakoo's Burritos - Sample Store,729392196847,1560,09/11/26 02:18 PM,DoorDash - Chris L (CA90A860),Online,Takeout,DoorDash,48.31,4.29,52.60,false
+Bubbakoo's Burritos - Sample Store,505234014029,1561,09/11/26 08:39 PM,DoorDash - Chris L (951E5D13),Online,Takeout,DoorDash,31.47,2.79,34.26,false
+Bubbakoo's Burritos - Sample Store,320030009082,1562,09/11/26 03:25 PM,DoorDash - Jane D (B97424F3),Online,Takeout,DoorDash,34.56,3.07,37.63,false
+Bubbakoo's Burritos - Sample Store,287327158030,1563,09/11/26 06:46 PM,DoorDash - Sam K (FC7AC223),Online,Takeout,DoorDash,39.89,3.54,43.43,false
+Bubbakoo's Burritos - Sample Store,792519860465,1564,09/11/26 01:43 PM,DoorDash - Sam K (D3B5B60A),Online,Takeout,DoorDash,13.91,1.23,15.14,false
+Bubbakoo's Burritos - Sample Store,189628184459,1565,09/11/26 11:57 AM,DoorDash - Tony B (0C9034A8),Online,Takeout,DoorDash,47.41,4.21,51.62,false
+Bubbakoo's Burritos - Sample Store,788924374806,1566,09/11/26 06:55 PM,DoorDash - Kate W (81BD899F),Online,Takeout,DoorDash,12.42,1.10,13.52,false
+Bubbakoo's Burritos - Sample Store,075091179490,1567,09/11/26 08:03 PM,DoorDash - Dev J (11EF0B59),Online,Takeout,DoorDash,25.61,2.27,27.88,false
+Bubbakoo's Burritos - Sample Store,585711862677,1568,09/11/26 07:48 PM,DoorDash - Priya S (F024B29B),Online,Takeout,DoorDash,21.43,1.90,23.33,false
+Bubbakoo's Burritos - Sample Store,1081722753254,1569,09/11/26 04:23 PM,DoorDash - Sam K (167E07FD),Online,Takeout,DoorDash,40.08,3.56,43.64,false
+Bubbakoo's Burritos - Sample Store,848945503286,1570,09/11/26 12:06 PM,DoorDash - Mike R (A85A3772),Online,Takeout,DoorDash,32.90,2.92,35.82,false
+Bubbakoo's Burritos - Sample Store,118240565120,1571,09/11/26 06:27 PM,DoorDash - Jane D (181312C3),Online,Takeout,DoorDash,35.43,3.14,38.57,false
+Bubbakoo's Burritos - Sample Store,839180230729,1572,09/11/26 04:26 PM,DoorDash - Ana P (6806686B),Online,Takeout,DoorDash,18.71,1.66,20.37,false
+Bubbakoo's Burritos - Sample Store,1036201958279,1573,09/11/26 04:49 PM,DoorDash - Kate W (F8C494D3),Online,Takeout,DoorDash,28.03,2.49,30.52,false
+Bubbakoo's Burritos - Sample Store,804025891928,1574,09/11/26 07:05 PM,DoorDash - Luis M (49E8A804),Online,Takeout,DoorDash,21.64,1.92,23.56,false
+Bubbakoo's Burritos - Sample Store,031129592946,1575,09/11/26 02:20 PM,DoorDash - Kate W (D03B868E),Online,Takeout,DoorDash,54.03,4.80,58.83,false
+Bubbakoo's Burritos - Sample Store,799606133004,1576,09/11/26 07:47 PM,DoorDash - Dev J (F9EA4EFB),Online,Takeout,DoorDash,33.05,2.93,35.98,false
+Bubbakoo's Burritos - Sample Store,863333159886,1577,09/11/26 02:14 PM,DoorDash - Chris L (DCF16762),Online,Takeout,DoorDash,42.00,3.73,45.73,false
+Bubbakoo's Burritos - Sample Store,1044819413980,1578,09/11/26 11:42 AM,DoorDash - Tony B (3A591ECD),Online,Takeout,DoorDash,53.27,4.73,58.00,false
+Bubbakoo's Burritos - Sample Store,1012826133642,1579,09/11/26 05:23 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,40.04,3.55,43.59,false
+Bubbakoo's Burritos - Sample Store,338613943709,1580,09/11/26 01:56 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,46.48,4.13,50.61,false
+Bubbakoo's Burritos - Sample Store,932749465595,1581,09/11/26 03:07 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,36.34,3.23,39.57,false
+Bubbakoo's Burritos - Sample Store,872084523417,1582,09/11/26 01:25 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,51.29,4.55,55.84,false
+Bubbakoo's Burritos - Sample Store,272133002348,1583,09/11/26 04:47 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,33.10,2.94,36.04,false
+Bubbakoo's Burritos - Sample Store,674613320752,1584,09/11/26 12:42 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,16.56,1.47,18.03,false
+Bubbakoo's Burritos - Sample Store,1050019209235,1585,09/11/26 07:32 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,45.83,4.07,49.90,false
+Bubbakoo's Burritos - Sample Store,922274372957,1586,09/11/26 04:19 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,41.02,3.64,44.66,false
+Bubbakoo's Burritos - Sample Store,457182673645,1587,09/11/26 05:00 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,37.94,3.37,41.31,false
+Bubbakoo's Burritos - Sample Store,036800863703,1588,09/11/26 02:55 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,20.77,1.84,22.61,false
+Bubbakoo's Burritos - Sample Store,903192942175,1589,09/11/26 08:44 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,31.32,2.78,34.10,false
+Bubbakoo's Burritos - Sample Store,1094968154195,1590,09/11/26 12:46 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,21.45,1.90,23.35,false
+Bubbakoo's Burritos - Sample Store,564053913699,1591,09/11/26 05:30 PM,Grubhub - Tony B 1591,Online,Takeout,Grubhub,40.94,3.63,44.57,false
+Bubbakoo's Burritos - Sample Store,1096840136671,1592,09/11/26 07:24 PM,Grubhub - Ana P 1592,Online,Takeout,Grubhub,36.70,3.26,39.96,false
+Bubbakoo's Burritos - Sample Store,057388117347,1593,09/11/26 02:07 PM,Grubhub - Mike R 1593,Online,Takeout,Grubhub,11.82,1.05,12.87,false
+Bubbakoo's Burritos - Sample Store,171509324771,1594,09/11/26 02:33 PM,Grubhub - Chris L 1594,Online,Takeout,Grubhub,34.73,3.08,37.81,false
+Bubbakoo's Burritos - Sample Store,303242532352,1595,09/12/26 01:37 PM,DoorDash - Dev J (22E15A22),Online,Takeout,DoorDash,40.66,3.61,44.27,false
+Bubbakoo's Burritos - Sample Store,789858380799,1596,09/12/26 06:11 PM,DoorDash - Jane D (17A4BA3B),Online,Takeout,DoorDash,21.17,1.88,23.05,false
+Bubbakoo's Burritos - Sample Store,961660958183,1597,09/12/26 03:03 PM,DoorDash - Chris L (2CEAD93B),Online,Takeout,DoorDash,36.31,3.22,39.53,false
+Bubbakoo's Burritos - Sample Store,920293543938,1598,09/12/26 09:02 PM,DoorDash - Dev J (B64B4795),Online,Takeout,DoorDash,44.91,3.99,48.90,false
+Bubbakoo's Burritos - Sample Store,875733881635,1599,09/12/26 07:46 PM,DoorDash - Mike R (DE8789F7),Online,Takeout,DoorDash,13.47,1.20,14.67,false
+Bubbakoo's Burritos - Sample Store,793566436280,1600,09/12/26 01:26 PM,DoorDash - Kate W (FF6373EA),Online,Takeout,DoorDash,26.04,2.31,28.35,false
+Bubbakoo's Burritos - Sample Store,696480176183,1601,09/12/26 02:24 PM,DoorDash - Priya S (9E4309D8),Online,Takeout,DoorDash,21.70,1.93,23.63,false
+Bubbakoo's Burritos - Sample Store,525779749790,1602,09/12/26 06:39 PM,DoorDash - Kate W (1FDCEE50),Online,Takeout,DoorDash,14.99,1.33,16.32,false
+Bubbakoo's Burritos - Sample Store,550377090904,1603,09/12/26 07:18 PM,DoorDash - Luis M (32AD343A),Online,Takeout,DoorDash,33.23,2.95,36.18,false
+Bubbakoo's Burritos - Sample Store,467009193783,1604,09/12/26 03:00 PM,DoorDash - Priya S (11D29908),Online,Takeout,DoorDash,14.44,1.28,15.72,false
+Bubbakoo's Burritos - Sample Store,603754599467,1605,09/12/26 05:00 PM,DoorDash - Luis M (26FEDD16),Online,Takeout,DoorDash,44.13,3.92,48.05,false
+Bubbakoo's Burritos - Sample Store,329079335230,1606,09/12/26 11:43 AM,DoorDash - Priya S (824799E5),Online,Takeout,DoorDash,50.93,4.52,55.45,false
+Bubbakoo's Burritos - Sample Store,939214221470,1607,09/12/26 08:30 PM,DoorDash - Ana P (F305AED0),Online,Takeout,DoorDash,41.66,3.70,45.36,false
+Bubbakoo's Burritos - Sample Store,714693402077,1608,09/12/26 04:35 PM,DoorDash - Ana P (CD120AE8),Online,Takeout,DoorDash,38.73,3.44,42.17,false
+Bubbakoo's Burritos - Sample Store,527450130939,1609,09/12/26 03:55 PM,DoorDash - Jane D (F9B96410),Online,Takeout,DoorDash,16.42,1.46,17.88,false
+Bubbakoo's Burritos - Sample Store,360473975987,1610,09/12/26 07:30 PM,DoorDash - Kate W (598F1181),Online,Takeout,DoorDash,23.91,2.12,26.03,false
+Bubbakoo's Burritos - Sample Store,890616699888,1611,09/12/26 12:59 PM,DoorDash - Sam K (90B781C5),Online,Takeout,DoorDash,26.63,2.36,28.99,false
+Bubbakoo's Burritos - Sample Store,887927459195,1612,09/12/26 03:43 PM,DoorDash - Priya S (29047148),Online,Takeout,DoorDash,52.89,4.69,57.58,false
+Bubbakoo's Burritos - Sample Store,999525378785,1613,09/12/26 01:30 PM,DoorDash - Mike R (438AB37E),Online,Takeout,DoorDash,25.62,2.27,27.89,false
+Bubbakoo's Burritos - Sample Store,043778314896,1614,09/12/26 01:30 PM,DoorDash - Ana P (C5DC8B51),Online,Takeout,DoorDash,36.89,3.27,40.16,false
+Bubbakoo's Burritos - Sample Store,039950479511,1615,09/12/26 06:12 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,15.38,1.36,16.74,false
+Bubbakoo's Burritos - Sample Store,116660026914,1616,09/12/26 11:58 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,18.54,1.65,20.19,false
+Bubbakoo's Burritos - Sample Store,480422155989,1617,09/12/26 02:24 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,39.64,3.52,43.16,false
+Bubbakoo's Burritos - Sample Store,990874173149,1618,09/12/26 05:41 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,30.22,2.68,32.90,false
+Bubbakoo's Burritos - Sample Store,749996661928,1619,09/12/26 01:49 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,19.46,1.73,21.19,false
+Bubbakoo's Burritos - Sample Store,698366021412,1620,09/12/26 06:32 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,36.72,3.26,39.98,false
+Bubbakoo's Burritos - Sample Store,191112123291,1621,09/12/26 05:48 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,35.03,3.11,38.14,false
+Bubbakoo's Burritos - Sample Store,879800286845,1622,09/12/26 01:42 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,43.46,3.86,47.32,false
+Bubbakoo's Burritos - Sample Store,1050031711996,1623,09/12/26 06:05 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,44.16,3.92,48.08,false
+Bubbakoo's Burritos - Sample Store,677694868420,1624,09/12/26 04:23 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,53.07,4.71,57.78,false
+Bubbakoo's Burritos - Sample Store,173245315393,1625,09/12/26 08:56 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,43.34,3.85,47.19,false
+Bubbakoo's Burritos - Sample Store,093463003876,1626,09/12/26 03:44 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,51.35,4.56,55.91,false
+Bubbakoo's Burritos - Sample Store,112242965146,1627,09/12/26 04:04 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,38.57,3.42,41.99,false
+Bubbakoo's Burritos - Sample Store,714892608624,1628,09/12/26 03:45 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,52.20,4.63,56.83,false
+Bubbakoo's Burritos - Sample Store,224929640278,1629,09/12/26 11:39 AM,Grubhub - Sam K 1629,Online,Takeout,Grubhub,34.21,3.04,37.25,false
+Bubbakoo's Burritos - Sample Store,768584402836,1630,09/12/26 08:48 PM,Grubhub - Tony B 1630,Online,Takeout,Grubhub,43.55,3.87,47.42,false
+Bubbakoo's Burritos - Sample Store,953432425299,1631,09/12/26 01:02 PM,Grubhub - Sam K 1631,Online,Takeout,Grubhub,13.18,1.17,14.35,false
+Bubbakoo's Burritos - Sample Store,086272528203,1632,09/13/26 05:25 PM,DoorDash - Luis M (0883BE32),Online,Takeout,DoorDash,51.32,4.55,55.87,false
+Bubbakoo's Burritos - Sample Store,669726209806,1633,09/13/26 02:41 PM,DoorDash - Sam K (149BC881),Online,Takeout,DoorDash,32.83,2.91,35.74,false
+Bubbakoo's Burritos - Sample Store,176799082628,1634,09/13/26 01:20 PM,DoorDash - Kate W (2F99594A),Online,Takeout,DoorDash,41.32,3.67,44.99,false
+Bubbakoo's Burritos - Sample Store,1099109776336,1635,09/13/26 07:07 PM,DoorDash - Jane D (E9A0CAFD),Online,Takeout,DoorDash,51.31,4.55,55.86,false
+Bubbakoo's Burritos - Sample Store,1002515488497,1636,09/13/26 12:07 PM,DoorDash - Luis M (F7C30846),Online,Takeout,DoorDash,40.65,3.61,44.26,false
+Bubbakoo's Burritos - Sample Store,1058838383133,1637,09/13/26 04:21 PM,DoorDash - Luis M (A70FA5DF),Online,Takeout,DoorDash,43.05,3.82,46.87,false
+Bubbakoo's Burritos - Sample Store,154253464526,1638,09/13/26 03:28 PM,DoorDash - Priya S (517942C2),Online,Takeout,DoorDash,18.54,1.65,20.19,false
+Bubbakoo's Burritos - Sample Store,648428871345,1639,09/13/26 07:02 PM,DoorDash - Kate W (19523FF8),Online,Takeout,DoorDash,34.18,3.03,37.21,false
+Bubbakoo's Burritos - Sample Store,546063595931,1640,09/13/26 01:48 PM,DoorDash - Mike R (F5B3FCE5),Online,Takeout,DoorDash,27.11,2.41,29.52,false
+Bubbakoo's Burritos - Sample Store,135112375509,1641,09/13/26 04:40 PM,DoorDash - Jane D (C53C691B),Online,Takeout,DoorDash,29.10,2.58,31.68,false
+Bubbakoo's Burritos - Sample Store,699777121362,1642,09/13/26 06:47 PM,DoorDash - Tony B (F02C655E),Online,Takeout,DoorDash,40.59,3.60,44.19,false
+Bubbakoo's Burritos - Sample Store,323412245393,1643,09/13/26 08:17 PM,DoorDash - Chris L (5C3F9A88),Online,Takeout,DoorDash,56.03,4.97,61.00,false
+Bubbakoo's Burritos - Sample Store,131694784298,1644,09/13/26 09:01 PM,DoorDash - Chris L (12277C63),Online,Takeout,DoorDash,14.03,1.25,15.28,false
+Bubbakoo's Burritos - Sample Store,292065400526,1645,09/13/26 12:53 PM,DoorDash - Dev J (317304C2),Online,Takeout,DoorDash,43.16,3.83,46.99,false
+Bubbakoo's Burritos - Sample Store,993640800993,1646,09/13/26 06:17 PM,DoorDash - Jane D (91878213),Online,Takeout,DoorDash,15.11,1.34,16.45,false
+Bubbakoo's Burritos - Sample Store,137147205365,1647,09/13/26 11:15 AM,DoorDash - Chris L (D510E09A),Online,Takeout,DoorDash,37.94,3.37,41.31,false
+Bubbakoo's Burritos - Sample Store,028765233522,1648,09/13/26 08:59 PM,DoorDash - Priya S (ACC122AD),Online,Takeout,DoorDash,52.38,4.65,57.03,false
+Bubbakoo's Burritos - Sample Store,729589602202,1649,09/13/26 06:14 PM,DoorDash - Ana P (83AFEB07),Online,Takeout,DoorDash,16.19,1.44,17.63,false
+Bubbakoo's Burritos - Sample Store,402550392539,1650,09/13/26 11:28 AM,DoorDash - Priya S (88064DBA),Online,Takeout,DoorDash,57.72,5.12,62.84,false
+Bubbakoo's Burritos - Sample Store,120900606041,1651,09/13/26 05:07 PM,DoorDash - Ana P (244410E7),Online,Takeout,DoorDash,54.20,4.81,59.01,false
+Bubbakoo's Burritos - Sample Store,826968411998,1652,09/13/26 01:43 PM,DoorDash - Luis M (8F7A94B8),Online,Takeout,DoorDash,25.54,2.27,27.81,false
+Bubbakoo's Burritos - Sample Store,394380964192,1653,09/13/26 12:00 PM,DoorDash - Jane D (C1BFC7EE),Online,Takeout,DoorDash,22.10,1.96,24.06,false
+Bubbakoo's Burritos - Sample Store,1070401711983,1654,09/13/26 12:34 PM,DoorDash - Luis M (55E4A001),Online,Takeout,DoorDash,50.24,4.46,54.70,false
+Bubbakoo's Burritos - Sample Store,850756426129,1655,09/13/26 07:37 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,22.23,1.97,24.20,false
+Bubbakoo's Burritos - Sample Store,493649058650,1656,09/13/26 12:31 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,26.92,2.39,29.31,false
+Bubbakoo's Burritos - Sample Store,1019749112306,1657,09/13/26 01:39 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,19.09,1.69,20.78,false
+Bubbakoo's Burritos - Sample Store,063523349785,1658,09/13/26 11:48 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,34.39,3.05,37.44,false
+Bubbakoo's Burritos - Sample Store,249830062493,1659,09/13/26 07:40 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,12.86,1.14,14.00,false
+Bubbakoo's Burritos - Sample Store,215182038138,1660,09/13/26 06:26 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,23.17,2.06,25.23,false
+Bubbakoo's Burritos - Sample Store,363657735171,1661,09/13/26 12:30 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,36.20,3.21,39.41,false
+Bubbakoo's Burritos - Sample Store,597244633598,1662,09/13/26 11:39 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,29.84,2.65,32.49,false
+Bubbakoo's Burritos - Sample Store,734865456345,1663,09/13/26 03:32 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,54.24,4.81,59.05,false
+Bubbakoo's Burritos - Sample Store,528569222571,1664,09/13/26 08:39 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,49.01,4.35,53.36,false
+Bubbakoo's Burritos - Sample Store,883863094899,1665,09/13/26 01:10 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,42.02,3.73,45.75,false
+Bubbakoo's Burritos - Sample Store,913520106752,1666,09/13/26 12:57 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,48.68,4.32,53.00,false
+Bubbakoo's Burritos - Sample Store,099351285177,1667,09/13/26 05:59 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,44.47,3.95,48.42,false
+Bubbakoo's Burritos - Sample Store,100418862539,1668,09/13/26 03:01 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,40.93,3.63,44.56,false
+Bubbakoo's Burritos - Sample Store,929080080624,1669,09/13/26 11:06 AM,Uber Eats - Sam K,Online,Takeout,Uber Eats,18.19,1.61,19.80,false
+Bubbakoo's Burritos - Sample Store,616372890209,1670,09/13/26 02:22 PM,Grubhub - Ana P 1670,Online,Takeout,Grubhub,25.62,2.27,27.89,false
+Bubbakoo's Burritos - Sample Store,048041085593,1671,09/13/26 03:46 PM,Grubhub - Priya S 1671,Online,Takeout,Grubhub,42.00,3.73,45.73,false
+Bubbakoo's Burritos - Sample Store,774163399302,1672,09/13/26 03:45 PM,Grubhub - Tony B 1672,Online,Takeout,Grubhub,16.59,1.47,18.06,false
+Bubbakoo's Burritos - Sample Store,750464415971,1673,09/13/26 08:18 PM,Grubhub - Sam K 1673,Online,Takeout,Grubhub,24.65,2.19,26.84,false
+Bubbakoo's Burritos - Sample Store,720409327683,1674,09/13/26 06:43 PM,Grubhub - Mike R 1674,Online,Takeout,Grubhub,51.52,4.57,56.09,false
+Bubbakoo's Burritos - Sample Store,020158428999,1675,09/13/26 03:01 PM,Grubhub - Sam K 1675,Online,Takeout,Grubhub,57.22,5.08,62.30,false
+Bubbakoo's Burritos - Sample Store,956361244968,1676,09/13/26 08:23 PM,Grubhub - Dev J 1676,Online,Takeout,Grubhub,13.86,1.23,15.09,false
+Bubbakoo's Burritos - Sample Store,216334337747,1677,09/13/26 02:56 PM,Grubhub - Ana P 1677,Online,Takeout,Grubhub,27.00,2.40,29.40,false
+Bubbakoo's Burritos - Sample Store,315419181968,1678,09/13/26 07:21 PM,Grubhub - Priya S 1678,Online,Takeout,Grubhub,13.03,1.16,14.19,false
+Bubbakoo's Burritos - Sample Store,1013872842593,1679,09/13/26 01:40 PM,Grubhub - Ana P 1679,Online,Takeout,Grubhub,25.76,2.29,28.05,false
+Bubbakoo's Burritos - Sample Store,411390002928,1680,09/14/26 11:37 AM,DoorDash - Chris L (6C8D781E),Online,Takeout,DoorDash,51.03,4.53,55.56,false
+Bubbakoo's Burritos - Sample Store,025713115593,1681,09/14/26 12:57 PM,DoorDash - Dev J (FEC6A064),Online,Takeout,DoorDash,53.43,4.74,58.17,false
+Bubbakoo's Burritos - Sample Store,138868979262,1682,09/14/26 05:39 PM,DoorDash - Mike R (5F2C126A),Online,Takeout,DoorDash,19.73,1.75,21.48,false
+Bubbakoo's Burritos - Sample Store,778248890890,1683,09/14/26 02:13 PM,DoorDash - Chris L (9C69AB78),Online,Takeout,DoorDash,20.72,1.84,22.56,false
+Bubbakoo's Burritos - Sample Store,101369625507,1684,09/14/26 03:01 PM,DoorDash - Mike R (526EB37E),Online,Takeout,DoorDash,33.15,2.94,36.09,false
+Bubbakoo's Burritos - Sample Store,442323173559,1685,09/14/26 01:06 PM,DoorDash - Tony B (6A9C14BE),Online,Takeout,DoorDash,22.16,1.97,24.13,false
+Bubbakoo's Burritos - Sample Store,891421010953,1686,09/14/26 06:14 PM,DoorDash - Jane D (A238CBDC),Online,Takeout,DoorDash,22.45,1.99,24.44,false
+Bubbakoo's Burritos - Sample Store,658108520428,1687,09/14/26 03:36 PM,DoorDash - Jane D (FCAC6705),Online,Takeout,DoorDash,33.06,2.93,35.99,false
+Bubbakoo's Burritos - Sample Store,827892542589,1688,09/14/26 07:03 PM,DoorDash - Mike R (F4C7CB05),Online,Takeout,DoorDash,36.77,3.26,40.03,false
+Bubbakoo's Burritos - Sample Store,202254215277,1689,09/14/26 12:35 PM,DoorDash - Mike R (008C5C5A),Online,Takeout,DoorDash,25.60,2.27,27.87,false
+Bubbakoo's Burritos - Sample Store,785900958127,1690,09/14/26 11:05 AM,DoorDash - Tony B (EB4B3D1D),Online,Takeout,DoorDash,31.33,2.78,34.11,false
+Bubbakoo's Burritos - Sample Store,428971044676,1691,09/14/26 12:44 PM,DoorDash - Kate W (4A4D8F03),Online,Takeout,DoorDash,35.00,3.11,38.11,false
+Bubbakoo's Burritos - Sample Store,406804674690,1692,09/14/26 04:43 PM,DoorDash - Mike R (48B33D2C),Online,Takeout,DoorDash,39.29,3.49,42.78,false
+Bubbakoo's Burritos - Sample Store,369856541204,1693,09/14/26 05:15 PM,DoorDash - Tony B (2336DF89),Online,Takeout,DoorDash,41.86,3.72,45.58,false
+Bubbakoo's Burritos - Sample Store,217593696710,1694,09/14/26 06:10 PM,DoorDash - Jane D (66EB2C44),Online,Takeout,DoorDash,12.07,1.07,13.14,false
+Bubbakoo's Burritos - Sample Store,411959734719,1695,09/14/26 05:09 PM,DoorDash - Luis M (B459D611),Online,Takeout,DoorDash,30.08,2.67,32.75,false
+Bubbakoo's Burritos - Sample Store,599135138434,1696,09/14/26 11:32 AM,DoorDash - Priya S (AEAC5FC1),Online,Takeout,DoorDash,28.70,2.55,31.25,false
+Bubbakoo's Burritos - Sample Store,552524193805,1697,09/14/26 02:23 PM,DoorDash - Ana P (B19FC492),Online,Takeout,DoorDash,36.45,3.23,39.68,false
+Bubbakoo's Burritos - Sample Store,805234983090,1698,09/14/26 01:55 PM,DoorDash - Kate W (8CF76194),Online,Takeout,DoorDash,41.96,3.72,45.68,false
+Bubbakoo's Burritos - Sample Store,631103703125,1699,09/14/26 01:18 PM,DoorDash - Dev J (8BD2EF3B),Online,Takeout,DoorDash,23.87,2.12,25.99,false
+Bubbakoo's Burritos - Sample Store,1067513399902,1700,09/14/26 06:34 PM,DoorDash - Tony B (C0CCAA47),Online,Takeout,DoorDash,45.92,4.08,50.00,false
+Bubbakoo's Burritos - Sample Store,1068110692715,1701,09/14/26 12:01 PM,DoorDash - Jane D (9FEAD1AA),Online,Takeout,DoorDash,41.68,3.70,45.38,false
+Bubbakoo's Burritos - Sample Store,096379184574,1702,09/14/26 03:36 PM,DoorDash - Kate W (D3EFA536),Online,Takeout,DoorDash,48.90,4.34,53.24,false
+Bubbakoo's Burritos - Sample Store,369932817707,1703,09/14/26 03:06 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,51.53,4.57,56.10,false
+Bubbakoo's Burritos - Sample Store,735696038762,1704,09/14/26 12:09 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,53.75,4.77,58.52,false
+Bubbakoo's Burritos - Sample Store,309111950919,1705,09/14/26 04:07 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,54.25,4.81,59.06,false
+Bubbakoo's Burritos - Sample Store,947472652559,1706,09/14/26 12:01 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,45.41,4.03,49.44,false
+Bubbakoo's Burritos - Sample Store,1052006692235,1707,09/14/26 05:32 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,43.87,3.89,47.76,false
+Bubbakoo's Burritos - Sample Store,048945846934,1708,09/14/26 03:48 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,23.73,2.11,25.84,false
+Bubbakoo's Burritos - Sample Store,027851650377,1709,09/14/26 12:39 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,21.21,1.88,23.09,false
+Bubbakoo's Burritos - Sample Store,170786689362,1710,09/14/26 05:53 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,20.86,1.85,22.71,false
+Bubbakoo's Burritos - Sample Store,387615367837,1711,09/14/26 02:08 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,33.18,2.94,36.12,false
+Bubbakoo's Burritos - Sample Store,239838419945,1712,09/14/26 03:32 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,23.97,2.13,26.10,false
+Bubbakoo's Burritos - Sample Store,621058757419,1713,09/14/26 06:28 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,48.95,4.34,53.29,false
+Bubbakoo's Burritos - Sample Store,916703554153,1714,09/14/26 01:57 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,24.73,2.19,26.92,false
+Bubbakoo's Burritos - Sample Store,951955412107,1715,09/14/26 02:16 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,50.84,4.51,55.35,false
+Bubbakoo's Burritos - Sample Store,590929030136,1716,09/14/26 05:38 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,24.05,2.13,26.18,false
+Bubbakoo's Burritos - Sample Store,845634112205,1717,09/14/26 06:30 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,41.35,3.67,45.02,false
+Bubbakoo's Burritos - Sample Store,191438873533,1718,09/14/26 08:12 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,31.46,2.79,34.25,false
+Bubbakoo's Burritos - Sample Store,891423397052,1719,09/14/26 12:46 PM,Grubhub - Sam K 1719,Online,Takeout,Grubhub,33.56,2.98,36.54,false
+Bubbakoo's Burritos - Sample Store,275975938440,1720,09/14/26 12:01 PM,Grubhub - Chris L 1720,Online,Takeout,Grubhub,50.43,4.48,54.91,false
+Bubbakoo's Burritos - Sample Store,864330595062,1721,09/14/26 03:32 PM,Grubhub - Luis M 1721,Online,Takeout,Grubhub,34.00,3.02,37.02,false
+Bubbakoo's Burritos - Sample Store,856804334192,1722,09/14/26 12:56 PM,Grubhub - Mike R 1722,Online,Takeout,Grubhub,46.45,4.12,50.57,false
+Bubbakoo's Burritos - Sample Store,431788106193,1723,09/14/26 02:51 PM,Grubhub - Priya S 1723,Online,Takeout,Grubhub,20.82,1.85,22.67,false
+Bubbakoo's Burritos - Sample Store,844325612680,1724,09/14/26 04:22 PM,Grubhub - Luis M 1724,Online,Takeout,Grubhub,30.64,2.72,33.36,false
+Bubbakoo's Burritos - Sample Store,614391218385,1725,09/14/26 03:42 PM,Grubhub - Priya S 1725,Online,Takeout,Grubhub,19.37,1.72,21.09,false
+Bubbakoo's Burritos - Sample Store,989427081600,1726,09/15/26 08:51 PM,DoorDash - Mike R (DD5F7A0D),Online,Takeout,DoorDash,53.41,4.74,58.15,false
+Bubbakoo's Burritos - Sample Store,958340220328,1727,09/15/26 11:11 AM,DoorDash - Chris L (286630CC),Online,Takeout,DoorDash,11.62,1.03,12.65,false
+Bubbakoo's Burritos - Sample Store,324947776936,1728,09/15/26 06:24 PM,DoorDash - Priya S (24893EA6),Online,Takeout,DoorDash,44.50,3.95,48.45,false
+Bubbakoo's Burritos - Sample Store,313871886698,1729,09/15/26 05:31 PM,DoorDash - Tony B (3B43707B),Online,Takeout,DoorDash,31.76,2.82,34.58,false
+Bubbakoo's Burritos - Sample Store,075773486948,1730,09/15/26 04:04 PM,DoorDash - Mike R (2991BB96),Online,Takeout,DoorDash,25.37,2.25,27.62,false
+Bubbakoo's Burritos - Sample Store,813901993310,1731,09/15/26 11:28 AM,DoorDash - Dev J (2DFFC261),Online,Takeout,DoorDash,47.62,4.23,51.85,false
+Bubbakoo's Burritos - Sample Store,1015481970704,1732,09/15/26 01:06 PM,DoorDash - Luis M (F79D2FAF),Online,Takeout,DoorDash,16.54,1.47,18.01,false
+Bubbakoo's Burritos - Sample Store,613129403010,1733,09/15/26 05:31 PM,DoorDash - Priya S (B646F9CF),Online,Takeout,DoorDash,56.53,5.02,61.55,false
+Bubbakoo's Burritos - Sample Store,839192622320,1734,09/15/26 12:54 PM,DoorDash - Chris L (DFBA6B2E),Online,Takeout,DoorDash,38.56,3.42,41.98,false
+Bubbakoo's Burritos - Sample Store,134166420602,1735,09/15/26 05:10 PM,DoorDash - Sam K (260FB292),Online,Takeout,DoorDash,18.17,1.61,19.78,false
+Bubbakoo's Burritos - Sample Store,779278183187,1736,09/15/26 06:06 PM,DoorDash - Sam K (EA66339B),Online,Takeout,DoorDash,14.84,1.32,16.16,false
+Bubbakoo's Burritos - Sample Store,139002753209,1737,09/15/26 12:47 PM,DoorDash - Jane D (81916245),Online,Takeout,DoorDash,54.43,4.83,59.26,false
+Bubbakoo's Burritos - Sample Store,212827473435,1738,09/15/26 12:30 PM,DoorDash - Mike R (A3687134),Online,Takeout,DoorDash,11.74,1.04,12.78,false
+Bubbakoo's Burritos - Sample Store,1060167949567,1739,09/15/26 01:20 PM,DoorDash - Dev J (407B0A05),Online,Takeout,DoorDash,24.61,2.18,26.79,false
+Bubbakoo's Burritos - Sample Store,945143636496,1740,09/15/26 08:36 PM,DoorDash - Priya S (A80597D9),Online,Takeout,DoorDash,45.88,4.07,49.95,false
+Bubbakoo's Burritos - Sample Store,203106435582,1741,09/15/26 12:45 PM,DoorDash - Sam K (966D73EB),Online,Takeout,DoorDash,31.11,2.76,33.87,false
+Bubbakoo's Burritos - Sample Store,092381074400,1742,09/15/26 11:21 AM,DoorDash - Sam K (8CEA2845),Online,Takeout,DoorDash,24.24,2.15,26.39,false
+Bubbakoo's Burritos - Sample Store,791524957666,1743,09/15/26 07:50 PM,DoorDash - Kate W (510D6531),Online,Takeout,DoorDash,34.30,3.04,37.34,false
+Bubbakoo's Burritos - Sample Store,265826488670,1744,09/15/26 05:25 PM,DoorDash - Dev J (46186237),Online,Takeout,DoorDash,22.63,2.01,24.64,false
+Bubbakoo's Burritos - Sample Store,711021635308,1745,09/15/26 06:57 PM,DoorDash - Chris L (CD353B12),Online,Takeout,DoorDash,23.09,2.05,25.14,false
+Bubbakoo's Burritos - Sample Store,1020553849329,1746,09/15/26 08:32 PM,DoorDash - Tony B (2CEA9842),Online,Takeout,DoorDash,11.72,1.04,12.76,false
+Bubbakoo's Burritos - Sample Store,715721969468,1747,09/15/26 05:51 PM,DoorDash - Mike R (4CE45E2B),Online,Takeout,DoorDash,32.74,2.91,35.65,false
+Bubbakoo's Burritos - Sample Store,767367046927,1748,09/15/26 11:46 AM,DoorDash - Priya S (641B07CF),Online,Takeout,DoorDash,53.11,4.71,57.82,false
+Bubbakoo's Burritos - Sample Store,566784786135,1749,09/15/26 05:54 PM,DoorDash - Priya S (301B9878),Online,Takeout,DoorDash,41.94,3.72,45.66,false
+Bubbakoo's Burritos - Sample Store,193009719155,1750,09/15/26 08:31 PM,DoorDash - Mike R (AEDA7474),Online,Takeout,DoorDash,32.88,2.92,35.80,false
+Bubbakoo's Burritos - Sample Store,196148863689,1751,09/15/26 06:51 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,33.34,2.96,36.30,false
+Bubbakoo's Burritos - Sample Store,169756931765,1752,09/15/26 12:31 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,18.32,1.63,19.95,false
+Bubbakoo's Burritos - Sample Store,224487200020,1753,09/15/26 08:27 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,21.51,1.91,23.42,false
+Bubbakoo's Burritos - Sample Store,864899736802,1754,09/15/26 11:12 AM,Uber Eats - Luis M,Online,Takeout,Uber Eats,55.61,4.94,60.55,false
+Bubbakoo's Burritos - Sample Store,779373397607,1755,09/15/26 12:39 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,56.14,4.98,61.12,false
+Bubbakoo's Burritos - Sample Store,628663969083,1756,09/15/26 08:55 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,42.34,3.76,46.10,false
+Bubbakoo's Burritos - Sample Store,535563094511,1757,09/15/26 01:08 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,46.94,4.17,51.11,false
+Bubbakoo's Burritos - Sample Store,777775578189,1758,09/15/26 05:50 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,18.26,1.62,19.88,false
+Bubbakoo's Burritos - Sample Store,476472164595,1760,09/15/26 07:35 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,28.44,2.52,30.96,false
+Bubbakoo's Burritos - Sample Store,889810972118,1761,09/15/26 06:40 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,32.70,2.90,35.60,false
+Bubbakoo's Burritos - Sample Store,732261875446,1762,09/15/26 03:16 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,45.92,4.08,50.00,false
+Bubbakoo's Burritos - Sample Store,189227080816,1763,09/15/26 04:44 PM,Grubhub - Ana P 1763,Online,Takeout,Grubhub,57.85,5.13,62.98,false
+Bubbakoo's Burritos - Sample Store,451341679986,1764,09/15/26 12:18 PM,Grubhub - Priya S 1764,Online,Takeout,Grubhub,14.16,1.26,15.42,false
+Bubbakoo's Burritos - Sample Store,435577293932,1765,09/15/26 01:21 PM,Grubhub - Sam K 1765,Online,Takeout,Grubhub,47.65,4.23,51.88,false
+Bubbakoo's Burritos - Sample Store,1083773389306,1766,09/15/26 07:37 PM,Grubhub - Priya S 1766,Online,Takeout,Grubhub,11.44,1.02,12.46,false
+Bubbakoo's Burritos - Sample Store,412171267080,1767,09/15/26 11:27 AM,Grubhub - Luis M 1767,Online,Takeout,Grubhub,15.41,1.37,16.78,false
+Bubbakoo's Burritos - Sample Store,545742078693,1768,09/16/26 08:57 PM,DoorDash - Priya S (42FBC9AC),Online,Takeout,DoorDash,25.83,2.29,28.12,false
+Bubbakoo's Burritos - Sample Store,028338954011,1769,09/16/26 12:46 PM,DoorDash - Priya S (7F7F422B),Online,Takeout,DoorDash,34.12,3.03,37.15,false
+Bubbakoo's Burritos - Sample Store,731953769601,1770,09/16/26 07:02 PM,DoorDash - Jane D (4DDD0780),Online,Takeout,DoorDash,51.94,4.61,56.55,false
+Bubbakoo's Burritos - Sample Store,322567072400,1771,09/16/26 11:02 AM,DoorDash - Dev J (59F34441),Online,Takeout,DoorDash,49.83,4.42,54.25,false
+Bubbakoo's Burritos - Sample Store,878604439241,1772,09/16/26 04:39 PM,DoorDash - Priya S (91156950),Online,Takeout,DoorDash,25.43,2.26,27.69,false
+Bubbakoo's Burritos - Sample Store,332765524541,1773,09/16/26 06:20 PM,DoorDash - Ana P (948DD818),Online,Takeout,DoorDash,32.62,2.90,35.52,false
+Bubbakoo's Burritos - Sample Store,031114215500,1774,09/16/26 03:57 PM,DoorDash - Jane D (B5AF2C45),Online,Takeout,DoorDash,55.51,4.93,60.44,false
+Bubbakoo's Burritos - Sample Store,359788126264,1775,09/16/26 03:29 PM,DoorDash - Kate W (BEE20F8D),Online,Takeout,DoorDash,22.19,1.97,24.16,false
+Bubbakoo's Burritos - Sample Store,190904017821,1776,09/16/26 12:45 PM,DoorDash - Tony B (F3A5C434),Online,Takeout,DoorDash,22.62,2.01,24.63,false
+Bubbakoo's Burritos - Sample Store,003611220674,1777,09/16/26 05:22 PM,DoorDash - Mike R (0D6B267B),Online,Takeout,DoorDash,11.87,1.05,12.92,false
+Bubbakoo's Burritos - Sample Store,1022776862189,1778,09/16/26 08:22 PM,DoorDash - Mike R (545AF8F0),Online,Takeout,DoorDash,43.03,3.82,46.85,false
+Bubbakoo's Burritos - Sample Store,533190833723,1779,09/16/26 08:14 PM,DoorDash - Luis M (DA6CDFB7),Online,Takeout,DoorDash,43.94,3.90,47.84,false
+Bubbakoo's Burritos - Sample Store,104188561879,1780,09/16/26 02:42 PM,DoorDash - Jane D (3AA72808),Online,Takeout,DoorDash,52.70,4.68,57.38,false
+Bubbakoo's Burritos - Sample Store,1009873046190,1781,09/16/26 06:29 PM,DoorDash - Tony B (FABB797C),Online,Takeout,DoorDash,40.79,3.62,44.41,false
+Bubbakoo's Burritos - Sample Store,278338853476,1782,09/16/26 04:22 PM,DoorDash - Dev J (D94D4254),Online,Takeout,DoorDash,44.19,3.92,48.11,false
+Bubbakoo's Burritos - Sample Store,219566704100,1783,09/16/26 01:20 PM,DoorDash - Jane D (3E065089),Online,Takeout,DoorDash,39.89,3.54,43.43,false
+Bubbakoo's Burritos - Sample Store,174119623553,1784,09/16/26 11:09 AM,DoorDash - Luis M (EB8732AD),Online,Takeout,DoorDash,25.40,2.25,27.65,false
+Bubbakoo's Burritos - Sample Store,996824615169,1785,09/16/26 12:52 PM,DoorDash - Chris L (296FFC0D),Online,Takeout,DoorDash,15.36,1.36,16.72,false
+Bubbakoo's Burritos - Sample Store,030566040170,1786,09/16/26 12:28 PM,DoorDash - Priya S (DFA2C9A6),Online,Takeout,DoorDash,16.91,1.50,18.41,false
+Bubbakoo's Burritos - Sample Store,397420738552,1787,09/16/26 04:49 PM,DoorDash - Tony B (B6D82A83),Online,Takeout,DoorDash,20.45,1.81,22.26,false
+Bubbakoo's Burritos - Sample Store,486728667048,1788,09/16/26 05:36 PM,DoorDash - Mike R (BD3BC0C4),Online,Takeout,DoorDash,14.15,1.26,15.41,false
+Bubbakoo's Burritos - Sample Store,1031176943523,1789,09/16/26 02:12 PM,DoorDash - Priya S (4DBE44B1),Online,Takeout,DoorDash,51.61,4.58,56.19,false
+Bubbakoo's Burritos - Sample Store,253845958017,1790,09/16/26 06:41 PM,DoorDash - Luis M (41A39E86),Online,Takeout,DoorDash,13.94,1.24,15.18,false
+Bubbakoo's Burritos - Sample Store,983394075577,1791,09/16/26 07:45 PM,DoorDash - Priya S (E156CF7F),Online,Takeout,DoorDash,31.32,2.78,34.10,false
+Bubbakoo's Burritos - Sample Store,452293167002,1792,09/16/26 01:07 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,37.18,3.30,40.48,false
+Bubbakoo's Burritos - Sample Store,687041778725,1793,09/16/26 03:55 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,26.25,2.33,28.58,false
+Bubbakoo's Burritos - Sample Store,029197846122,1794,09/16/26 01:59 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,54.29,4.82,59.11,false
+Bubbakoo's Burritos - Sample Store,511187780501,1795,09/16/26 08:12 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,49.52,4.39,53.91,false
+Bubbakoo's Burritos - Sample Store,456137507195,1796,09/16/26 02:23 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,43.80,3.89,47.69,false
+Bubbakoo's Burritos - Sample Store,245274550303,1797,09/16/26 08:50 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,42.11,3.74,45.85,false
+Bubbakoo's Burritos - Sample Store,462011259057,1798,09/16/26 04:16 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,35.39,3.14,38.53,false
+Bubbakoo's Burritos - Sample Store,345253152122,1799,09/16/26 03:08 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,55.14,4.89,60.03,false
+Bubbakoo's Burritos - Sample Store,378198967189,1800,09/16/26 06:38 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,12.75,1.13,13.88,false
+Bubbakoo's Burritos - Sample Store,585873643004,1801,09/16/26 12:20 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,52.79,4.69,57.48,false
+Bubbakoo's Burritos - Sample Store,583767876089,1802,09/16/26 11:45 AM,Uber Eats - Mike R,Online,Takeout,Uber Eats,45.40,4.03,49.43,false
+Bubbakoo's Burritos - Sample Store,532914470705,1803,09/16/26 05:12 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,14.15,1.26,15.41,false
+Bubbakoo's Burritos - Sample Store,293058210371,1804,09/16/26 11:36 AM,Uber Eats - Tony B,Online,Takeout,Uber Eats,51.48,4.57,56.05,false
+Bubbakoo's Burritos - Sample Store,653411336562,1805,09/16/26 07:01 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,19.53,1.73,21.26,false
+Bubbakoo's Burritos - Sample Store,110849109855,1806,09/16/26 12:08 PM,Grubhub - Kate W 1806,Online,Takeout,Grubhub,19.96,1.77,21.73,false
+Bubbakoo's Burritos - Sample Store,860844519001,1807,09/16/26 05:35 PM,Grubhub - Luis M 1807,Online,Takeout,Grubhub,21.84,1.94,23.78,false
+Bubbakoo's Burritos - Sample Store,615683515667,1808,09/16/26 04:11 PM,Grubhub - Chris L 1808,Online,Takeout,Grubhub,34.46,3.06,37.52,false
+Bubbakoo's Burritos - Sample Store,631402976284,1809,09/16/26 08:46 PM,Grubhub - Mike R 1809,Online,Takeout,Grubhub,27.74,2.46,30.20,false
+Bubbakoo's Burritos - Sample Store,716332145386,1810,09/16/26 08:19 PM,Grubhub - Luis M 1810,Online,Takeout,Grubhub,43.55,3.87,47.42,false
+Bubbakoo's Burritos - Sample Store,760211572093,1811,09/16/26 07:23 PM,Grubhub - Tony B 1811,Online,Takeout,Grubhub,57.18,5.07,62.25,false
+Bubbakoo's Burritos - Sample Store,737120108047,1812,09/16/26 04:00 PM,Grubhub - Luis M 1812,Online,Takeout,Grubhub,42.28,3.75,46.03,false
+Bubbakoo's Burritos - Sample Store,375372238023,1813,09/16/26 03:51 PM,Grubhub - Chris L 1813,Online,Takeout,Grubhub,36.15,3.21,39.36,false
+Bubbakoo's Burritos - Sample Store,316675049990,1814,09/16/26 12:38 PM,Grubhub - Ana P 1814,Online,Takeout,Grubhub,24.95,2.21,27.16,false
+Bubbakoo's Burritos - Sample Store,298128622936,1815,09/16/26 05:25 PM,Grubhub - Sam K 1815,Online,Takeout,Grubhub,46.31,4.11,50.42,false
+Bubbakoo's Burritos - Sample Store,353172701655,1816,09/17/26 08:35 PM,DoorDash - Jane D (F4DCA3BF),Online,Takeout,DoorDash,27.15,2.41,29.56,false
+Bubbakoo's Burritos - Sample Store,990045275220,1817,09/17/26 06:22 PM,DoorDash - Sam K (D5F5B05B),Online,Takeout,DoorDash,23.36,2.07,25.43,false
+Bubbakoo's Burritos - Sample Store,276712772081,1818,09/17/26 01:20 PM,DoorDash - Mike R (579FB87C),Online,Takeout,DoorDash,20.97,1.86,22.83,false
+Bubbakoo's Burritos - Sample Store,046059441379,1819,09/17/26 08:54 PM,DoorDash - Kate W (86A3B443),Online,Takeout,DoorDash,54.45,4.83,59.28,false
+Bubbakoo's Burritos - Sample Store,149946728183,1820,09/17/26 06:11 PM,DoorDash - Luis M (2E7CB5A1),Online,Takeout,DoorDash,54.15,4.81,58.96,false
+Bubbakoo's Burritos - Sample Store,588972053449,1821,09/17/26 03:27 PM,DoorDash - Chris L (3F6AE06B),Online,Takeout,DoorDash,39.59,3.51,43.10,false
+Bubbakoo's Burritos - Sample Store,523910909731,1822,09/17/26 04:59 PM,DoorDash - Chris L (313C4E70),Online,Takeout,DoorDash,51.46,4.57,56.03,false
+Bubbakoo's Burritos - Sample Store,582024432586,1823,09/17/26 11:47 AM,DoorDash - Mike R (5969B1BE),Online,Takeout,DoorDash,44.42,3.94,48.36,false
+Bubbakoo's Burritos - Sample Store,368357461257,1824,09/17/26 12:41 PM,DoorDash - Sam K (2066D4C3),Online,Takeout,DoorDash,35.29,3.13,38.42,false
+Bubbakoo's Burritos - Sample Store,215608596857,1825,09/17/26 12:20 PM,DoorDash - Tony B (350AC24E),Online,Takeout,DoorDash,54.81,4.86,59.67,false
+Bubbakoo's Burritos - Sample Store,112311792262,1826,09/17/26 06:52 PM,DoorDash - Mike R (C3BB6FDF),Online,Takeout,DoorDash,47.39,4.21,51.60,false
+Bubbakoo's Burritos - Sample Store,049567481120,1827,09/17/26 08:34 PM,DoorDash - Priya S (14037FE1),Online,Takeout,DoorDash,44.99,3.99,48.98,false
+Bubbakoo's Burritos - Sample Store,912874341940,1828,09/17/26 05:33 PM,DoorDash - Tony B (CFF66431),Online,Takeout,DoorDash,48.86,4.34,53.20,false
+Bubbakoo's Burritos - Sample Store,803048481823,1829,09/17/26 02:12 PM,DoorDash - Dev J (5821FE37),Online,Takeout,DoorDash,34.00,3.02,37.02,false
+Bubbakoo's Burritos - Sample Store,656877280342,1830,09/17/26 12:26 PM,DoorDash - Ana P (9B1E12FB),Online,Takeout,DoorDash,35.84,3.18,39.02,false
+Bubbakoo's Burritos - Sample Store,948070085594,1831,09/17/26 03:42 PM,DoorDash - Kate W (45414AF1),Online,Takeout,DoorDash,54.06,4.80,58.86,false
+Bubbakoo's Burritos - Sample Store,453062021146,1832,09/17/26 03:10 PM,DoorDash - Dev J (ACB898F9),Online,Takeout,DoorDash,17.89,1.59,19.48,false
+Bubbakoo's Burritos - Sample Store,925928340190,1833,09/17/26 11:03 AM,DoorDash - Mike R (FF6C1590),Online,Takeout,DoorDash,31.43,2.79,34.22,false
+Bubbakoo's Burritos - Sample Store,882203304714,1834,09/17/26 05:55 PM,DoorDash - Ana P (2CC9847E),Online,Takeout,DoorDash,43.68,3.88,47.56,false
+Bubbakoo's Burritos - Sample Store,712652842125,1835,09/17/26 07:37 PM,DoorDash - Chris L (15C2DAD5),Online,Takeout,DoorDash,52.18,4.63,56.81,false
+Bubbakoo's Burritos - Sample Store,151248129556,1836,09/17/26 08:43 PM,DoorDash - Ana P (833AB777),Online,Takeout,DoorDash,15.60,1.38,16.98,false
+Bubbakoo's Burritos - Sample Store,1009714949303,1837,09/17/26 12:37 PM,DoorDash - Priya S (0C0D2572),Online,Takeout,DoorDash,26.44,2.35,28.79,false
+Bubbakoo's Burritos - Sample Store,655761341040,1838,09/17/26 02:39 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,46.65,4.14,50.79,false
+Bubbakoo's Burritos - Sample Store,803667043902,1839,09/17/26 07:02 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,18.88,1.68,20.56,false
+Bubbakoo's Burritos - Sample Store,637871152796,1840,09/17/26 06:32 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,16.01,1.42,17.43,false
+Bubbakoo's Burritos - Sample Store,361331223151,1841,09/17/26 11:51 AM,Uber Eats - Priya S,Online,Takeout,Uber Eats,41.83,3.71,45.54,false
+Bubbakoo's Burritos - Sample Store,285301123516,1842,09/17/26 06:13 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,14.15,1.26,15.41,false
+Bubbakoo's Burritos - Sample Store,190906575330,1843,09/17/26 04:04 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,56.68,5.03,61.71,false
+Bubbakoo's Burritos - Sample Store,954710746897,1844,09/17/26 05:18 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,12.73,1.13,13.86,false
+Bubbakoo's Burritos - Sample Store,768049867559,1845,09/17/26 04:34 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,53.76,4.77,58.53,false
+Bubbakoo's Burritos - Sample Store,900198274057,1846,09/17/26 06:37 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,29.21,2.59,31.80,false
+Bubbakoo's Burritos - Sample Store,865322039984,1847,09/17/26 01:29 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,56.50,5.01,61.51,false
+Bubbakoo's Burritos - Sample Store,1098353136441,1848,09/17/26 12:42 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,43.71,3.88,47.59,false
+Bubbakoo's Burritos - Sample Store,931206361950,1849,09/17/26 02:55 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,31.66,2.81,34.47,false
+Bubbakoo's Burritos - Sample Store,120340372811,1850,09/17/26 07:52 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,26.54,2.36,28.90,false
+Bubbakoo's Burritos - Sample Store,615563467504,1851,09/17/26 06:01 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,55.00,4.88,59.88,false
+Bubbakoo's Burritos - Sample Store,643867833246,1852,09/17/26 01:57 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,51.59,4.58,56.17,false
+Bubbakoo's Burritos - Sample Store,486157510985,1853,09/17/26 01:40 PM,Grubhub - Dev J 1853,Online,Takeout,Grubhub,24.78,2.20,26.98,false
+Bubbakoo's Burritos - Sample Store,1080077283102,1854,09/17/26 02:41 PM,Grubhub - Sam K 1854,Online,Takeout,Grubhub,45.08,4.00,49.08,false
+Bubbakoo's Burritos - Sample Store,579461296731,1855,09/17/26 01:40 PM,Grubhub - Sam K 1855,Online,Takeout,Grubhub,47.39,4.21,51.60,false
+Bubbakoo's Burritos - Sample Store,506028399253,1856,09/17/26 02:32 PM,Grubhub - Tony B 1856,Online,Takeout,Grubhub,28.92,2.57,31.49,false
+Bubbakoo's Burritos - Sample Store,780282458439,1857,09/17/26 01:23 PM,Grubhub - Kate W 1857,Online,Takeout,Grubhub,19.32,1.71,21.03,false
+Bubbakoo's Burritos - Sample Store,658533608221,1858,09/17/26 02:11 PM,Grubhub - Sam K 1858,Online,Takeout,Grubhub,14.24,1.26,15.50,false
+Bubbakoo's Burritos - Sample Store,622276014372,1859,09/17/26 03:58 PM,Grubhub - Jane D 1859,Online,Takeout,Grubhub,49.76,4.42,54.18,false
+Bubbakoo's Burritos - Sample Store,642652282336,1860,09/17/26 08:49 PM,Grubhub - Kate W 1860,Online,Takeout,Grubhub,13.09,1.16,14.25,false
+Bubbakoo's Burritos - Sample Store,1081681420583,1861,09/17/26 02:19 PM,Grubhub - Tony B 1861,Online,Takeout,Grubhub,22.38,1.99,24.37,false
+Bubbakoo's Burritos - Sample Store,820771579906,1862,09/18/26 01:01 PM,DoorDash - Kate W (E390433E),Online,Takeout,DoorDash,29.69,2.63,32.32,false
+Bubbakoo's Burritos - Sample Store,383892192783,1863,09/18/26 04:32 PM,DoorDash - Jane D (3BEDA32E),Online,Takeout,DoorDash,24.26,2.15,26.41,false
+Bubbakoo's Burritos - Sample Store,632131675291,1864,09/18/26 06:26 PM,DoorDash - Kate W (2A23ADBA),Online,Takeout,DoorDash,26.97,2.39,29.36,false
+Bubbakoo's Burritos - Sample Store,802948007992,1865,09/18/26 08:29 PM,DoorDash - Luis M (839C7BC1),Online,Takeout,DoorDash,19.18,1.70,20.88,false
+Bubbakoo's Burritos - Sample Store,158212343330,1866,09/18/26 08:54 PM,DoorDash - Jane D (160C909D),Online,Takeout,DoorDash,33.01,2.93,35.94,false
+Bubbakoo's Burritos - Sample Store,872556574203,1867,09/18/26 12:04 PM,DoorDash - Mike R (D1D24C3E),Online,Takeout,DoorDash,47.75,4.24,51.99,false
+Bubbakoo's Burritos - Sample Store,199297192099,1868,09/18/26 01:40 PM,DoorDash - Luis M (224056F6),Online,Takeout,DoorDash,36.50,3.24,39.74,false
+Bubbakoo's Burritos - Sample Store,097876478546,1869,09/18/26 04:12 PM,DoorDash - Priya S (3D78B177),Online,Takeout,DoorDash,29.10,2.58,31.68,false
+Bubbakoo's Burritos - Sample Store,629761184595,1870,09/18/26 06:47 PM,DoorDash - Kate W (C053A3BA),Online,Takeout,DoorDash,51.62,4.58,56.20,false
+Bubbakoo's Burritos - Sample Store,588491707928,1871,09/18/26 08:41 PM,DoorDash - Tony B (540C8009),Online,Takeout,DoorDash,23.00,2.04,25.04,false
+Bubbakoo's Burritos - Sample Store,820963463305,1872,09/18/26 12:45 PM,DoorDash - Sam K (CBCE4E6C),Online,Takeout,DoorDash,19.46,1.73,21.19,false
+Bubbakoo's Burritos - Sample Store,050732473497,1873,09/18/26 01:09 PM,DoorDash - Luis M (EC88ECA5),Online,Takeout,DoorDash,28.46,2.53,30.99,false
+Bubbakoo's Burritos - Sample Store,582798814542,1874,09/18/26 04:14 PM,DoorDash - Jane D (50877BEB),Online,Takeout,DoorDash,26.10,2.32,28.42,false
+Bubbakoo's Burritos - Sample Store,880770308547,1875,09/18/26 05:06 PM,DoorDash - Sam K (730C7358),Online,Takeout,DoorDash,46.72,4.15,50.87,false
+Bubbakoo's Burritos - Sample Store,311509363891,1876,09/18/26 12:27 PM,DoorDash - Jane D (0A0994DB),Online,Takeout,DoorDash,43.61,3.87,47.48,false
+Bubbakoo's Burritos - Sample Store,1048567993540,1877,09/18/26 06:03 PM,DoorDash - Chris L (EB7A54C0),Online,Takeout,DoorDash,53.94,4.79,58.73,false
+Bubbakoo's Burritos - Sample Store,171490966723,1878,09/18/26 11:04 AM,DoorDash - Chris L (B92A1A90),Online,Takeout,DoorDash,54.74,4.86,59.60,false
+Bubbakoo's Burritos - Sample Store,891115205383,1879,09/18/26 08:06 PM,DoorDash - Dev J (8708FCDF),Online,Takeout,DoorDash,52.37,4.65,57.02,false
+Bubbakoo's Burritos - Sample Store,535941367923,1880,09/18/26 11:04 AM,DoorDash - Sam K (50E33E24),Online,Takeout,DoorDash,56.15,4.98,61.13,false
+Bubbakoo's Burritos - Sample Store,729306385473,1881,09/18/26 05:14 PM,DoorDash - Ana P (735D5FE6),Online,Takeout,DoorDash,31.50,2.80,34.30,false
+Bubbakoo's Burritos - Sample Store,009229104244,1882,09/18/26 11:09 AM,DoorDash - Kate W (7D49467C),Online,Takeout,DoorDash,44.46,3.95,48.41,false
+Bubbakoo's Burritos - Sample Store,1005216907741,1883,09/18/26 07:09 PM,DoorDash - Jane D (911EE72A),Online,Takeout,DoorDash,44.55,3.95,48.50,false
+Bubbakoo's Burritos - Sample Store,998342494860,1884,09/18/26 12:21 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,15.16,1.35,16.51,false
+Bubbakoo's Burritos - Sample Store,451294865378,1885,09/18/26 08:53 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,25.50,2.26,27.76,false
+Bubbakoo's Burritos - Sample Store,262944902994,1886,09/18/26 07:42 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,27.24,2.42,29.66,false
+Bubbakoo's Burritos - Sample Store,742683738363,1887,09/18/26 04:52 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,12.10,1.07,13.17,false
+Bubbakoo's Burritos - Sample Store,942590156884,1888,09/18/26 04:09 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,46.74,4.15,50.89,false
+Bubbakoo's Burritos - Sample Store,968544804342,1889,09/18/26 05:50 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,12.88,1.14,14.02,false
+Bubbakoo's Burritos - Sample Store,361255070984,1890,09/18/26 07:20 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,51.79,4.60,56.39,false
+Bubbakoo's Burritos - Sample Store,373163860628,1891,09/18/26 08:57 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,27.60,2.45,30.05,false
+Bubbakoo's Burritos - Sample Store,948438772504,1892,09/18/26 04:37 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,49.35,4.38,53.73,false
+Bubbakoo's Burritos - Sample Store,237826257527,1893,09/18/26 06:55 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,36.52,3.24,39.76,false
+Bubbakoo's Burritos - Sample Store,765637144885,1894,09/18/26 08:09 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,23.12,2.05,25.17,false
+Bubbakoo's Burritos - Sample Store,832454760685,1895,09/18/26 12:14 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,38.15,3.39,41.54,false
+Bubbakoo's Burritos - Sample Store,078762384877,1897,09/18/26 12:02 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,22.12,1.96,24.08,false
+Bubbakoo's Burritos - Sample Store,1066165964427,1898,09/18/26 04:57 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,15.61,1.39,17.00,false
+Bubbakoo's Burritos - Sample Store,278498232583,1899,09/18/26 03:44 PM,Grubhub - Luis M 1899,Online,Takeout,Grubhub,54.97,4.88,59.85,false
+Bubbakoo's Burritos - Sample Store,635041263520,1900,09/18/26 08:32 PM,Grubhub - Jane D 1900,Online,Takeout,Grubhub,37.98,3.37,41.35,false
+Bubbakoo's Burritos - Sample Store,324662544930,1901,09/18/26 01:32 PM,Grubhub - Priya S 1901,Online,Takeout,Grubhub,48.51,4.31,52.82,false
+Bubbakoo's Burritos - Sample Store,886665431059,1902,09/18/26 02:18 PM,Grubhub - Ana P 1902,Online,Takeout,Grubhub,11.14,0.99,12.13,false
+Bubbakoo's Burritos - Sample Store,645282970802,1903,09/18/26 11:05 AM,Grubhub - Tony B 1903,Online,Takeout,Grubhub,57.27,5.08,62.35,false
+Bubbakoo's Burritos - Sample Store,481460692172,1904,09/18/26 06:41 PM,Grubhub - Mike R 1904,Online,Takeout,Grubhub,20.84,1.85,22.69,false
+Bubbakoo's Burritos - Sample Store,352863792259,1905,09/18/26 04:35 PM,Grubhub - Priya S 1905,Online,Takeout,Grubhub,31.44,2.79,34.23,false
+Bubbakoo's Burritos - Sample Store,113791030310,1906,09/18/26 06:38 PM,Grubhub - Luis M 1906,Online,Takeout,Grubhub,19.67,1.75,21.42,false
+Bubbakoo's Burritos - Sample Store,517166694375,1907,09/18/26 03:09 PM,Grubhub - Dev J 1907,Online,Takeout,Grubhub,42.48,3.77,46.25,false
+Bubbakoo's Burritos - Sample Store,602531613637,1908,09/18/26 05:26 PM,Grubhub - Ana P 1908,Online,Takeout,Grubhub,43.23,3.84,47.07,false
+Bubbakoo's Burritos - Sample Store,900613225257,1909,09/19/26 01:46 PM,DoorDash - Chris L (D097DC9F),Online,Takeout,DoorDash,26.44,2.35,28.79,false
+Bubbakoo's Burritos - Sample Store,916312045223,1910,09/19/26 07:37 PM,DoorDash - Ana P (C9B9B674),Online,Takeout,DoorDash,55.12,4.89,60.01,false
+Bubbakoo's Burritos - Sample Store,970361196119,1911,09/19/26 12:09 PM,DoorDash - Luis M (BEAE4606),Online,Takeout,DoorDash,14.34,1.27,15.61,false
+Bubbakoo's Burritos - Sample Store,829797470220,1912,09/19/26 11:03 AM,DoorDash - Chris L (6E803D2E),Online,Takeout,DoorDash,29.95,2.66,32.61,false
+Bubbakoo's Burritos - Sample Store,220172938364,1913,09/19/26 06:03 PM,DoorDash - Chris L (9EB5BE7E),Online,Takeout,DoorDash,26.29,2.33,28.62,false
+Bubbakoo's Burritos - Sample Store,1047150861792,1914,09/19/26 03:15 PM,DoorDash - Jane D (8026D716),Online,Takeout,DoorDash,55.92,4.96,60.88,false
+Bubbakoo's Burritos - Sample Store,1088156785314,1915,09/19/26 11:25 AM,DoorDash - Priya S (D5EC5BED),Online,Takeout,DoorDash,47.63,4.23,51.86,false
+Bubbakoo's Burritos - Sample Store,842960773702,1916,09/19/26 06:45 PM,DoorDash - Luis M (D56E6378),Online,Takeout,DoorDash,17.65,1.57,19.22,false
+Bubbakoo's Burritos - Sample Store,866787730672,1917,09/19/26 11:20 AM,DoorDash - Mike R (114EEE4A),Online,Takeout,DoorDash,24.51,2.18,26.69,false
+Bubbakoo's Burritos - Sample Store,292576735877,1918,09/19/26 07:56 PM,DoorDash - Mike R (7AC4BBA1),Online,Takeout,DoorDash,30.62,2.72,33.34,false
+Bubbakoo's Burritos - Sample Store,942297479774,1919,09/19/26 05:39 PM,DoorDash - Kate W (A100C996),Online,Takeout,DoorDash,15.36,1.36,16.72,false
+Bubbakoo's Burritos - Sample Store,1064168934046,1920,09/19/26 01:04 PM,DoorDash - Kate W (FB9D5328),Online,Takeout,DoorDash,43.25,3.84,47.09,false
+Bubbakoo's Burritos - Sample Store,245813134142,1921,09/19/26 08:03 PM,DoorDash - Mike R (0209E1DD),Online,Takeout,DoorDash,47.40,4.21,51.61,false
+Bubbakoo's Burritos - Sample Store,550305965358,1922,09/19/26 04:35 PM,DoorDash - Tony B (0F702302),Online,Takeout,DoorDash,57.90,5.14,63.04,false
+Bubbakoo's Burritos - Sample Store,816928670697,1923,09/19/26 02:26 PM,DoorDash - Tony B (33D6FB36),Online,Takeout,DoorDash,43.99,3.90,47.89,false
+Bubbakoo's Burritos - Sample Store,626773580833,1924,09/19/26 03:00 PM,DoorDash - Dev J (6346D979),Online,Takeout,DoorDash,25.54,2.27,27.81,false
+Bubbakoo's Burritos - Sample Store,582480001685,1926,09/19/26 12:30 PM,DoorDash - Ana P (09683666),Online,Takeout,DoorDash,45.37,4.03,49.40,false
+Bubbakoo's Burritos - Sample Store,1099222438832,1927,09/19/26 08:39 PM,DoorDash - Tony B (26081FE4),Online,Takeout,DoorDash,30.78,2.73,33.51,false
+Bubbakoo's Burritos - Sample Store,529257771960,1928,09/19/26 06:41 PM,DoorDash - Sam K (DB2BF83F),Online,Takeout,DoorDash,23.42,2.08,25.50,false
+Bubbakoo's Burritos - Sample Store,803161519456,1929,09/19/26 08:52 PM,DoorDash - Kate W (C90C422C),Online,Takeout,DoorDash,42.23,3.75,45.98,false
+Bubbakoo's Burritos - Sample Store,541857336783,1930,09/19/26 12:16 PM,DoorDash - Ana P (A3E49592),Online,Takeout,DoorDash,16.26,1.44,17.70,false
+Bubbakoo's Burritos - Sample Store,360160148997,1931,09/19/26 11:07 AM,DoorDash - Luis M (3488FF92),Online,Takeout,DoorDash,36.48,3.24,39.72,false
+Bubbakoo's Burritos - Sample Store,656005801736,1932,09/19/26 06:07 PM,DoorDash - Kate W (04E749E1),Online,Takeout,DoorDash,23.37,2.07,25.44,false
+Bubbakoo's Burritos - Sample Store,981332018595,1933,09/19/26 11:03 AM,DoorDash - Chris L (750CE91B),Online,Takeout,DoorDash,41.57,3.69,45.26,false
+Bubbakoo's Burritos - Sample Store,595360812754,1934,09/19/26 01:06 PM,DoorDash - Jane D (1E0860D4),Online,Takeout,DoorDash,55.32,4.91,60.23,false
+Bubbakoo's Burritos - Sample Store,486069302548,1935,09/19/26 08:05 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,14.23,1.26,15.49,false
+Bubbakoo's Burritos - Sample Store,284315147517,1936,09/19/26 01:01 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,20.41,1.81,22.22,false
+Bubbakoo's Burritos - Sample Store,583242120548,1937,09/19/26 08:48 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,16.45,1.46,17.91,false
+Bubbakoo's Burritos - Sample Store,768170095245,1938,09/19/26 01:47 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,17.39,1.54,18.93,false
+Bubbakoo's Burritos - Sample Store,384266323963,1939,09/19/26 07:27 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,36.13,3.21,39.34,false
+Bubbakoo's Burritos - Sample Store,846559645063,1940,09/19/26 12:31 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,56.94,5.05,61.99,false
+Bubbakoo's Burritos - Sample Store,620174375973,1941,09/19/26 03:09 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,54.95,4.88,59.83,false
+Bubbakoo's Burritos - Sample Store,703519962744,1942,09/19/26 08:33 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,36.39,3.23,39.62,false
+Bubbakoo's Burritos - Sample Store,860843266593,1943,09/19/26 04:09 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,46.72,4.15,50.87,false
+Bubbakoo's Burritos - Sample Store,333825617557,1944,09/19/26 02:49 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,45.58,4.05,49.63,false
+Bubbakoo's Burritos - Sample Store,551291059842,1945,09/19/26 03:30 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,44.38,3.94,48.32,false
+Bubbakoo's Burritos - Sample Store,966670718163,1946,09/19/26 07:02 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,18.70,1.66,20.36,false
+Bubbakoo's Burritos - Sample Store,148686809851,1947,09/19/26 06:32 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,31.87,2.83,34.70,false
+Bubbakoo's Burritos - Sample Store,353559200751,1948,09/19/26 11:21 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,40.42,3.59,44.01,false
+Bubbakoo's Burritos - Sample Store,143389055389,1949,09/19/26 11:08 AM,Grubhub - Chris L 1949,Online,Takeout,Grubhub,18.01,1.60,19.61,false
+Bubbakoo's Burritos - Sample Store,366085081844,1950,09/19/26 08:58 PM,Grubhub - Dev J 1950,Online,Takeout,Grubhub,38.05,3.38,41.43,false
+Bubbakoo's Burritos - Sample Store,539632501574,1951,09/19/26 01:28 PM,Grubhub - Sam K 1951,Online,Takeout,Grubhub,36.11,3.20,39.31,false
+Bubbakoo's Burritos - Sample Store,194437170127,1952,09/19/26 05:27 PM,Grubhub - Chris L 1952,Online,Takeout,Grubhub,54.15,4.81,58.96,false
+Bubbakoo's Burritos - Sample Store,861164682500,1953,09/19/26 08:22 PM,Grubhub - Mike R 1953,Online,Takeout,Grubhub,16.43,1.46,17.89,false
+Bubbakoo's Burritos - Sample Store,965901008576,1954,09/19/26 12:15 PM,Grubhub - Chris L 1954,Online,Takeout,Grubhub,16.51,1.47,17.98,false
+Bubbakoo's Burritos - Sample Store,960776547764,1955,09/19/26 05:18 PM,Grubhub - Jane D 1955,Online,Takeout,Grubhub,23.12,2.05,25.17,false
+Bubbakoo's Burritos - Sample Store,434254787535,1956,09/19/26 08:49 PM,Grubhub - Sam K 1956,Online,Takeout,Grubhub,34.38,3.05,37.43,false
+Bubbakoo's Burritos - Sample Store,275094135326,1957,09/19/26 03:01 PM,Grubhub - Sam K 1957,Online,Takeout,Grubhub,34.92,3.10,38.02,false
+Bubbakoo's Burritos - Sample Store,228238416406,1958,09/20/26 01:22 PM,DoorDash - Ana P (75D0F5B8),Online,Takeout,DoorDash,39.96,3.55,43.51,false
+Bubbakoo's Burritos - Sample Store,249404157828,1959,09/20/26 04:19 PM,DoorDash - Tony B (EC225484),Online,Takeout,DoorDash,24.41,2.17,26.58,false
+Bubbakoo's Burritos - Sample Store,1071620810068,1960,09/20/26 03:21 PM,DoorDash - Mike R (DF9E03E6),Online,Takeout,DoorDash,32.15,2.85,35.00,false
+Bubbakoo's Burritos - Sample Store,168302764496,1961,09/20/26 06:43 PM,DoorDash - Priya S (84809E89),Online,Takeout,DoorDash,18.85,1.67,20.52,false
+Bubbakoo's Burritos - Sample Store,180068308472,1962,09/20/26 05:53 PM,DoorDash - Mike R (10B1CDA1),Online,Takeout,DoorDash,11.55,1.03,12.58,false
+Bubbakoo's Burritos - Sample Store,1069295911957,1963,09/20/26 12:49 PM,DoorDash - Mike R (A7125BF6),Online,Takeout,DoorDash,21.70,1.93,23.63,false
+Bubbakoo's Burritos - Sample Store,637690009385,1964,09/20/26 12:43 PM,DoorDash - Kate W (200254A9),Online,Takeout,DoorDash,44.69,3.97,48.66,false
+Bubbakoo's Burritos - Sample Store,257923028626,1965,09/20/26 04:37 PM,DoorDash - Priya S (1ECF455A),Online,Takeout,DoorDash,15.41,1.37,16.78,false
+Bubbakoo's Burritos - Sample Store,840966615737,1966,09/20/26 08:32 PM,DoorDash - Mike R (5A728E4D),Online,Takeout,DoorDash,56.52,5.02,61.54,false
+Bubbakoo's Burritos - Sample Store,012704765682,1967,09/20/26 03:09 PM,DoorDash - Ana P (B13D9984),Online,Takeout,DoorDash,39.15,3.47,42.62,false
+Bubbakoo's Burritos - Sample Store,984991939206,1968,09/20/26 02:00 PM,DoorDash - Mike R (EAC32A1B),Online,Takeout,DoorDash,23.32,2.07,25.39,false
+Bubbakoo's Burritos - Sample Store,557362256795,1969,09/20/26 08:35 PM,DoorDash - Chris L (9B4B8D78),Online,Takeout,DoorDash,57.13,5.07,62.20,false
+Bubbakoo's Burritos - Sample Store,875022958086,1970,09/20/26 12:59 PM,DoorDash - Mike R (145A7ECA),Online,Takeout,DoorDash,15.74,1.40,17.14,false
+Bubbakoo's Burritos - Sample Store,403975413567,1971,09/20/26 08:22 PM,DoorDash - Chris L (94BC4E1B),Online,Takeout,DoorDash,29.75,2.64,32.39,false
+Bubbakoo's Burritos - Sample Store,355798116356,1972,09/20/26 06:57 PM,DoorDash - Ana P (6C40BABD),Online,Takeout,DoorDash,38.14,3.38,41.52,false
+Bubbakoo's Burritos - Sample Store,904083837668,1973,09/20/26 11:15 AM,DoorDash - Tony B (42D51E8C),Online,Takeout,DoorDash,44.51,3.95,48.46,false
+Bubbakoo's Burritos - Sample Store,839172604592,1974,09/20/26 12:37 PM,DoorDash - Kate W (0773B17C),Online,Takeout,DoorDash,24.57,2.18,26.75,false
+Bubbakoo's Burritos - Sample Store,644550885554,1975,09/20/26 03:05 PM,DoorDash - Tony B (4D1138D2),Online,Takeout,DoorDash,27.71,2.46,30.17,false
+Bubbakoo's Burritos - Sample Store,177373957998,1976,09/20/26 11:29 AM,DoorDash - Luis M (9DF6B81E),Online,Takeout,DoorDash,51.25,4.55,55.80,false
+Bubbakoo's Burritos - Sample Store,281389583899,1977,09/20/26 05:13 PM,DoorDash - Mike R (95D90871),Online,Takeout,DoorDash,21.79,1.93,23.72,false
+Bubbakoo's Burritos - Sample Store,517204240824,1978,09/20/26 04:09 PM,DoorDash - Kate W (7C1EAD1E),Online,Takeout,DoorDash,41.08,3.65,44.73,false
+Bubbakoo's Burritos - Sample Store,387928757229,1979,09/20/26 05:01 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,24.22,2.15,26.37,false
+Bubbakoo's Burritos - Sample Store,429871618156,1980,09/20/26 12:28 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,40.31,3.58,43.89,false
+Bubbakoo's Burritos - Sample Store,661502184898,1981,09/20/26 05:23 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,43.93,3.90,47.83,false
+Bubbakoo's Burritos - Sample Store,1017219338527,1982,09/20/26 11:45 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,27.21,2.41,29.62,false
+Bubbakoo's Burritos - Sample Store,775586529157,1983,09/20/26 03:37 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,32.78,2.91,35.69,false
+Bubbakoo's Burritos - Sample Store,115708586502,1984,09/20/26 11:09 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,16.57,1.47,18.04,false
+Bubbakoo's Burritos - Sample Store,712319624842,1985,09/20/26 02:07 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,46.40,4.12,50.52,false
+Bubbakoo's Burritos - Sample Store,538417658361,1986,09/20/26 01:25 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,47.10,4.18,51.28,false
+Bubbakoo's Burritos - Sample Store,541780398483,1987,09/20/26 04:30 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,44.09,3.91,48.00,false
+Bubbakoo's Burritos - Sample Store,783003159414,1988,09/20/26 03:22 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,42.13,3.74,45.87,false
+Bubbakoo's Burritos - Sample Store,1067206927589,1989,09/20/26 01:44 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,18.42,1.63,20.05,false
+Bubbakoo's Burritos - Sample Store,1098951238628,1990,09/20/26 03:35 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,52.13,4.63,56.76,false
+Bubbakoo's Burritos - Sample Store,078095425942,1991,09/20/26 11:52 AM,Uber Eats - Chris L,Online,Takeout,Uber Eats,57.97,5.14,63.11,false
+Bubbakoo's Burritos - Sample Store,543163751633,1992,09/20/26 01:12 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,42.16,3.74,45.90,false
+Bubbakoo's Burritos - Sample Store,081208769624,1993,09/20/26 05:35 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,55.55,4.93,60.48,false
+Bubbakoo's Burritos - Sample Store,1080635043673,1994,09/20/26 01:44 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,33.98,3.02,37.00,false
+Bubbakoo's Burritos - Sample Store,611438384293,1995,09/20/26 08:15 PM,Grubhub - Jane D 1995,Online,Takeout,Grubhub,50.20,4.46,54.66,false
+Bubbakoo's Burritos - Sample Store,161861669840,1996,09/20/26 08:45 PM,Grubhub - Luis M 1996,Online,Takeout,Grubhub,43.22,3.84,47.06,false
+Bubbakoo's Burritos - Sample Store,686926236743,1997,09/20/26 07:31 PM,Grubhub - Jane D 1997,Online,Takeout,Grubhub,42.53,3.77,46.30,false
+Bubbakoo's Burritos - Sample Store,510916315330,1998,09/20/26 03:44 PM,Grubhub - Sam K 1998,Online,Takeout,Grubhub,39.38,3.49,42.87,false
+Bubbakoo's Burritos - Sample Store,747619937626,1999,09/20/26 05:13 PM,Grubhub - Dev J 1999,Online,Takeout,Grubhub,55.85,4.96,60.81,false
+Bubbakoo's Burritos - Sample Store,233330870732,2000,09/20/26 05:38 PM,Grubhub - Tony B 2000,Online,Takeout,Grubhub,57.36,5.09,62.45,false
+Bubbakoo's Burritos - Sample Store,1073729200587,2001,09/21/26 08:55 PM,DoorDash - Tony B (B85C85E4),Online,Takeout,DoorDash,14.49,1.29,15.78,false
+Bubbakoo's Burritos - Sample Store,142410095596,2002,09/21/26 02:21 PM,DoorDash - Kate W (8FA87F19),Online,Takeout,DoorDash,38.11,3.38,41.49,false
+Bubbakoo's Burritos - Sample Store,074467727059,2003,09/21/26 01:20 PM,DoorDash - Kate W (778BBB79),Online,Takeout,DoorDash,55.53,4.93,60.46,false
+Bubbakoo's Burritos - Sample Store,800271496878,2004,09/21/26 07:12 PM,DoorDash - Kate W (7B3D100C),Online,Takeout,DoorDash,51.37,4.56,55.93,false
+Bubbakoo's Burritos - Sample Store,977665385559,2005,09/21/26 08:55 PM,DoorDash - Mike R (5D88F83F),Online,Takeout,DoorDash,55.65,4.94,60.59,false
+Bubbakoo's Burritos - Sample Store,158912187503,2006,09/21/26 08:21 PM,DoorDash - Kate W (A7634A10),Online,Takeout,DoorDash,32.63,2.90,35.53,false
+Bubbakoo's Burritos - Sample Store,941188451025,2007,09/21/26 01:29 PM,DoorDash - Jane D (6E9D7C3F),Online,Takeout,DoorDash,35.89,3.19,39.08,false
+Bubbakoo's Burritos - Sample Store,358278856532,2008,09/21/26 08:26 PM,DoorDash - Luis M (1BC95414),Online,Takeout,DoorDash,17.86,1.59,19.45,false
+Bubbakoo's Burritos - Sample Store,386216125532,2009,09/21/26 07:54 PM,DoorDash - Ana P (30BD740E),Online,Takeout,DoorDash,51.12,4.54,55.66,false
+Bubbakoo's Burritos - Sample Store,348814897925,2010,09/21/26 04:55 PM,DoorDash - Sam K (2E7598BC),Online,Takeout,DoorDash,12.86,1.14,14.00,false
+Bubbakoo's Burritos - Sample Store,641911097106,2011,09/21/26 03:49 PM,DoorDash - Tony B (B5482B55),Online,Takeout,DoorDash,53.10,4.71,57.81,false
+Bubbakoo's Burritos - Sample Store,971450322231,2012,09/21/26 06:21 PM,DoorDash - Tony B (258E1568),Online,Takeout,DoorDash,30.83,2.74,33.57,false
+Bubbakoo's Burritos - Sample Store,750333554243,2013,09/21/26 03:01 PM,DoorDash - Ana P (D59CC071),Online,Takeout,DoorDash,53.68,4.76,58.44,false
+Bubbakoo's Burritos - Sample Store,483372449678,2014,09/21/26 12:25 PM,DoorDash - Dev J (DDD96637),Online,Takeout,DoorDash,49.09,4.36,53.45,false
+Bubbakoo's Burritos - Sample Store,072043770737,2015,09/21/26 05:15 PM,DoorDash - Mike R (A3903658),Online,Takeout,DoorDash,33.35,2.96,36.31,false
+Bubbakoo's Burritos - Sample Store,751896373061,2016,09/21/26 04:19 PM,DoorDash - Chris L (05558CF8),Online,Takeout,DoorDash,28.49,2.53,31.02,false
+Bubbakoo's Burritos - Sample Store,317285472170,2017,09/21/26 05:25 PM,DoorDash - Priya S (2A938E3A),Online,Takeout,DoorDash,56.24,4.99,61.23,false
+Bubbakoo's Burritos - Sample Store,134013226847,2018,09/21/26 04:23 PM,DoorDash - Kate W (AAEA59D2),Online,Takeout,DoorDash,31.51,2.80,34.31,false
+Bubbakoo's Burritos - Sample Store,910712098764,2019,09/21/26 06:18 PM,DoorDash - Dev J (D3CD66C2),Online,Takeout,DoorDash,38.01,3.37,41.38,false
+Bubbakoo's Burritos - Sample Store,1028587578411,2020,09/21/26 02:35 PM,DoorDash - Jane D (535CE4B6),Online,Takeout,DoorDash,50.17,4.45,54.62,false
+Bubbakoo's Burritos - Sample Store,034953823663,2021,09/21/26 05:25 PM,DoorDash - Chris L (0C6F402B),Online,Takeout,DoorDash,19.71,1.75,21.46,false
+Bubbakoo's Burritos - Sample Store,459721855088,2022,09/21/26 08:15 PM,DoorDash - Priya S (51EEAE07),Online,Takeout,DoorDash,34.35,3.05,37.40,false
+Bubbakoo's Burritos - Sample Store,1029816107260,2023,09/21/26 05:38 PM,DoorDash - Sam K (0B7B653F),Online,Takeout,DoorDash,52.50,4.66,57.16,false
+Bubbakoo's Burritos - Sample Store,019349883037,2024,09/21/26 11:58 AM,DoorDash - Ana P (225BEA90),Online,Takeout,DoorDash,36.97,3.28,40.25,false
+Bubbakoo's Burritos - Sample Store,479576471591,2025,09/21/26 11:23 AM,DoorDash - Mike R (9CDE7073),Online,Takeout,DoorDash,50.16,4.45,54.61,false
+Bubbakoo's Burritos - Sample Store,523755886619,2026,09/21/26 11:13 AM,DoorDash - Jane D (DBA18586),Online,Takeout,DoorDash,30.25,2.68,32.93,false
+Bubbakoo's Burritos - Sample Store,680673269404,2027,09/21/26 01:04 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,30.09,2.67,32.76,false
+Bubbakoo's Burritos - Sample Store,908387519720,2028,09/21/26 06:18 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,55.67,4.94,60.61,false
+Bubbakoo's Burritos - Sample Store,016415117974,2029,09/21/26 03:30 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,34.19,3.03,37.22,false
+Bubbakoo's Burritos - Sample Store,035289476653,2030,09/21/26 08:57 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,32.36,2.87,35.23,false
+Bubbakoo's Burritos - Sample Store,146425623857,2031,09/21/26 03:08 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,32.84,2.91,35.75,false
+Bubbakoo's Burritos - Sample Store,508596784128,2032,09/21/26 06:01 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,48.11,4.27,52.38,false
+Bubbakoo's Burritos - Sample Store,102053301581,2033,09/21/26 06:04 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,19.65,1.74,21.39,false
+Bubbakoo's Burritos - Sample Store,514318892679,2034,09/21/26 05:02 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,28.51,2.53,31.04,false
+Bubbakoo's Burritos - Sample Store,265114250865,2035,09/21/26 07:14 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,17.80,1.58,19.38,false
+Bubbakoo's Burritos - Sample Store,532047733631,2036,09/21/26 06:07 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,25.20,2.24,27.44,false
+Bubbakoo's Burritos - Sample Store,315029229318,2037,09/21/26 07:03 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,28.00,2.48,30.48,false
+Bubbakoo's Burritos - Sample Store,730324783924,2038,09/21/26 02:33 PM,Grubhub - Mike R 2038,Online,Takeout,Grubhub,54.72,4.86,59.58,false
+Bubbakoo's Burritos - Sample Store,656421908566,2039,09/21/26 07:43 PM,Grubhub - Luis M 2039,Online,Takeout,Grubhub,26.23,2.33,28.56,false
+Bubbakoo's Burritos - Sample Store,818406106652,2040,09/21/26 12:56 PM,Grubhub - Kate W 2040,Online,Takeout,Grubhub,42.06,3.73,45.79,false
+Bubbakoo's Burritos - Sample Store,1074956658826,2041,09/21/26 08:04 PM,Grubhub - Ana P 2041,Online,Takeout,Grubhub,19.60,1.74,21.34,false
+Bubbakoo's Burritos - Sample Store,289374052676,2042,09/22/26 08:36 PM,DoorDash - Mike R (47156316),Online,Takeout,DoorDash,53.13,4.72,57.85,false
+Bubbakoo's Burritos - Sample Store,1047597546652,2043,09/22/26 12:16 PM,DoorDash - Ana P (7A44B923),Online,Takeout,DoorDash,35.93,3.19,39.12,false
+Bubbakoo's Burritos - Sample Store,005428022107,2044,09/22/26 01:12 PM,DoorDash - Ana P (0E7FF625),Online,Takeout,DoorDash,20.45,1.81,22.26,false
+Bubbakoo's Burritos - Sample Store,541644603200,2045,09/22/26 02:37 PM,DoorDash - Tony B (213F2957),Online,Takeout,DoorDash,27.80,2.47,30.27,false
+Bubbakoo's Burritos - Sample Store,353119179445,2046,09/22/26 01:55 PM,DoorDash - Kate W (90A2BBE9),Online,Takeout,DoorDash,34.24,3.04,37.28,false
+Bubbakoo's Burritos - Sample Store,1028959054816,2047,09/22/26 02:47 PM,DoorDash - Mike R (530FD9D4),Online,Takeout,DoorDash,44.88,3.98,48.86,false
+Bubbakoo's Burritos - Sample Store,446422275020,2048,09/22/26 12:31 PM,DoorDash - Chris L (A1D33E7B),Online,Takeout,DoorDash,27.92,2.48,30.40,false
+Bubbakoo's Burritos - Sample Store,294400290147,2049,09/22/26 01:23 PM,DoorDash - Ana P (04163CAC),Online,Takeout,DoorDash,21.57,1.91,23.48,false
+Bubbakoo's Burritos - Sample Store,284135403103,2050,09/22/26 04:38 PM,DoorDash - Mike R (BFCB35F6),Online,Takeout,DoorDash,11.30,1.00,12.30,false
+Bubbakoo's Burritos - Sample Store,807469631966,2051,09/22/26 07:21 PM,DoorDash - Tony B (9E75D577),Online,Takeout,DoorDash,20.69,1.84,22.53,false
+Bubbakoo's Burritos - Sample Store,545292497747,2052,09/22/26 03:36 PM,DoorDash - Mike R (BAF184B1),Online,Takeout,DoorDash,37.04,3.29,40.33,false
+Bubbakoo's Burritos - Sample Store,145533141436,2053,09/22/26 03:58 PM,DoorDash - Ana P (129B367A),Online,Takeout,DoorDash,34.88,3.10,37.98,false
+Bubbakoo's Burritos - Sample Store,271680764385,2054,09/22/26 03:30 PM,DoorDash - Mike R (056B9469),Online,Takeout,DoorDash,44.44,3.94,48.38,false
+Bubbakoo's Burritos - Sample Store,578682091032,2055,09/22/26 08:15 PM,DoorDash - Tony B (F1F55711),Online,Takeout,DoorDash,43.27,3.84,47.11,false
+Bubbakoo's Burritos - Sample Store,373001127519,2056,09/22/26 07:32 PM,DoorDash - Luis M (42D53CE4),Online,Takeout,DoorDash,35.34,3.14,38.48,false
+Bubbakoo's Burritos - Sample Store,1066423401768,2057,09/22/26 12:22 PM,DoorDash - Jane D (84BD5532),Online,Takeout,DoorDash,34.97,3.10,38.07,false
+Bubbakoo's Burritos - Sample Store,326558197406,2058,09/22/26 02:33 PM,DoorDash - Luis M (414753FE),Online,Takeout,DoorDash,27.45,2.44,29.89,false
+Bubbakoo's Burritos - Sample Store,601218965483,2059,09/22/26 01:12 PM,DoorDash - Luis M (87AB1905),Online,Takeout,DoorDash,23.08,2.05,25.13,false
+Bubbakoo's Burritos - Sample Store,274054179721,2060,09/22/26 11:11 AM,DoorDash - Mike R (69D346B0),Online,Takeout,DoorDash,16.19,1.44,17.63,false
+Bubbakoo's Burritos - Sample Store,268782843167,2061,09/22/26 04:27 PM,DoorDash - Jane D (D532AA85),Online,Takeout,DoorDash,50.22,4.46,54.68,false
+Bubbakoo's Burritos - Sample Store,262388789224,2062,09/22/26 02:56 PM,DoorDash - Dev J (7043B374),Online,Takeout,DoorDash,17.00,1.51,18.51,false
+Bubbakoo's Burritos - Sample Store,140659124333,2063,09/22/26 12:23 PM,DoorDash - Ana P (AACB257B),Online,Takeout,DoorDash,11.68,1.04,12.72,false
+Bubbakoo's Burritos - Sample Store,665616443323,2064,09/22/26 04:25 PM,DoorDash - Kate W (9DFB723D),Online,Takeout,DoorDash,46.35,4.11,50.46,false
+Bubbakoo's Burritos - Sample Store,970193723867,2065,09/22/26 03:59 PM,DoorDash - Tony B (DA6AF529),Online,Takeout,DoorDash,55.90,4.96,60.86,false
+Bubbakoo's Burritos - Sample Store,864873565802,2066,09/22/26 02:08 PM,DoorDash - Mike R (81999DC4),Online,Takeout,DoorDash,43.28,3.84,47.12,false
+Bubbakoo's Burritos - Sample Store,588974674749,2067,09/22/26 12:07 PM,DoorDash - Priya S (9BA37063),Online,Takeout,DoorDash,15.98,1.42,17.40,false
+Bubbakoo's Burritos - Sample Store,773634807860,2068,09/22/26 03:51 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,23.92,2.12,26.04,false
+Bubbakoo's Burritos - Sample Store,927998615036,2069,09/22/26 11:17 AM,Uber Eats - Sam K,Online,Takeout,Uber Eats,53.50,4.75,58.25,false
+Bubbakoo's Burritos - Sample Store,170778297411,2070,09/22/26 02:42 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,34.61,3.07,37.68,false
+Bubbakoo's Burritos - Sample Store,970188956520,2071,09/22/26 07:40 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,26.52,2.35,28.87,false
+Bubbakoo's Burritos - Sample Store,129048983405,2072,09/22/26 07:26 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,50.65,4.50,55.15,false
+Bubbakoo's Burritos - Sample Store,874654303936,2073,09/22/26 02:47 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,16.95,1.50,18.45,false
+Bubbakoo's Burritos - Sample Store,695743955553,2074,09/22/26 04:03 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,42.60,3.78,46.38,false
+Bubbakoo's Burritos - Sample Store,818158084626,2075,09/22/26 12:04 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,26.79,2.38,29.17,false
+Bubbakoo's Burritos - Sample Store,901386735829,2076,09/22/26 03:45 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,21.19,1.88,23.07,false
+Bubbakoo's Burritos - Sample Store,1050159879735,2077,09/22/26 02:37 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,35.83,3.18,39.01,false
+Bubbakoo's Burritos - Sample Store,345359694145,2078,09/22/26 11:09 AM,Uber Eats - Mike R,Online,Takeout,Uber Eats,35.24,3.13,38.37,false
+Bubbakoo's Burritos - Sample Store,590004746223,2079,09/22/26 05:04 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,21.11,1.87,22.98,false
+Bubbakoo's Burritos - Sample Store,886797948045,2080,09/22/26 04:02 PM,Grubhub - Tony B 2080,Online,Takeout,Grubhub,56.06,4.98,61.04,false
+Bubbakoo's Burritos - Sample Store,398428521342,2081,09/22/26 06:30 PM,Grubhub - Priya S 2081,Online,Takeout,Grubhub,27.46,2.44,29.90,false
+Bubbakoo's Burritos - Sample Store,143851388088,2082,09/22/26 05:21 PM,Grubhub - Ana P 2082,Online,Takeout,Grubhub,17.58,1.56,19.14,false
+Bubbakoo's Burritos - Sample Store,829828274000,2083,09/22/26 02:52 PM,Grubhub - Jane D 2083,Online,Takeout,Grubhub,22.61,2.01,24.62,false
+Bubbakoo's Burritos - Sample Store,086120867243,2084,09/23/26 03:17 PM,DoorDash - Jane D (E316FC2D),Online,Takeout,DoorDash,43.73,3.88,47.61,false
+Bubbakoo's Burritos - Sample Store,821318096794,2085,09/23/26 06:14 PM,DoorDash - Mike R (977E18B6),Online,Takeout,DoorDash,40.77,3.62,44.39,false
+Bubbakoo's Burritos - Sample Store,192637911125,2086,09/23/26 02:04 PM,DoorDash - Mike R (8D282421),Online,Takeout,DoorDash,22.73,2.02,24.75,false
+Bubbakoo's Burritos - Sample Store,887432735997,2087,09/23/26 12:31 PM,DoorDash - Ana P (AA54AD35),Online,Takeout,DoorDash,24.43,2.17,26.60,false
+Bubbakoo's Burritos - Sample Store,107536526445,2088,09/23/26 12:41 PM,DoorDash - Tony B (CC66CCD6),Online,Takeout,DoorDash,50.74,4.50,55.24,false
+Bubbakoo's Burritos - Sample Store,776113654300,2089,09/23/26 07:39 PM,DoorDash - Chris L (477F3DCC),Online,Takeout,DoorDash,45.61,4.05,49.66,false
+Bubbakoo's Burritos - Sample Store,788291604681,2090,09/23/26 01:38 PM,DoorDash - Sam K (776A14A4),Online,Takeout,DoorDash,16.91,1.50,18.41,false
+Bubbakoo's Burritos - Sample Store,570713616281,2091,09/23/26 02:23 PM,DoorDash - Luis M (B1D07546),Online,Takeout,DoorDash,22.93,2.04,24.97,false
+Bubbakoo's Burritos - Sample Store,602103372077,2092,09/23/26 06:10 PM,DoorDash - Luis M (752DEBA2),Online,Takeout,DoorDash,54.51,4.84,59.35,false
+Bubbakoo's Burritos - Sample Store,971588241149,2093,09/23/26 06:06 PM,DoorDash - Sam K (389EE002),Online,Takeout,DoorDash,20.76,1.84,22.60,false
+Bubbakoo's Burritos - Sample Store,495584424080,2094,09/23/26 02:50 PM,DoorDash - Mike R (3770471E),Online,Takeout,DoorDash,50.74,4.50,55.24,false
+Bubbakoo's Burritos - Sample Store,978590641091,2095,09/23/26 07:31 PM,DoorDash - Dev J (07C6532D),Online,Takeout,DoorDash,41.70,3.70,45.40,false
+Bubbakoo's Burritos - Sample Store,636277132306,2096,09/23/26 01:30 PM,DoorDash - Ana P (98CB9086),Online,Takeout,DoorDash,46.51,4.13,50.64,false
+Bubbakoo's Burritos - Sample Store,1097307649945,2097,09/23/26 02:16 PM,DoorDash - Dev J (B9ED6BA0),Online,Takeout,DoorDash,54.81,4.86,59.67,false
+Bubbakoo's Burritos - Sample Store,585476920992,2098,09/23/26 05:50 PM,DoorDash - Jane D (0E35DAE1),Online,Takeout,DoorDash,53.75,4.77,58.52,false
+Bubbakoo's Burritos - Sample Store,874420527851,2099,09/23/26 03:48 PM,DoorDash - Mike R (D15D03EE),Online,Takeout,DoorDash,30.69,2.72,33.41,false
+Bubbakoo's Burritos - Sample Store,778002604026,2100,09/23/26 08:20 PM,DoorDash - Chris L (2D5551D3),Online,Takeout,DoorDash,27.10,2.41,29.51,false
+Bubbakoo's Burritos - Sample Store,021736426261,2101,09/23/26 08:31 PM,DoorDash - Jane D (A852EC15),Online,Takeout,DoorDash,19.52,1.73,21.25,false
+Bubbakoo's Burritos - Sample Store,264249145436,2102,09/23/26 01:15 PM,DoorDash - Dev J (4CBA1F54),Online,Takeout,DoorDash,54.87,4.87,59.74,false
+Bubbakoo's Burritos - Sample Store,411088078929,2103,09/23/26 07:52 PM,DoorDash - Mike R (0A7BB97D),Online,Takeout,DoorDash,16.19,1.44,17.63,false
+Bubbakoo's Burritos - Sample Store,262474260623,2104,09/23/26 02:06 PM,DoorDash - Jane D (F5E59458),Online,Takeout,DoorDash,14.69,1.30,15.99,false
+Bubbakoo's Burritos - Sample Store,414689327402,2105,09/23/26 03:18 PM,DoorDash - Priya S (B4E413E2),Online,Takeout,DoorDash,44.23,3.93,48.16,false
+Bubbakoo's Burritos - Sample Store,890260093259,2106,09/23/26 12:35 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,49.82,4.42,54.24,false
+Bubbakoo's Burritos - Sample Store,212889233395,2107,09/23/26 11:12 AM,Uber Eats - Dev J,Online,Takeout,Uber Eats,28.92,2.57,31.49,false
+Bubbakoo's Burritos - Sample Store,1040887433843,2108,09/23/26 04:16 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,27.55,2.45,30.00,false
+Bubbakoo's Burritos - Sample Store,009231097858,2109,09/23/26 06:38 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,50.57,4.49,55.06,false
+Bubbakoo's Burritos - Sample Store,1066650123757,2110,09/23/26 11:13 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,35.59,3.16,38.75,false
+Bubbakoo's Burritos - Sample Store,515179116001,2111,09/23/26 03:19 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,19.76,1.75,21.51,false
+Bubbakoo's Burritos - Sample Store,532041017584,2112,09/23/26 03:02 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,14.51,1.29,15.80,false
+Bubbakoo's Burritos - Sample Store,373453508684,2113,09/23/26 07:26 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,22.46,1.99,24.45,false
+Bubbakoo's Burritos - Sample Store,583932432797,2114,09/23/26 06:11 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,45.57,4.04,49.61,false
+Bubbakoo's Burritos - Sample Store,1012558666855,2115,09/23/26 08:01 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,50.46,4.48,54.94,false
+Bubbakoo's Burritos - Sample Store,197958467545,2116,09/23/26 04:50 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,43.67,3.88,47.55,false
+Bubbakoo's Burritos - Sample Store,258632091798,2117,09/23/26 01:20 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,51.11,4.54,55.65,false
+Bubbakoo's Burritos - Sample Store,389548107601,2118,09/23/26 11:16 AM,Uber Eats - Priya S,Online,Takeout,Uber Eats,36.62,3.25,39.87,false
+Bubbakoo's Burritos - Sample Store,355599765230,2119,09/23/26 07:58 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,34.01,3.02,37.03,false
+Bubbakoo's Burritos - Sample Store,498715230517,2120,09/23/26 07:34 PM,Grubhub - Jane D 2120,Online,Takeout,Grubhub,56.89,5.05,61.94,false
+Bubbakoo's Burritos - Sample Store,964714254592,2121,09/23/26 08:29 PM,Grubhub - Kate W 2121,Online,Takeout,Grubhub,34.31,3.05,37.36,false
+Bubbakoo's Burritos - Sample Store,870937702543,2122,09/23/26 06:28 PM,Grubhub - Ana P 2122,Online,Takeout,Grubhub,20.05,1.78,21.83,false
+Bubbakoo's Burritos - Sample Store,360125025238,2123,09/23/26 04:44 PM,Grubhub - Mike R 2123,Online,Takeout,Grubhub,39.16,3.48,42.64,false
+Bubbakoo's Burritos - Sample Store,238032689731,2124,09/23/26 02:21 PM,Grubhub - Jane D 2124,Online,Takeout,Grubhub,42.67,3.79,46.46,false
+Bubbakoo's Burritos - Sample Store,147255732440,2125,09/23/26 01:04 PM,Grubhub - Dev J 2125,Online,Takeout,Grubhub,31.85,2.83,34.68,false
+Bubbakoo's Burritos - Sample Store,688496730000,2126,09/23/26 07:06 PM,Grubhub - Sam K 2126,Online,Takeout,Grubhub,12.16,1.08,13.24,false
+Bubbakoo's Burritos - Sample Store,277753772868,2128,09/24/26 07:18 PM,DoorDash - Jane D (6E765A60),Online,Takeout,DoorDash,15.99,1.42,17.41,false
+Bubbakoo's Burritos - Sample Store,1010496052638,2129,09/24/26 08:55 PM,DoorDash - Tony B (CD96F458),Online,Takeout,DoorDash,54.95,4.88,59.83,false
+Bubbakoo's Burritos - Sample Store,067627853418,2130,09/24/26 12:07 PM,DoorDash - Kate W (A95BA4A3),Online,Takeout,DoorDash,36.26,3.22,39.48,false
+Bubbakoo's Burritos - Sample Store,122660216107,2131,09/24/26 02:49 PM,DoorDash - Luis M (7390A43A),Online,Takeout,DoorDash,18.13,1.61,19.74,false
+Bubbakoo's Burritos - Sample Store,779327364210,2132,09/24/26 06:44 PM,DoorDash - Kate W (AC4BC44D),Online,Takeout,DoorDash,23.33,2.07,25.40,false
+Bubbakoo's Burritos - Sample Store,239095910423,2133,09/24/26 02:56 PM,DoorDash - Sam K (632E910F),Online,Takeout,DoorDash,27.80,2.47,30.27,false
+Bubbakoo's Burritos - Sample Store,780477364427,2134,09/24/26 11:10 AM,DoorDash - Luis M (546F7F42),Online,Takeout,DoorDash,19.18,1.70,20.88,false
+Bubbakoo's Burritos - Sample Store,576174688601,2135,09/24/26 01:25 PM,DoorDash - Priya S (46369121),Online,Takeout,DoorDash,34.01,3.02,37.03,false
+Bubbakoo's Burritos - Sample Store,493310207327,2136,09/24/26 12:44 PM,DoorDash - Mike R (E9F2056D),Online,Takeout,DoorDash,13.83,1.23,15.06,false
+Bubbakoo's Burritos - Sample Store,579685268457,2137,09/24/26 01:27 PM,DoorDash - Kate W (4562E650),Online,Takeout,DoorDash,17.08,1.52,18.60,false
+Bubbakoo's Burritos - Sample Store,560724762104,2138,09/24/26 11:05 AM,DoorDash - Mike R (E2BC0CF3),Online,Takeout,DoorDash,33.90,3.01,36.91,false
+Bubbakoo's Burritos - Sample Store,476377174125,2139,09/24/26 08:11 PM,DoorDash - Ana P (F0E05807),Online,Takeout,DoorDash,21.86,1.94,23.80,false
+Bubbakoo's Burritos - Sample Store,062849548799,2140,09/24/26 01:39 PM,DoorDash - Priya S (6A564605),Online,Takeout,DoorDash,49.65,4.41,54.06,false
+Bubbakoo's Burritos - Sample Store,351053621431,2141,09/24/26 08:15 PM,DoorDash - Dev J (5792920F),Online,Takeout,DoorDash,45.19,4.01,49.20,false
+Bubbakoo's Burritos - Sample Store,920762053786,2142,09/24/26 04:09 PM,DoorDash - Kate W (29D7A7BC),Online,Takeout,DoorDash,43.04,3.82,46.86,false
+Bubbakoo's Burritos - Sample Store,105239675767,2143,09/24/26 03:53 PM,DoorDash - Tony B (278AAF33),Online,Takeout,DoorDash,29.54,2.62,32.16,false
+Bubbakoo's Burritos - Sample Store,645127175315,2144,09/24/26 06:05 PM,DoorDash - Mike R (924EA876),Online,Takeout,DoorDash,55.19,4.90,60.09,false
+Bubbakoo's Burritos - Sample Store,148112210418,2145,09/24/26 04:26 PM,DoorDash - Ana P (F13789BB),Online,Takeout,DoorDash,12.35,1.10,13.45,false
+Bubbakoo's Burritos - Sample Store,455625684131,2146,09/24/26 08:41 PM,DoorDash - Sam K (C00B1433),Online,Takeout,DoorDash,26.15,2.32,28.47,false
+Bubbakoo's Burritos - Sample Store,677102036067,2147,09/24/26 08:10 PM,DoorDash - Jane D (A480D285),Online,Takeout,DoorDash,46.68,4.14,50.82,false
+Bubbakoo's Burritos - Sample Store,249583480863,2148,09/24/26 07:30 PM,DoorDash - Luis M (B8D1DCDF),Online,Takeout,DoorDash,49.77,4.42,54.19,false
+Bubbakoo's Burritos - Sample Store,078569810183,2149,09/24/26 02:38 PM,DoorDash - Dev J (6414C4AD),Online,Takeout,DoorDash,40.47,3.59,44.06,false
+Bubbakoo's Burritos - Sample Store,550490210078,2150,09/24/26 05:24 PM,DoorDash - Tony B (210CEF08),Online,Takeout,DoorDash,38.69,3.43,42.12,false
+Bubbakoo's Burritos - Sample Store,155193645474,2151,09/24/26 03:53 PM,DoorDash - Jane D (12476F42),Online,Takeout,DoorDash,38.47,3.41,41.88,false
+Bubbakoo's Burritos - Sample Store,1029259684501,2152,09/24/26 02:58 PM,DoorDash - Mike R (AEADED78),Online,Takeout,DoorDash,28.09,2.49,30.58,false
+Bubbakoo's Burritos - Sample Store,768791020691,2153,09/24/26 01:35 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,52.53,4.66,57.19,false
+Bubbakoo's Burritos - Sample Store,349275370501,2154,09/24/26 12:08 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,45.78,4.06,49.84,false
+Bubbakoo's Burritos - Sample Store,890013577559,2155,09/24/26 04:02 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,45.45,4.03,49.48,false
+Bubbakoo's Burritos - Sample Store,886098121244,2156,09/24/26 05:14 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,48.19,4.28,52.47,false
+Bubbakoo's Burritos - Sample Store,913559920453,2157,09/24/26 07:01 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,21.38,1.90,23.28,false
+Bubbakoo's Burritos - Sample Store,167505222475,2158,09/24/26 08:04 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,56.06,4.98,61.04,false
+Bubbakoo's Burritos - Sample Store,372257225139,2159,09/24/26 04:17 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,32.49,2.88,35.37,false
+Bubbakoo's Burritos - Sample Store,542988388748,2160,09/24/26 12:35 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,18.31,1.63,19.94,false
+Bubbakoo's Burritos - Sample Store,230967754094,2161,09/24/26 07:09 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,37.78,3.35,41.13,false
+Bubbakoo's Burritos - Sample Store,942106682289,2162,09/24/26 05:29 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,11.27,1.00,12.27,false
+Bubbakoo's Burritos - Sample Store,630477674664,2163,09/24/26 08:45 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,12.59,1.12,13.71,false
+Bubbakoo's Burritos - Sample Store,937139229376,2164,09/24/26 05:11 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,44.98,3.99,48.97,false
+Bubbakoo's Burritos - Sample Store,1079878774223,2165,09/24/26 02:45 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,39.54,3.51,43.05,false
+Bubbakoo's Burritos - Sample Store,840084360249,2166,09/24/26 03:05 PM,Uber Eats - Jane D,Online,Takeout,Uber Eats,56.89,5.05,61.94,false
+Bubbakoo's Burritos - Sample Store,1098411842288,2167,09/24/26 04:07 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,39.14,3.47,42.61,false
+Bubbakoo's Burritos - Sample Store,729673860641,2168,09/24/26 02:58 PM,Grubhub - Chris L 2168,Online,Takeout,Grubhub,11.22,1.00,12.22,false
+Bubbakoo's Burritos - Sample Store,315335877789,2169,09/24/26 07:21 PM,Grubhub - Chris L 2169,Online,Takeout,Grubhub,57.40,5.09,62.49,false
+Bubbakoo's Burritos - Sample Store,870978981583,2170,09/24/26 04:52 PM,Grubhub - Ana P 2170,Online,Takeout,Grubhub,18.23,1.62,19.85,false
+Bubbakoo's Burritos - Sample Store,936836918337,2171,09/24/26 01:21 PM,Grubhub - Chris L 2171,Online,Takeout,Grubhub,52.08,4.62,56.70,false
+Bubbakoo's Burritos - Sample Store,058161524335,2172,09/24/26 02:11 PM,Grubhub - Sam K 2172,Online,Takeout,Grubhub,56.96,5.06,62.02,false
+Bubbakoo's Burritos - Sample Store,216361361477,2173,09/24/26 03:28 PM,Grubhub - Chris L 2173,Online,Takeout,Grubhub,39.28,3.49,42.77,false
+Bubbakoo's Burritos - Sample Store,997945760147,2174,09/25/26 08:25 PM,DoorDash - Priya S (8C74A523),Online,Takeout,DoorDash,43.77,3.88,47.65,false
+Bubbakoo's Burritos - Sample Store,913919279796,2175,09/25/26 05:59 PM,DoorDash - Priya S (28C62265),Online,Takeout,DoorDash,39.03,3.46,42.49,false
+Bubbakoo's Burritos - Sample Store,293359737814,2176,09/25/26 07:13 PM,DoorDash - Jane D (1B4F0458),Online,Takeout,DoorDash,50.69,4.50,55.19,false
+Bubbakoo's Burritos - Sample Store,350641245475,2177,09/25/26 08:03 PM,DoorDash - Mike R (49FDBC4C),Online,Takeout,DoorDash,51.68,4.59,56.27,false
+Bubbakoo's Burritos - Sample Store,348098751953,2178,09/25/26 08:09 PM,DoorDash - Mike R (7F82621D),Online,Takeout,DoorDash,18.07,1.60,19.67,false
+Bubbakoo's Burritos - Sample Store,1022441434414,2179,09/25/26 12:07 PM,DoorDash - Priya S (291211A5),Online,Takeout,DoorDash,23.89,2.12,26.01,false
+Bubbakoo's Burritos - Sample Store,556245015775,2180,09/25/26 05:03 PM,DoorDash - Luis M (C0D143F4),Online,Takeout,DoorDash,52.25,4.64,56.89,false
+Bubbakoo's Burritos - Sample Store,382097352717,2181,09/25/26 05:49 PM,DoorDash - Dev J (67E07007),Online,Takeout,DoorDash,54.65,4.85,59.50,false
+Bubbakoo's Burritos - Sample Store,209273181148,2182,09/25/26 04:47 PM,DoorDash - Tony B (153F1369),Online,Takeout,DoorDash,31.36,2.78,34.14,false
+Bubbakoo's Burritos - Sample Store,208920758133,2183,09/25/26 02:46 PM,DoorDash - Mike R (3E59E443),Online,Takeout,DoorDash,24.35,2.16,26.51,false
+Bubbakoo's Burritos - Sample Store,792237731623,2184,09/25/26 02:47 PM,DoorDash - Sam K (540D720B),Online,Takeout,DoorDash,33.72,2.99,36.71,false
+Bubbakoo's Burritos - Sample Store,768133406061,2185,09/25/26 06:53 PM,DoorDash - Kate W (64F3F658),Online,Takeout,DoorDash,40.39,3.58,43.97,false
+Bubbakoo's Burritos - Sample Store,794475472869,2186,09/25/26 07:59 PM,DoorDash - Kate W (A276CB0A),Online,Takeout,DoorDash,33.91,3.01,36.92,false
+Bubbakoo's Burritos - Sample Store,1006574337900,2187,09/25/26 03:29 PM,DoorDash - Chris L (0C9B8A55),Online,Takeout,DoorDash,34.32,3.05,37.37,false
+Bubbakoo's Burritos - Sample Store,452930601310,2188,09/25/26 08:27 PM,DoorDash - Luis M (195C5F04),Online,Takeout,DoorDash,52.28,4.64,56.92,false
+Bubbakoo's Burritos - Sample Store,490712428432,2189,09/25/26 04:29 PM,DoorDash - Mike R (734F5339),Online,Takeout,DoorDash,20.67,1.83,22.50,false
+Bubbakoo's Burritos - Sample Store,099466985741,2190,09/25/26 08:16 PM,DoorDash - Chris L (CFEEB148),Online,Takeout,DoorDash,42.51,3.77,46.28,false
+Bubbakoo's Burritos - Sample Store,752322616676,2191,09/25/26 08:32 PM,DoorDash - Dev J (9F6A7C54),Online,Takeout,DoorDash,39.26,3.48,42.74,false
+Bubbakoo's Burritos - Sample Store,508267905901,2192,09/25/26 02:44 PM,DoorDash - Kate W (2CA5F43E),Online,Takeout,DoorDash,46.54,4.13,50.67,false
+Bubbakoo's Burritos - Sample Store,511096082991,2193,09/25/26 03:20 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,28.17,2.50,30.67,false
+Bubbakoo's Burritos - Sample Store,094291669836,2194,09/25/26 12:59 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,45.55,4.04,49.59,false
+Bubbakoo's Burritos - Sample Store,364630193555,2195,09/25/26 07:17 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,56.12,4.98,61.10,false
+Bubbakoo's Burritos - Sample Store,224435001104,2196,09/25/26 11:34 AM,Uber Eats - Sam K,Online,Takeout,Uber Eats,35.05,3.11,38.16,false
+Bubbakoo's Burritos - Sample Store,816496617968,2197,09/25/26 01:55 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,25.53,2.27,27.80,false
+Bubbakoo's Burritos - Sample Store,691693448459,2198,09/25/26 03:52 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,24.67,2.19,26.86,false
+Bubbakoo's Burritos - Sample Store,130692219632,2199,09/25/26 12:18 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,43.31,3.84,47.15,false
+Bubbakoo's Burritos - Sample Store,492753201611,2200,09/25/26 08:31 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,24.27,2.15,26.42,false
+Bubbakoo's Burritos - Sample Store,119572481746,2201,09/25/26 05:48 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,46.80,4.15,50.95,false
+Bubbakoo's Burritos - Sample Store,665255726658,2202,09/25/26 05:32 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,30.52,2.71,33.23,false
+Bubbakoo's Burritos - Sample Store,308471069610,2203,09/25/26 11:48 AM,Uber Eats - Ana P,Online,Takeout,Uber Eats,12.10,1.07,13.17,false
+Bubbakoo's Burritos - Sample Store,335399794910,2204,09/25/26 08:03 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,55.46,4.92,60.38,false
+Bubbakoo's Burritos - Sample Store,798283175383,2205,09/25/26 06:00 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,33.84,3.00,36.84,false
+Bubbakoo's Burritos - Sample Store,1013800580089,2206,09/25/26 08:43 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,53.77,4.77,58.54,false
+Bubbakoo's Burritos - Sample Store,901998140892,2207,09/25/26 11:35 AM,Uber Eats - Tony B,Online,Takeout,Uber Eats,41.58,3.69,45.27,false
+Bubbakoo's Burritos - Sample Store,990268460472,2208,09/25/26 12:19 PM,Uber Eats - Dev J,Online,Takeout,Uber Eats,31.99,2.84,34.83,false
+Bubbakoo's Burritos - Sample Store,1099331837056,2209,09/25/26 05:11 PM,Grubhub - Ana P 2209,Online,Takeout,Grubhub,20.23,1.80,22.03,false
+Bubbakoo's Burritos - Sample Store,774850949354,2210,09/25/26 07:05 PM,Grubhub - Mike R 2210,Online,Takeout,Grubhub,43.17,3.83,47.00,false
+Bubbakoo's Burritos - Sample Store,365497481445,2211,09/25/26 05:14 PM,Grubhub - Kate W 2211,Online,Takeout,Grubhub,14.62,1.30,15.92,false
+Bubbakoo's Burritos - Sample Store,569629279359,2212,09/26/26 06:29 PM,DoorDash - Chris L (8702D2CC),Online,Takeout,DoorDash,54.98,4.88,59.86,false
+Bubbakoo's Burritos - Sample Store,968040320309,2213,09/26/26 02:09 PM,DoorDash - Chris L (9E3F810E),Online,Takeout,DoorDash,40.13,3.56,43.69,false
+Bubbakoo's Burritos - Sample Store,501567289654,2214,09/26/26 07:11 PM,DoorDash - Mike R (00ADB57F),Online,Takeout,DoorDash,35.69,3.17,38.86,false
+Bubbakoo's Burritos - Sample Store,868429625298,2215,09/26/26 05:54 PM,DoorDash - Priya S (E42DC903),Online,Takeout,DoorDash,32.22,2.86,35.08,false
+Bubbakoo's Burritos - Sample Store,355828390839,2216,09/26/26 01:25 PM,DoorDash - Kate W (FFF05A66),Online,Takeout,DoorDash,14.60,1.30,15.90,false
+Bubbakoo's Burritos - Sample Store,1094181334175,2217,09/26/26 01:19 PM,DoorDash - Jane D (E6336E52),Online,Takeout,DoorDash,43.96,3.90,47.86,false
+Bubbakoo's Burritos - Sample Store,456850631263,2218,09/26/26 05:58 PM,DoorDash - Jane D (1E53C3D4),Online,Takeout,DoorDash,19.81,1.76,21.57,false
+Bubbakoo's Burritos - Sample Store,1066650418889,2219,09/26/26 04:40 PM,DoorDash - Sam K (CB86C18E),Online,Takeout,DoorDash,43.65,3.87,47.52,false
+Bubbakoo's Burritos - Sample Store,349722152844,2220,09/26/26 05:19 PM,DoorDash - Mike R (EBDB9A80),Online,Takeout,DoorDash,43.48,3.86,47.34,false
+Bubbakoo's Burritos - Sample Store,1041973495244,2221,09/26/26 08:52 PM,DoorDash - Dev J (C3457B15),Online,Takeout,DoorDash,44.58,3.96,48.54,false
+Bubbakoo's Burritos - Sample Store,643635939339,2222,09/26/26 03:10 PM,DoorDash - Tony B (4410F0C5),Online,Takeout,DoorDash,45.48,4.04,49.52,false
+Bubbakoo's Burritos - Sample Store,237006279264,2223,09/26/26 05:22 PM,DoorDash - Priya S (CE19CCCE),Online,Takeout,DoorDash,23.19,2.06,25.25,false
+Bubbakoo's Burritos - Sample Store,093924721704,2225,09/26/26 08:46 PM,DoorDash - Kate W (CC35021A),Online,Takeout,DoorDash,50.36,4.47,54.83,false
+Bubbakoo's Burritos - Sample Store,161473691936,2226,09/26/26 04:40 PM,DoorDash - Tony B (D98E96FF),Online,Takeout,DoorDash,55.23,4.90,60.13,false
+Bubbakoo's Burritos - Sample Store,388258903427,2227,09/26/26 04:55 PM,DoorDash - Dev J (14E7A641),Online,Takeout,DoorDash,42.61,3.78,46.39,false
+Bubbakoo's Burritos - Sample Store,656662559314,2228,09/26/26 05:27 PM,DoorDash - Sam K (89B4BBC1),Online,Takeout,DoorDash,24.06,2.14,26.20,false
+Bubbakoo's Burritos - Sample Store,909303658157,2229,09/26/26 11:10 AM,DoorDash - Luis M (F6791BE6),Online,Takeout,DoorDash,30.13,2.67,32.80,false
+Bubbakoo's Burritos - Sample Store,898613531598,2230,09/26/26 11:19 AM,DoorDash - Mike R (D06AABE7),Online,Takeout,DoorDash,26.83,2.38,29.21,false
+Bubbakoo's Burritos - Sample Store,967287106407,2231,09/26/26 02:55 PM,DoorDash - Jane D (268D2497),Online,Takeout,DoorDash,31.14,2.76,33.90,false
+Bubbakoo's Burritos - Sample Store,551634934806,2232,09/26/26 06:59 PM,DoorDash - Sam K (2E541BC0),Online,Takeout,DoorDash,29.96,2.66,32.62,false
+Bubbakoo's Burritos - Sample Store,253607395225,2233,09/26/26 03:32 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,46.14,4.09,50.23,false
+Bubbakoo's Burritos - Sample Store,257295498385,2234,09/26/26 07:00 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,37.30,3.31,40.61,false
+Bubbakoo's Burritos - Sample Store,881838598246,2235,09/26/26 08:27 PM,Uber Eats - Chris L,Online,Takeout,Uber Eats,55.93,4.96,60.89,false
+Bubbakoo's Burritos - Sample Store,619866174121,2236,09/26/26 04:23 PM,Uber Eats - Tony B,Online,Takeout,Uber Eats,20.39,1.81,22.20,false
+Bubbakoo's Burritos - Sample Store,122205826219,2237,09/26/26 04:13 PM,Uber Eats - Luis M,Online,Takeout,Uber Eats,18.55,1.65,20.20,false
+Bubbakoo's Burritos - Sample Store,783400417465,2238,09/26/26 07:09 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,43.59,3.87,47.46,false
+Bubbakoo's Burritos - Sample Store,538752834601,2239,09/26/26 06:20 PM,Uber Eats - Sam K,Online,Takeout,Uber Eats,30.45,2.70,33.15,false
+Bubbakoo's Burritos - Sample Store,1099003600386,2240,09/26/26 06:34 PM,Uber Eats - Priya S,Online,Takeout,Uber Eats,51.35,4.56,55.91,false
+Bubbakoo's Burritos - Sample Store,977450036997,2241,09/26/26 04:15 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,29.84,2.65,32.49,false
+Bubbakoo's Burritos - Sample Store,690759158912,2242,09/26/26 07:50 PM,Uber Eats - Ana P,Online,Takeout,Uber Eats,28.94,2.57,31.51,false
+Bubbakoo's Burritos - Sample Store,112103556125,2243,09/26/26 11:13 AM,Uber Eats - Sam K,Online,Takeout,Uber Eats,56.73,5.03,61.76,false
+Bubbakoo's Burritos - Sample Store,227929497071,2244,09/26/26 03:25 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,36.44,3.23,39.67,false
+Bubbakoo's Burritos - Sample Store,788923438071,2245,09/26/26 02:44 PM,Uber Eats - Mike R,Online,Takeout,Uber Eats,49.39,4.38,53.77,false
+Bubbakoo's Burritos - Sample Store,608502950479,2246,09/26/26 02:38 PM,Uber Eats - Kate W,Online,Takeout,Uber Eats,30.61,2.72,33.33,false
+Bubbakoo's Burritos - Sample Store,551759658590,2247,09/26/26 05:18 PM,Grubhub - Luis M 2247,Online,Takeout,Grubhub,27.18,2.41,29.59,false
+Bubbakoo's Burritos - Sample Store,298265594631,2248,09/26/26 07:57 PM,Grubhub - Ana P 2248,Online,Takeout,Grubhub,51.74,4.59,56.33,false
+Bubbakoo's Burritos - Sample Store,763733725385,2249,09/26/26 07:42 PM,Grubhub - Kate W 2249,Online,Takeout,Grubhub,55.78,4.95,60.73,false
+Bubbakoo's Burritos - Sample Store,256680179113,2250,09/26/26 02:50 PM,Grubhub - Jane D 2250,Online,Takeout,Grubhub,37.62,3.34,40.96,false
+Bubbakoo's Burritos - Sample Store,016988151616,2251,09/26/26 05:20 PM,Grubhub - Jane D 2251,Online,Takeout,Grubhub,57.62,5.11,62.73,false
+Bubbakoo's Burritos - Sample Store,694043742807,2252,09/26/26 06:28 PM,Grubhub - Chris L 2252,Online,Takeout,Grubhub,39.13,3.47,42.60,false
+Bubbakoo's Burritos - Sample Store,389198745698,2253,09/26/26 06:15 PM,Grubhub - Sam K 2253,Online,Takeout,Grubhub,48.77,4.33,53.10,false
+Bubbakoo's Burritos - Sample Store,319723559775,2254,09/26/26 05:53 PM,Grubhub - Luis M 2254,Online,Takeout,Grubhub,30.30,2.69,32.99,false

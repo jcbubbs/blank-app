@@ -1,19 +1,21 @@
-# 🎈 Blank app template
+# 🌯 3P Recovery Pilot
 
-A simple Streamlit app template for you to modify!
+Reconciles **one store's** Toast orders against DoorDash, Uber Eats and Grubhub CSV exports. It flags error charges, cancelled-after-made orders, commission overcharges, unpaid orders and price drift, then builds a dispute worklist sorted by deadline.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+The full build plan is in [`docs/loop-rebuild-plan.md`](docs/loop-rebuild-plan.md).
 
-### How to run it on your own machine
+## Run it
 
-1. Install the requirements
+```
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+The app opens on **sample data**, which is made up and has problems planted in it. Switch to *Upload my CSVs* in the sidebar to run a real store. The **What CSVs to pull** tab lists the exact exports and columns to bring.
 
-2. Run the app
+## Layout
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+- `recon/loaders.py`: finds columns by alias for each export and normalizes them to one row per order.
+- `recon/engine.py`: T1/T2/T3 order matching and rules R1–R7.
+- `recon/sample.py`: synthetic data generator (`python -m recon.sample` writes `sample_data/`).
+- `tests/`: `python -m pytest tests`.
