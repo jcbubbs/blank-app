@@ -116,6 +116,40 @@ def match_orders(toast: pd.DataFrame, plat: pd.DataFrame, s: Settings) -> pd.Dat
     return plat
 
 
+_STOP = {"BUILD", "YOUR", "OWN", "MISSING", "INCORRECT", "QUALITY", "FOOD", "SIGNATURE", "LARGE",
+         "SMALL", "MEAL", "DEAL", "THE", "AND", "WITH", "ENTIRELY", "WRONG", "ORDER"}
+
+
+def _tokens(text: str) -> set[str]:
+    words = re.findall(r"[A-Z]{4,}", str(text).upper())
+    return {w[:-1] if w.endswith("S") and len(w) > 4 else w for w in words} - _STOP
+
+
+def item_evidence(claim: str, ticket: pd.DataFrame) -> tuple[str, str]:
+    """Compare a platform's error description with the Toast ticket's items.
+
+    Returns (evidence, confidence). Finding the claimed item on the ticket
+    proves it was rung and sent to the kitchen, not that it went in the bag.
+    It's still the proof DoorDash asks for.
+    """
+    if ticket.empty:
+        return "No Toast item data for this order", ""
+    claims = [c for c in re.split(r"[;|]", str(claim)) if c.strip()]
+    wanted = set().union(*(_tokens(c) for c in claims)) if claims else set()
+    if not wanted:
+        return f"Whole-order claim. Toast ticket had {len(ticket)} items, all sent to kitchen", "medium"
+    hits = ticket[ticket["item"].map(lambda x: bool(wanted & _tokens(x)))]
+    if hits.empty:
+        return "Claimed item NOT on the Toast ticket, so the charge is likely valid. Skip the dispute and coach the store", "low"
+    live = hits[~hits["voided"]]
+    if live.empty:
+        return "Claimed item was VOIDED on the Toast ticket, so the charge is likely valid", "low"
+    sent = live["sent"].min()
+    names = ", ".join(sorted(live["item"].unique())[:3])
+    when = f" at {sent:%I:%M %p}" if pd.notna(sent) else ""
+    return f"Toast ticket shows {names} rung and sent to kitchen{when}, not voided", "high"
+
+
 def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidence="medium"):
     when = row.get("order_time") if row is not None else None
     if (when is None or pd.isna(when)) and toast_row is not None:
@@ -139,8 +173,9 @@ def _finding(row, rule, amount, evidence, s: Settings, toast_row=None, confidenc
     }
 
 
-def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.DataFrame:
+def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings, items: pd.DataFrame | None = None) -> pd.DataFrame:
     have_toast = not toast.empty
+    tickets = items.groupby("order_number") if items is not None and not items.empty else None
     by_id = toast.set_index("toast_order_id") if have_toast else pd.DataFrame()
     out = []
     for _, r in matched.iterrows():
@@ -160,11 +195,20 @@ def find_issues(toast: pd.DataFrame, matched: pd.DataFrame, s: Settings) -> pd.D
                 ev += f" on a ${r['subtotal']:.2f} order ({charged / r['subtotal']:.0%})"
             if credited:
                 ev += f"; ${credited:.2f} already credited back"
+            confidence = "high" if rung else "medium"
             if rung:
-                ev += f". Toast #{t['order_number']} was rung and closed at ${t['subtotal']:.2f}, so it's POS proof the order was made"
-            f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, "high" if rung else "medium")
+                ev += f". Toast #{t['order_number']} was rung at ${t['subtotal']:.2f}"
+                if tickets is not None:
+                    num = str(t["order_number"])
+                    ticket = tickets.get_group(num) if num in tickets.groups else pd.DataFrame(columns=items.columns)
+                    item_ev, item_conf = item_evidence(r["description"], ticket)
+                    ev += f". {item_ev}"
+                    confidence = item_conf or "medium"
+            f = _finding(r, "R1", max(0.0, charged - credited), ev, s, t, confidence)
             if credited >= charged - 0.01:
                 f["status"] = "credited"
+            elif confidence == "low":
+                f["status"] = "likely valid"   # don't dispute; losing disputes gets DD self-service restricted
             out.append(f)
 
         if cancelled and r["net_payout"] <= 0.01 and rung:
@@ -253,10 +297,10 @@ def summarize(toast: pd.DataFrame, matched: pd.DataFrame, issues: pd.DataFrame, 
     }
 
 
-def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings):
+def run(toast: pd.DataFrame, platforms: list[pd.DataFrame], s: Settings, items: pd.DataFrame | None = None):
     plat = pd.concat([p for p in platforms if not p.empty], ignore_index=True) if any(not p.empty for p in platforms) else pd.DataFrame()
     if plat.empty:
         raise ValueError("No platform orders loaded. Upload at least one DoorDash, Uber Eats or Grubhub CSV.")
     matched = match_orders(toast, plat, s)
-    issues = find_issues(toast, matched, s)
+    issues = find_issues(toast, matched, s, items)
     return matched, issues, summarize(toast, matched, issues, s)

@@ -215,10 +215,10 @@ def load_platform(frames: list[pd.DataFrame], platform: str) -> tuple[pd.DataFra
     agg.update({
         "order_time": "min",
         "status": lambda s: next((v for v in s if isinstance(v, str) and v.strip()), ""),
-        "txn_type": lambda s: " | ".join(sorted({str(v) for v in s if str(v).strip()})),
+        "txn_type": lambda s: " | ".join(sorted({str(v) for v in s if pd.notna(v) and str(v).strip()})),
         "payout_date": "first", "payout_id": "first", "txn_id": "first",
         "pos_order_id": lambda s: next((v for v in s if isinstance(v, str) and v.strip()), ""),
-        "description": lambda s: " | ".join(sorted({str(v) for v in s if str(v).strip()})),
+        "description": lambda s: " | ".join(sorted({str(v) for v in s if pd.notna(v) and str(v).strip()})),
     })
     orders = raw.groupby("order_id", as_index=False).agg(agg)
     orders.insert(0, "platform", platform)
@@ -252,3 +252,32 @@ def load_toast(frames: list[pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
         t.loc[(t["platform"] == "") & blob.str.contains(pat), "platform"] = p
     t["search_blob"] = (blob + " " + t["order_number"].astype(str) + " " + t["toast_order_id"].astype(str)).map(lambda s: re.sub(r"[^A-Z0-9 ]", "", s.upper()))
     return t.reset_index(drop=True), mapping
+
+
+ITEM_ALIASES: dict[str, list[str]] = {
+    "order_number": ["Order #", "Order Number"],
+    "toast_order_id": ["Order Id", "Order GUID"],
+    "sent": ["Sent Date", "Order Date"],
+    "item": ["Menu Item", "Item"],
+    "qty": ["Qty", "Quantity"],
+    "price": ["Net Price", "Gross Price"],
+    "voided": ["Void?", "Voided"],
+}
+
+
+def load_toast_items(frames: list[pd.DataFrame]) -> pd.DataFrame:
+    """Toast ItemSelectionDetails: one row per item rung on an order."""
+    parts = []
+    for df in frames:
+        mapping = map_columns(df, ITEM_ALIASES)
+        out = pd.DataFrame(index=df.index)
+        for field, cols in mapping.items():
+            out[field] = df[cols[0]].fillna("") if cols else ""
+        parts.append(out)
+    if not parts:
+        return pd.DataFrame(columns=list(ITEM_ALIASES))
+    it = pd.concat(parts, ignore_index=True).drop_duplicates()
+    it["sent"] = pd.to_datetime(it["sent"], errors="coerce", format="mixed")
+    it["price"] = to_money(it["price"])
+    it["voided"] = it["voided"].astype(str).str.strip().str.lower().isin({"true", "yes", "1", "y"})
+    return it

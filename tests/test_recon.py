@@ -53,3 +53,15 @@ def test_doordash_zip_style_duplicates_and_credits():
     r1 = issues[issues["rule"] == "R1"].iloc[0]
     assert r1["amount"] == 6.0                      # 10 charged - 4 credited
     assert (issues["rule"] == "R5").sum() == 0      # 5.25 / (30 - 5) = 21% exactly
+
+
+def test_item_evidence():
+    import pandas as pd
+    ticket = pd.DataFrame({"item": ["BURRITO", "CHIPS & QUESO 4OZ"], "voided": [False, False],
+                           "sent": pd.to_datetime(["2026-09-01 12:01", "2026-09-01 12:01"])})
+    ev, conf = engine.item_evidence("1 CHIPS & SIGNATURE QUESO missing", ticket)
+    assert conf == "high" and "CHIPS & QUESO 4OZ" in ev
+    _, conf = engine.item_evidence("2 TACOS - BUILD YOUR OWN missing", ticket)
+    assert conf == "low"
+    _, conf = engine.item_evidence("1 BURRITO BOWL - BUILD YOUR OWN missing", ticket.iloc[:0])
+    assert conf == ""

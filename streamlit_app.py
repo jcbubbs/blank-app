@@ -19,6 +19,7 @@ with st.sidebar:
     uploads = {}
     if mode == "Upload my CSVs":
         uploads["toast"] = st.file_uploader("Toast: OrderDetails.csv (optional but recommended)", type="csv", accept_multiple_files=True)
+        uploads["toast_items"] = st.file_uploader("Toast: ItemSelectionDetails.csv (proof for 'missing item' charges)", type="csv", accept_multiple_files=True)
         for p, label in LABELS.items():
             uploads[p] = st.file_uploader(f"{label} financial export (CSV or zip)", type=["csv", "zip"], accept_multiple_files=True)
 
@@ -83,7 +84,8 @@ for p in LABELS:
     plat_maps[p] = mp
 
 try:
-    matched, issues, s = engine.run(toast, plats, settings)
+    items = loaders.load_toast_items(frames.get("toast_items", []))
+    matched, issues, s = engine.run(toast, plats, settings, items)
 except ValueError as e:
     st.error(str(e))
     st.stop()
